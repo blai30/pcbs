@@ -97,6 +97,11 @@
             )
         )
     )
+    (sheet (at 21.59 60.32) (size 23.495 12.065) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes)
+        (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "abf328ec-53ba-49d0-892a-3c690fff3139")
+        (property "Sheetname" "Controller" (at 21.59 59.6084 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left bottom)))
+        (property "Sheetfile" "fuji75-controller.kicad_sch" (at 21.59 72.9696 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left top)))
+        (instances (project "fuji75" (path "/f9fa9632-d804-41cf-8e10-2d16c15e8373" (page "4")))))
     (sheet_instances
         (path "/"
             (page "1")
