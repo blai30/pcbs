@@ -2,7 +2,31 @@
 
 Replacement hotswap PCB for the Sakura Workshop Fuji75, with per-key RGB and an RP2040. It fits the stock case, plate mount, daughterboard, and JST cable.
 
-The layout is the stock Fuji75 hotswap layout except for the bottom right: 1u Alt, Menu, and Ctrl instead of 1.5u Alt and Ctrl (`reference/keyboard-layout.json`).
+The layout is the stock Fuji75 hotswap layout except for the bottom right: 1u Alt, Fn, and Ctrl instead of 1.5u Alt and Ctrl (`reference/keyboard-layout.json`). The nav column is Insert, Delete, PgUp, and PgDn.
+
+## KiCad project
+
+Open `fuji75.kicad_pro` in KiCad 10.
+
+- `fuji75.kicad_sch`: root sheet
+- `fuji75-key-matrix.kicad_sch` and `fuji75-led-chain.kicad_sch`: generated
+- `fuji75.kicad_pcb`: switches, diodes, LEDs, capacitors, stabilizers, outline, and flex cuts are generated
+- `layout.json`: the layout with each key's matrix position as its top-left legend (`row,col`, VIA format). Opens in keyboard-layout-editor.com
+- `fuji75.kicad_dru`: custom DRC rules for the socket pads at the board edge and the LED cutouts
+
+The generator only runs during the key grid stage. It rebuilds the schematic and PCB from scratch, and it refuses to run once the PCB has parts it didn't make or any tracks.
+
+Setup (once):
+
+1. Run `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user "kbplacer[schematic]==0.20"`.
+
+Regenerate from the repo root:
+
+1. Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/generate.py` (add `--no-flex-cuts` for a solid board).
+
+Footprints in `lib/` are copies from marbastlib (CERN-OHL-P, see `lib/marbastlib-LICENSE`) and KiCad's stock library. `LED_MX_6028R` has its pads renumbered to KiCad's SK6812 numbering (1 GND, 2 DIN, 3 VCC, 4 DOUT), which kbplacer expects.
+
+The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm inside the board edge (the socket tab hangs over the edge, like stock). Don't run "Update Footprints from Library" on those switches, it undoes the trim.
 
 ## Reference
 

@@ -1,0 +1,106 @@
+(kicad_sch
+    (version 20250114)
+    (generator "eeschema")
+    (generator_version "9.0")
+    (uuid "48ae8536-f25f-474f-b657-713eb643eb0a")
+    (paper "A4")
+    (lib_symbols)
+    (sheet
+        (at 21.59 20.32)
+        (size 23.495 12.065)
+        (exclude_from_sim no)
+        (in_bom yes)
+        (on_board yes)
+        (dnp no)
+        (fields_autoplaced yes)
+        (stroke
+            (width 0.1524)
+            (type solid)
+        )
+        (fill
+            (color 0 0 0 0)
+        )
+        (uuid "bdf52550-dfc2-41d7-b34c-b17e827f1d3e")
+        (property "Sheetname" "Key Matrix"
+            (at 21.59 19.6084 0)
+            (show_name no)
+            (do_not_autoplace no)
+            (effects
+                (font
+                    (size 1.27 1.27)
+                )
+                (justify left bottom)
+            )
+        )
+        (property "Sheetfile" "fuji75-key-matrix.kicad_sch"
+            (at 21.59 32.9696 0)
+            (show_name no)
+            (do_not_autoplace no)
+            (effects
+                (font
+                    (size 1.27 1.27)
+                )
+                (justify left top)
+            )
+        )
+        (instances
+            (project "fuji75"
+                (path "/48ae8536-f25f-474f-b657-713eb643eb0a"
+                    (page "2")
+                )
+            )
+        )
+    )
+    (sheet
+        (at 21.59 40.32)
+        (size 23.495 12.065)
+        (exclude_from_sim no)
+        (in_bom yes)
+        (on_board yes)
+        (dnp no)
+        (fields_autoplaced yes)
+        (stroke
+            (width 0.1524)
+            (type solid)
+        )
+        (fill
+            (color 0 0 0 0)
+        )
+        (uuid "154e0b20-1d0b-40f2-8745-d9ac3d0357ad")
+        (property "Sheetname" "Led Chain"
+            (at 21.59 39.6084 0)
+            (show_name no)
+            (do_not_autoplace no)
+            (effects
+                (font
+                    (size 1.27 1.27)
+                )
+                (justify left bottom)
+            )
+        )
+        (property "Sheetfile" "fuji75-led-chain.kicad_sch"
+            (at 21.59 52.9696 0)
+            (show_name no)
+            (do_not_autoplace no)
+            (effects
+                (font
+                    (size 1.27 1.27)
+                )
+                (justify left top)
+            )
+        )
+        (instances
+            (project "fuji75"
+                (path "/48ae8536-f25f-474f-b657-713eb643eb0a"
+                    (page "3")
+                )
+            )
+        )
+    )
+    (sheet_instances
+        (path "/"
+            (page "1")
+        )
+    )
+    (embedded_fonts no)
+)
