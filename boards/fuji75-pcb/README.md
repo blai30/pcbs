@@ -15,6 +15,8 @@ Open `fuji75.kicad_pro` in KiCad 10.
 - `layout.json`: the layout with each key's matrix position as its top-left legend (`row,col`, VIA format). Opens in keyboard-layout-editor.com
 - `fuji75.kicad_dru`: custom DRC rules for the socket pads at the board edge and the LED cutouts
 
+White solder mask with black silkscreen, set in the board stackup (Board Setup, Physical Stackup). Renders only use it with `kicad-cli pcb render --use-board-stackup-colors`.
+
 `scripts/generate.py` built the key grid. It's locked now: it rebuilds the schematic and PCB from scratch, so it refuses to run once the PCB has parts it didn't make (the controller) or any tracks. Its `check_holes_inside` and `check_min_web` still work on their own (DRC doesn't check holes crossing an edge or board material thinner than 1 mm).
 
 To run it again on a board without the controller, install kbplacer once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user "kbplacer[schematic]==0.20"`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/generate.py` from the repo root (add `--no-flex-cuts` for a solid board).
