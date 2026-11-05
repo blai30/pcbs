@@ -42,13 +42,14 @@ FLEX_CUT_WIDTH = 1.0
 # Uncut strip at each end of a cut, from the board edge.
 FLEX_CUT_END_MARGIN = 10.0
 BRIDGE_WIDTH = 4.0
-# Each cut's center in KLE y units (the first sits mid-way in the F-row's 0.25u gap), with its
-# bridge centers in mm from the board's left edge, staggered between neighboring cuts.
+# Each cut: its center in KLE y units (the first sits mid-way in the F-row's 0.25u gap), where it
+# starts in mm from the board's left edge, and its bridge centers in mm from the left edge,
+# staggered between neighboring cuts. The F-row cut starts past the controller (J1 to the flash).
 FLEX_CUTS = [
-    (1.375, [75, 150, 225]),
-    (2.5, [40, 112, 187, 262]),
-    (3.5, [75, 150, 225]),
-    (4.5, [40, 112, 187, 262]),
+    (1.375, 85, [150, 225]),
+    (2.5, FLEX_CUT_END_MARGIN, [40, 112, 187, 262]),
+    (3.5, FLEX_CUT_END_MARGIN, [75, 150, 225]),
+    (4.5, FLEX_CUT_END_MARGIN, [40, 112, 187, 262]),
 ]
 # Extra space kept between a flex cut and any stabilizer hole.
 HOLE_MARGIN = 1.0
@@ -295,9 +296,9 @@ def subtract(spans, gap_start, gap_end):
 
 
 def draw_flex_cuts(board, grid, outline, holes):
-    for center_row, bridges in FLEX_CUTS:
+    for center_row, start, bridges in FLEX_CUTS:
         center_y = grid.y(center_row)
-        spans = [(outline.left + FLEX_CUT_END_MARGIN, outline.right_at(center_y) - FLEX_CUT_END_MARGIN)]
+        spans = [(outline.left + start, outline.right_at(center_y) - FLEX_CUT_END_MARGIN)]
         for bridge in bridges:
             center_x = outline.left + bridge
             spans = subtract(spans, center_x - BRIDGE_WIDTH / 2, center_x + BRIDGE_WIDTH / 2)
