@@ -331,7 +331,7 @@
       {
         "filename": "fuji75.kicad_sch",
         "name": "Root",
-        "uuid": "48ae8536-f25f-474f-b657-713eb643eb0a"
+        "uuid": "22da14e6-3767-41e0-b268-e93a489d2662"
       }
     ],
     "used_designators": "",
@@ -339,15 +339,15 @@
   },
   "sheets": [
     [
-      "48ae8536-f25f-474f-b657-713eb643eb0a",
+      "22da14e6-3767-41e0-b268-e93a489d2662",
       "Root"
     ],
     [
-      "bdf52550-dfc2-41d7-b34c-b17e827f1d3e",
+      "5d05c530-fd1a-4da8-9c6e-40e6753bc6f0",
       "Key Matrix"
     ],
     [
-      "154e0b20-1d0b-40f2-8745-d9ac3d0357ad",
+      "adfc3d8b-9239-48cc-a564-2d260b71f8d8",
       "Led Chain"
     ]
   ],

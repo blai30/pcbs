@@ -55,6 +55,8 @@ HOLE_MARGIN = 1.0
 # Socket pads on the outer columns get cut back to this far inside the edge. The socket's metal
 # tab hangs past the edge, same as the stock board.
 SOCKET_PAD_EDGE_MARGIN = 0.3
+# Narrowest board material allowed between two cuts or a cut and the edge (fabs want about 0.5).
+MIN_WEB = 1.0
 
 # References this script makes (stabilizers are checked separately).
 KEY_COUNT = 82
@@ -192,19 +194,56 @@ class Outline:
         self.tab_bottom = grid.y(6.25, ARROW_TAB_BOTTOM - CLEARANCE)
         self.tab_left = grid.x(15.75, ARROW_TAB_RIGHT - ARROW_TAB_WIDTH + CLEARANCE)
         self.bottom = grid.y(6.5, -CLEARANCE)
+        # LED cutouts opened into the bottom edge, as (left x, right x, top y).
+        self.led_notches = []
 
     def points(self):
         return [
             (self.left, self.top), (self.notch_x, self.top), (self.notch_x, self.notch_y),
             (self.right, self.notch_y), (self.right, self.step_y), (self.tab_right, self.step_y),
-            (self.tab_right, self.tab_bottom), (self.tab_left, self.tab_bottom),
-            (self.tab_left, self.bottom), (self.left, self.bottom),
+            (self.tab_right, self.tab_bottom),
+            *self.notch_points(self.tab_bottom, self.tab_left, self.tab_right),
+            (self.tab_left, self.tab_bottom), (self.tab_left, self.bottom),
+            *self.notch_points(self.bottom, self.left, self.tab_left),
+            (self.left, self.bottom),
         ]
+
+    def notch_points(self, edge_y, start_x, end_x):
+        """Points for the LED notches on one bottom edge, right to left (the outline's direction)."""
+        points = []
+        for left, right, top in sorted(self.led_notches, reverse=True):
+            if start_x < left and right < end_x:
+                points += [(right, edge_y), (right, top), (left, top), (left, edge_y)]
+        return points
 
     def right_at(self, y):
         if y < self.notch_y:
             return self.notch_x
         return self.right if y < self.step_y else self.tab_right
+
+    def bottom_at(self, x):
+        return self.tab_bottom if x > self.tab_left else self.bottom
+
+
+def open_edge_led_cutouts(footprints, outline):
+    # An LED cutout that ends too close to the bottom edge would leave a strip too thin to make
+    # (0.09 mm under the arrow keys). Those cutouts become notches in the edge instead.
+    for reference, footprint in footprints.items():
+        if not reference.startswith("LED"):
+            continue
+        cutout = [item for item in footprint.GraphicalItems() if item.GetLayer() == pcbnew.Edge_Cuts]
+        # Bounding boxes include the line width, so take half of it back off each side.
+        stroke = pcbnew.ToMM(cutout[0].GetWidth()) / 2
+        boxes = [item.GetBoundingBox() for item in cutout]
+        left = pcbnew.ToMM(min(box.GetX() for box in boxes)) + stroke
+        right = pcbnew.ToMM(max(box.GetRight() for box in boxes)) - stroke
+        top = pcbnew.ToMM(min(box.GetY() for box in boxes)) + stroke
+        bottom = pcbnew.ToMM(max(box.GetBottom() for box in boxes)) - stroke
+        if outline.bottom_at((left + right) / 2) - bottom < MIN_WEB:
+            # Moving the cutout to a comment layer keeps it visible without cutting the board.
+            for item in cutout:
+                item.SetLayer(pcbnew.Cmts_User)
+            outline.led_notches.append((left, right, top))
 
 
 def draw_outline(board, outline):
@@ -292,6 +331,17 @@ def check_holes_inside(board):
         sys.exit(f"Holes cross the board edge or a flex cut: {', '.join(sorted(broken))}")
 
 
+def check_min_web(board):
+    # Shrinking the board shape by half the minimum web merges any cutout that sits closer than
+    # that to the edge or another cutout, so the hole count drops.
+    shape = pcbnew.SHAPE_POLY_SET()
+    board.GetBoardPolygonOutlines(shape, False)
+    holes = shape.HoleCount(0)
+    shape.Deflate(pcbnew.FromMM(MIN_WEB / 2), pcbnew.CORNER_STRATEGY_ROUND_ALL_CORNERS, pcbnew.FromMM(0.01))
+    if shape.OutlineCount() != 1 or shape.HoleCount(0) != holes:
+        sys.exit(f"Some board material between cuts or edges is thinner than {MIN_WEB} mm.")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--no-flex-cuts", action="store_true", help="draw the outline without flex cuts")
@@ -308,11 +358,13 @@ def main():
 
     grid = Grid(footprints["SW1"].GetPosition())
     outline = Outline(grid)
+    open_edge_led_cutouts(footprints, outline)
     draw_outline(board, outline)
     trim_socket_pads(footprints, outline)
     if not args.no_flex_cuts:
         draw_flex_cuts(board, grid, outline, stabilizer_holes(footprints))
     check_holes_inside(board)
+    check_min_web(board)
 
     board.Save(str(PCB_FILE))
     print(f"Wrote {PCB_FILE}")

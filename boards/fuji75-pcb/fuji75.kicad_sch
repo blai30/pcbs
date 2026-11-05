@@ -2,7 +2,7 @@
     (version 20250114)
     (generator "eeschema")
     (generator_version "9.0")
-    (uuid "48ae8536-f25f-474f-b657-713eb643eb0a")
+    (uuid "22da14e6-3767-41e0-b268-e93a489d2662")
     (paper "A4")
     (lib_symbols)
     (sheet
@@ -20,7 +20,7 @@
         (fill
             (color 0 0 0 0)
         )
-        (uuid "bdf52550-dfc2-41d7-b34c-b17e827f1d3e")
+        (uuid "5d05c530-fd1a-4da8-9c6e-40e6753bc6f0")
         (property "Sheetname" "Key Matrix"
             (at 21.59 19.6084 0)
             (show_name no)
@@ -45,7 +45,7 @@
         )
         (instances
             (project "fuji75"
-                (path "/48ae8536-f25f-474f-b657-713eb643eb0a"
+                (path "/22da14e6-3767-41e0-b268-e93a489d2662"
                     (page "2")
                 )
             )
@@ -66,7 +66,7 @@
         (fill
             (color 0 0 0 0)
         )
-        (uuid "154e0b20-1d0b-40f2-8745-d9ac3d0357ad")
+        (uuid "adfc3d8b-9239-48cc-a564-2d260b71f8d8")
         (property "Sheetname" "Led Chain"
             (at 21.59 39.6084 0)
             (show_name no)
@@ -91,7 +91,7 @@
         )
         (instances
             (project "fuji75"
-                (path "/48ae8536-f25f-474f-b657-713eb643eb0a"
+                (path "/22da14e6-3767-41e0-b268-e93a489d2662"
                     (page "3")
                 )
             )
