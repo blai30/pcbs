@@ -10,23 +10,34 @@ Open `fuji75.kicad_pro` in KiCad 10.
 
 - `fuji75.kicad_sch`: root sheet
 - `fuji75-key-matrix.kicad_sch` and `fuji75-led-chain.kicad_sch`: generated
-- `fuji75.kicad_pcb`: switches, diodes, LEDs, capacitors, stabilizers, outline, and flex cuts are generated
+- `fuji75-controller.kicad_sch`: USB in, power, RP2040, flash, clock, boot button, and the LED level shifter. Edited by hand
+- `fuji75.kicad_pcb`: switches, diodes, LEDs, capacitors, stabilizers, outline, and flex cuts are generated. The controller parts are placed by hand
 - `layout.json`: the layout with each key's matrix position as its top-left legend (`row,col`, VIA format). Opens in keyboard-layout-editor.com
 - `fuji75.kicad_dru`: custom DRC rules for the socket pads at the board edge and the LED cutouts
 
-The generator only runs during the key grid stage. It rebuilds the schematic and PCB from scratch, and it refuses to run once the PCB has parts it didn't make or any tracks.
+`scripts/generate.py` built the key grid. It's locked now: it rebuilds the schematic and PCB from scratch, so it refuses to run once the PCB has parts it didn't make (the controller) or any tracks. Its `check_holes_inside` and `check_min_web` still work on their own (DRC doesn't check holes crossing an edge or board material thinner than 1 mm).
 
-Setup (once):
-
-1. Run `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user "kbplacer[schematic]==0.20"`.
-
-Regenerate from the repo root:
-
-1. Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/generate.py` (add `--no-flex-cuts` for a solid board).
+To run it again on a board without the controller, install kbplacer once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user "kbplacer[schematic]==0.20"`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/generate.py` from the repo root (add `--no-flex-cuts` for a solid board).
 
 Footprints in `lib/` are copies from marbastlib (CERN-OHL-P, see `lib/marbastlib-LICENSE`) and KiCad's stock library. `LED_MX_6028R` has its pads renumbered to KiCad's SK6812 numbering (1 GND, 2 DIN, 3 VCC, 4 DOUT), which kbplacer expects.
 
 The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm inside the board edge (the socket tab hangs over the edge, like stock). The arrow keys' LED cutouts open into the bottom edge as notches (a closed cutout would leave a 0.09 mm strip, too thin to make). Don't run "Update Footprints from Library" on those switches or the arrow LEDs (LED73 to LED75), it undoes the trim and the notches.
+
+## Controller
+
+The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
+
+GPIO pin map (first pass, routing may still swap pins):
+
+| GPIO | Signal |
+| --- | --- |
+| 0 to 14 | COL0 to COL14 |
+| 15 to 20 | ROW0 to ROW5 |
+| 22 | LED data (through the 74AHCT1G125 to 5 V) |
+
+Parts sit on both sides. The 12 RP2040 decoupling capacitors are on the top side right above the chip (under the plate), and so is the boot button.
+
+To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The printed plate has to keep the stock plate's wide spacebar cutout.
 
 ## Reference
 
