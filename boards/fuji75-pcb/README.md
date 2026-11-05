@@ -11,11 +11,11 @@ Open `fuji75.kicad_pro` in KiCad 10.
 - `fuji75.kicad_sch`: root sheet
 - `fuji75-key-matrix.kicad_sch` and `fuji75-led-chain.kicad_sch`: generated
 - `fuji75-controller.kicad_sch`: USB in, power, RP2040, flash, clock, boot button, and the LED level shifter. Edited by hand
-- `fuji75.kicad_pcb`: switches, diodes, LEDs, capacitors, stabilizers, outline, and flex cuts are generated. The controller parts are placed by hand
+- `fuji75.kicad_pcb`: switches, LEDs, stabilizers, outline, and flex cuts came from the generator. Diodes, LED capacitors, the controller, and all routing were placed and drawn by one-off scripts after that. The board file is the source now
 - `layout.json`: the layout with each key's matrix position as its top-left legend (`row,col`, VIA format). Opens in keyboard-layout-editor.com
 - `fuji75.kicad_dru`: custom DRC rules for the socket pads at the board edge and the LED cutouts
 
-White solder mask with black silkscreen, set in the board stackup (Board Setup, Physical Stackup). Renders only use it with `kicad-cli pcb render --use-board-stackup-colors`.
+White solder mask, black silkscreen, and ENIG finish, set in the board stackup (Board Setup, Physical Stackup). Renders only use the colors with `kicad-cli pcb render --use-board-stackup-colors`.
 
 `scripts/generate.py` built the key grid. It's locked now: it rebuilds the schematic and PCB from scratch, so it refuses to run once the PCB has parts it didn't make (the controller) or any tracks. Its `check_holes_inside` and `check_min_web` still work on their own (DRC doesn't check holes crossing an edge or board material thinner than 1 mm).
 
@@ -29,17 +29,59 @@ The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm
 
 The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
 
-GPIO pin map (first pass, routing may still swap pins):
+The ESD chip, R1, R2, and the MOSFET sit next to J1. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 10 cm from J1 to the chip. That's fine at full speed (12 Mbps).
+
+GPIO pin map:
 
 | GPIO | Signal |
 | --- | --- |
-| 0 to 14 | COL0 to COL14 |
-| 15 to 20 | ROW0 to ROW5 |
-| 22 | LED data (through the 74AHCT1G125 to 5 V) |
+| 1 | ROW5 |
+| 2 | LED data (through the 74AHCT1G125 to 5 V) |
+| 3 | ROW4 |
+| 4 to 7 | COL3, COL2, COL1, COL0 |
+| 8 to 11 | ROW3, ROW2, ROW1, ROW0 |
+| 18 to 28 | COL14 down to COL4 |
 
-Parts sit on both sides. The 12 RP2040 decoupling capacitors are on the top side right above the chip (under the plate), and so is the boot button.
+GPIO 0, 12 to 17, and 29 are unused.
+
+Parts sit on both sides. The crystal and the 12 RP2040 decoupling capacitors are on the top side right above the chip (under the spacebar), and so is the boot button.
 
 To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The printed plate has to keep the stock plate's wide spacebar cutout.
+
+## Routing
+
+Each layer has one job. Rows and columns never cross on the same layer:
+
+- Top: the columns, straight down between the switches. They cross a flex cut only at a bridge or in the 10 mm strips at the ends
+- Bottom: one row line and one LED power line straight through each row of keys, and the LED data chain hopping LED to LED. The LEDs in rows 0, 2, and 4 are turned around, and the chain snakes left-right-left down the board
+- Between rows 4 and 5, the columns gather into two buses into the chip
+- Ground fill on both sides, stitched together with vias
+
+Tracks are 0.2 mm, 5 V and 3.3 V supply lines 0.3 to 0.5 mm. The USBLC6-2SC6 and boot button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
+
+## Fab
+
+Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/fab.py` from the repo root. It writes `build/fab/`:
+
+- `fuji75-gerbers.zip`: Gerbers and drill files
+- `fuji75-bom.csv`: BOM with manufacturer and LCSC part numbers (every symbol has `MPN` and `LCSC` fields)
+- `fuji75-cpl.csv`: placement for both sides
+
+PCBWay order settings:
+
+- 2 layers, 1.6 mm, 1 oz copper, ENIG
+- White solder mask, black silkscreen
+- 5 boards, 2 assembled on both sides, PCBWay sources all parts (turnkey)
+- Leave out the stabilizers. They're PCB-mount stabilizers you install yourself (they're out of the BOM)
+
+PCBWay sends photos of the part rotations before building. Things to check:
+
+- RP2040, flash, and the SOT-23 parts: the pin 1 dot matches the silkscreen dot
+- Diodes: the stripe (cathode) faces the row line (down on most keys, right on the five keys at the right edge)
+- LEDs: they're reverse-mount, the lens faces up through the board. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5
+- Hotswap sockets: the socket's body matches the footprint outline on the bottom
+
+If the Kailh socket (CPG151101S11) is short on stock, the HanElectricity CPG151101S11-2 is a drop-in.
 
 ## Reference
 

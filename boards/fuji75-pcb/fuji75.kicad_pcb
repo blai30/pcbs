@@ -74,7 +74,7 @@
 				(type "Bottom Silk Screen")
 				(color "Black")
 			)
-			(copper_finish "None")
+			(copper_finish "ENIG")
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)
