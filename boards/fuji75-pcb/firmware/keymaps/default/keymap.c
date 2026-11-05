@@ -26,3 +26,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______,                            _______,          _______, _______, _______, RM_PREV, RM_VALD, RM_NEXT
     ),
 };
+
+// Lock indicator keys by matrix position.
+#define CAPS_ROW 3
+#define CAPS_COL 0
+#define F11_ROW 0
+#define F11_COL 11
+
+// Indicator color as hue and saturation (white). Brightness is the RGB matrix cap.
+#define INDICATOR_HUE 0
+#define INDICATOR_SAT 0
+
+static void light_key(uint8_t row, uint8_t col, uint8_t led_min, uint8_t led_max) {
+    uint8_t index = g_led_config.matrix_co[row][col];
+    if (index < led_min || index >= led_max) {
+        return;
+    }
+    rgb_t rgb = hsv_to_rgb((hsv_t){INDICATOR_HUE, INDICATOR_SAT, RGB_MATRIX_MAXIMUM_BRIGHTNESS});
+    rgb_matrix_set_color(index, rgb.r, rgb.g, rgb.b);
+}
+
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    led_t led_state = host_keyboard_led_state();
+
+    // The Caps key shows Num Lock while Fn is held (Fn+Caps is NumLk).
+    bool caps_key_on = layer_state_is(FN) ? led_state.num_lock : led_state.caps_lock;
+    if (caps_key_on) {
+        light_key(CAPS_ROW, CAPS_COL, led_min, led_max);
+    }
+    if (led_state.scroll_lock) {
+        light_key(F11_ROW, F11_COL, led_min, led_max);
+    }
+    return false;
+}
