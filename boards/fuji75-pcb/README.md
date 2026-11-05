@@ -8,6 +8,7 @@ The layout is the stock Fuji75 hotswap layout except for the bottom right: 1u Al
 
 Everything in `reference/` comes from measuring the stock PCB (Sakura Workshop doesn't share the design files):
 
+- `fuji75_plate.dxf`: original plate model provided by Sakura Workshop (for reference)
 - `measurements.md`: outline measurements, taken to the near edge of each switch's center hole (add 2 mm for the center)
 - `measurement-guide.png`: diagram of where each measurement was taken, with the values
 - `photos/`: both sides of the stock PCB, the case, and the daughterboard
