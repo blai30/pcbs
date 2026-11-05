@@ -42,14 +42,14 @@ FLEX_CUT_WIDTH = 1.0
 # Uncut strip at each end of a cut, from the board edge.
 FLEX_CUT_END_MARGIN = 10.0
 BRIDGE_WIDTH = 4.0
-# Each cut: its center in KLE y units (the first sits mid-way in the F-row's 0.25u gap), where it
-# starts in mm from the board's left edge, and its bridge centers in mm from the left edge,
-# staggered between neighboring cuts. The F-row cut starts past the controller (J1 to the flash).
+# Each cut: its center in KLE y units, where it starts in mm from the board's left edge, and its
+# bridges in mm from the left edge, as a center or a (center, width) pair. Bridges sit where the
+# column traces cross. No F-row cut: that strip carries the controller and its traces.
 FLEX_CUTS = [
-    (1.375, 85, [150, 225]),
-    (2.5, FLEX_CUT_END_MARGIN, [40, 112, 187, 262]),
-    (3.5, FLEX_CUT_END_MARGIN, [75, 150, 225]),
-    (4.5, FLEX_CUT_END_MARGIN, [40, 112, 187, 262]),
+    (2.5, FLEX_CUT_END_MARGIN, [41.93, 112, 187]),
+    (3.5, FLEX_CUT_END_MARGIN, [47.93, 75, 150, 225]),
+    # The wide bridge joins the left Shift stabilizer's hole gap.
+    (4.5, FLEX_CUT_END_MARGIN, [(36, 12), 112, 187]),
 ]
 # Extra space kept between a flex cut and any stabilizer hole.
 HOLE_MARGIN = 1.0
@@ -300,8 +300,9 @@ def draw_flex_cuts(board, grid, outline, holes):
         center_y = grid.y(center_row)
         spans = [(outline.left + start, outline.right_at(center_y) - FLEX_CUT_END_MARGIN)]
         for bridge in bridges:
-            center_x = outline.left + bridge
-            spans = subtract(spans, center_x - BRIDGE_WIDTH / 2, center_x + BRIDGE_WIDTH / 2)
+            center, width = bridge if isinstance(bridge, tuple) else (bridge, BRIDGE_WIDTH)
+            center_x = outline.left + center
+            spans = subtract(spans, center_x - width / 2, center_x + width / 2)
         for hole_x, hole_y, radius in holes:
             if abs(hole_y - center_y) < radius + FLEX_CUT_WIDTH / 2 + HOLE_MARGIN:
                 spans = subtract(spans, hole_x - radius - HOLE_MARGIN, hole_x + radius + HOLE_MARGIN)
