@@ -46,10 +46,10 @@ BRIDGE_WIDTH = 4.0
 # bridges in mm from the left edge, as a center or a (center, width) pair. Bridges sit where the
 # column traces cross. No F-row cut: that strip carries the controller and its traces.
 FLEX_CUTS = [
-    (2.5, FLEX_CUT_END_MARGIN, [41.93, 112, 187]),
-    (3.5, FLEX_CUT_END_MARGIN, [47.93, 75, 150, 225]),
+    (2.5, FLEX_CUT_END_MARGIN, [41.93, 79.43, 112, 187]),
+    (3.5, FLEX_CUT_END_MARGIN, [47.93, 75, 99.43, 150, 225]),
     # The wide bridge joins the left Shift stabilizer's hole gap.
-    (4.5, FLEX_CUT_END_MARGIN, [(36, 12), 112, 187]),
+    (4.5, FLEX_CUT_END_MARGIN, [(36, 12), 69.43, 89.43, 112, 187]),
 ]
 # Extra space kept between a flex cut and any stabilizer hole.
 HOLE_MARGIN = 1.0
