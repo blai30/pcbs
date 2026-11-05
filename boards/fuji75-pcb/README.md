@@ -120,3 +120,7 @@ The wire colors don't follow USB conventions. Don't go by color.
 The pinout wasn't checked with a multimeter. It comes from the UDB schematic, the [Fuji75 interest check](https://geekhack.org/index.php?topic=113840.0), and the traces between J1 and the 32U4 in `photos/IMG_5497.JPEG`. The new board adds reverse-polarity protection on VBUS in case it's wrong.
 
 The daughterboard has its own fuse, ESD protection, CC resistors, and series resistors on D+ and D- (they look like 22 Ω).
+
+## License
+
+The board is under CERN-OHL-P-2.0 (repo root `LICENSE`). The footprints in `lib/` are marbastlib's, under the same license. The firmware in `firmware/` is under GPL-2.0-or-later.
