@@ -77,21 +77,7 @@ Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/fab.
 - `fuji75-bom.csv`: BOM with manufacturer and LCSC part numbers (every symbol has `MPN` and `LCSC` fields)
 - `fuji75-cpl.csv`: placement for both sides
 
-PCBWay order settings:
-
-- 2 layers, 1.6 mm, 1 oz copper, ENIG
-- White solder mask, black silkscreen
-- 5 boards, 2 assembled on both sides, PCBWay sources all parts (turnkey)
-- Leave out the stabilizers. They're PCB-mount stabilizers you install yourself (they're out of the BOM)
-
-PCBWay sends photos of the part rotations before building. Things to check:
-
-- RP2040, flash, and the SOT-23 parts: the pin 1 dot matches the silkscreen dot
-- Diodes: the stripe (cathode) faces the row line (down on most keys, right on the five keys at the right edge)
-- LEDs: they're reverse-mount, the lens faces up through the board. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5
-- Hotswap sockets: the socket's body matches the footprint outline on the bottom
-
-If the Kailh socket (CPG151101S11) is short on stock, the HanElectricity CPG151101S11-2 is a drop-in.
+[pcbway-order.md](pcbway-order.md) has every PCBWay form setting, the notes to paste, and what to check in the rotation photos. In short: 2 layers, 1.6 mm, 1 oz copper, ENIG, white mask, black silkscreen, 5 boards with 2 assembled on both sides (turnkey). Stabilizers are left out.
 
 ## Reference
 
