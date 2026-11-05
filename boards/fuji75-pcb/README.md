@@ -48,6 +48,14 @@ Parts sit on both sides. The crystal and the 12 RP2040 decoupling capacitors are
 
 To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The printed plate has to keep the stock plate's wide spacebar cutout.
 
+## Firmware
+
+QMK with VIA, in `firmware/`. See `firmware/readme.md` for building, flashing, and loading the VIA definition.
+
+- 1000 Hz polling and NKRO
+- RGB brightness is capped at 36 of 255 (about 14%). All 82 LEDs at full white would draw about 3 A, and the cap keeps that worst case near 420 mA, under USB's 500 mA
+- USB ID `0x1209`/`0x0001` is pid.codes' test PID until this board gets its own
+
 ## Routing
 
 Each layer has one job. Rows and columns never cross on the same layer:
