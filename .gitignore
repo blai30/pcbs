@@ -1,0 +1,13 @@
+# KiCad local state and backups
+*-backups/
+*.kicad_prl
+*.lck
+fp-info-cache
+_autosave-*
+\#auto_saved_files\#
+
+# Generated manufacturing files
+build/
+
+__pycache__/
+node_modules/
