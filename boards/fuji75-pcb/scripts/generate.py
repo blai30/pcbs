@@ -51,8 +51,9 @@ FLEX_CUTS = [
     # The wide bridge joins the left Shift stabilizer's hole gap.
     (4.5, FLEX_CUT_END_MARGIN, [(36, 12), 69.43, 89.43, 112, 187]),
 ]
-# Extra space kept between a flex cut and any stabilizer hole.
-HOLE_MARGIN = 1.0
+# Space kept between the end of a flex cut and any stabilizer hole edge. It clears the whole
+# stabilizer housing, so the housing never straddles a hinge.
+HOLE_MARGIN = 4.0
 # Socket pads on the outer columns get cut back to this far inside the edge. The socket's metal
 # tab hangs past the edge, same as the stock board.
 SOCKET_PAD_EDGE_MARGIN = 0.3

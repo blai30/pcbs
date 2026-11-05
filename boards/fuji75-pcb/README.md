@@ -27,9 +27,9 @@ The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm
 
 ## Controller
 
-The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
+The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The ESD chip's VBUS pin is on the MOSFET's output side (on the input side, a reversed cable shorts through it). The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
 
-The ESD chip, R1, R2, and the MOSFET sit next to J1. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 10 cm from J1 to the chip. That's fine at full speed (12 Mbps).
+The ESD chip, R1, R2, and the MOSFET sit next to J1. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 19 cm from J1 to the chip. That's fine at full speed (12 Mbps).
 
 GPIO pin map:
 
@@ -64,8 +64,10 @@ Each layer has one job. Rows and columns never cross on the same layer:
 - Bottom: one row line and one LED power line straight through each row of keys, and the LED data chain hopping LED to LED. The LEDs in rows 0, 2, and 4 are turned around, and the chain snakes left-right-left down the board
 - Between rows 4 and 5, the columns gather into two buses into the chip
 - Ground fill on both sides, stitched together with vias
+- No bottom copper within 2.5 mm of a stabilizer screw hole, where the screw heads sit (keepouts in the stabilizer footprints)
+- Flex cuts stop at least 4 mm from any stabilizer hole (the stabilizer housing never sits across a cut)
 
-Tracks are 0.2 mm, 5 V and 3.3 V supply lines 0.3 to 0.5 mm. The USBLC6-2SC6 and boot button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
+Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk and the 3.3 V lines are 0.3 to 0.5 mm. The USBLC6-2SC6 and boot button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
 
 ## Fab
 

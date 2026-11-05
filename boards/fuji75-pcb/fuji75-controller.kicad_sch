@@ -44,7 +44,7 @@
 (label "GND" (at 81.28 55.88 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "72d99443-0651-4797-ae13-51c527321ab4"))
 (label "USB_DP_J" (at 76.2 50.8 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "06baa1a7-36bc-4427-9657-61038f0c92d6"))
 (label "USB_DP_J" (at 86.36 50.8 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1ae84b2a-276c-49e8-8c19-806f04465446"))
-(label "VBUS_IN" (at 81.28 43.18 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1a2b3592-4e95-43eb-be2a-466c52de4429"))
+(label "VCC" (at 81.28 43.18 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1a2b3592-4e95-43eb-be2a-466c52de4429"))
 (label "USB_DN_J" (at 86.36 48.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b6e9870c-008d-472c-8c61-2cb65ccaf455"))
 (symbol (lib_id "Device:R_Small") (at 116.84 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6f09d7d7-f10b-428c-84bf-39344552e659")
   (property "Reference" "R1" (at 116.84 45.72 90) (effects (font (size 1.016 1.016))))
