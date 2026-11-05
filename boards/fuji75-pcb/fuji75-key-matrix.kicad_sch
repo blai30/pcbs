@@ -255,6 +255,8 @@
 (property "Reference" "SW1" (at 29.21 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 29.21 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -283,6 +285,8 @@
 (property "Reference" "D1" (at 33.02 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -321,6 +325,8 @@
 (property "Reference" "SW2" (at 41.91 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 41.91 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -349,6 +355,8 @@
 (property "Reference" "D2" (at 45.72 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -385,6 +393,8 @@
 (property "Reference" "SW3" (at 54.61 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 54.61 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -413,6 +423,8 @@
 (property "Reference" "D3" (at 58.42 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -449,6 +461,8 @@
 (property "Reference" "SW4" (at 67.31 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 67.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 67.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 67.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 67.31 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -477,6 +491,8 @@
 (property "Reference" "D4" (at 71.12 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 71.12 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 71.12 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 71.12 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 69.85 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -513,6 +529,8 @@
 (property "Reference" "SW5" (at 80.01 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 80.01 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 80.01 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 80.01 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 80.01 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -541,6 +559,8 @@
 (property "Reference" "D5" (at 83.82 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 83.82 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 83.82 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 83.82 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 82.55 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -577,6 +597,8 @@
 (property "Reference" "SW6" (at 92.71 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -605,6 +627,8 @@
 (property "Reference" "D6" (at 96.52 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -641,6 +665,8 @@
 (property "Reference" "SW7" (at 105.41 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 105.41 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 105.41 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 105.41 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 105.41 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -669,6 +695,8 @@
 (property "Reference" "D7" (at 109.22 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 109.22 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 109.22 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 109.22 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 107.95 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -705,6 +733,8 @@
 (property "Reference" "SW8" (at 118.11 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 118.11 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 118.11 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 118.11 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 118.11 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -733,6 +763,8 @@
 (property "Reference" "D8" (at 121.92 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 121.92 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 121.92 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 121.92 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 120.65 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -769,6 +801,8 @@
 (property "Reference" "SW9" (at 130.81 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 130.81 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 130.81 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 130.81 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 130.81 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -797,6 +831,8 @@
 (property "Reference" "D9" (at 134.62 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 134.62 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 134.62 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 134.62 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 133.35 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -833,6 +869,8 @@
 (property "Reference" "SW10" (at 143.51 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -861,6 +899,8 @@
 (property "Reference" "D10" (at 147.32 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -897,6 +937,8 @@
 (property "Reference" "SW11" (at 156.21 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -925,6 +967,8 @@
 (property "Reference" "D11" (at 160.02 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -961,6 +1005,8 @@
 (property "Reference" "SW12" (at 168.91 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 168.91 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -989,6 +1035,8 @@
 (property "Reference" "D12" (at 172.72 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1025,6 +1073,8 @@
 (property "Reference" "SW13" (at 181.61 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 181.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 181.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 181.61 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 181.61 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1053,6 +1103,8 @@
 (property "Reference" "D13" (at 185.42 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 185.42 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 185.42 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 185.42 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 184.15 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1089,6 +1141,8 @@
 (property "Reference" "SW14" (at 194.31 17.78 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 194.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 194.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 194.31 19.05 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 194.31 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1117,6 +1171,8 @@
 (property "Reference" "D14" (at 198.12 30.48 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 198.12 33.02 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 198.12 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 198.12 33.02 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 196.85 31.75 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1153,6 +1209,8 @@
 (property "Reference" "SW15" (at 29.21 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 29.21 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1179,6 +1237,8 @@
 (property "Reference" "D15" (at 33.02 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1217,6 +1277,8 @@
 (property "Reference" "SW16" (at 41.91 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 41.91 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1243,6 +1305,8 @@
 (property "Reference" "D16" (at 45.72 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1279,6 +1343,8 @@
 (property "Reference" "SW17" (at 54.61 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 54.61 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1305,6 +1371,8 @@
 (property "Reference" "D17" (at 58.42 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1341,6 +1409,8 @@
 (property "Reference" "SW18" (at 67.31 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 67.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 67.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 67.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 67.31 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1367,6 +1437,8 @@
 (property "Reference" "D18" (at 71.12 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 71.12 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 71.12 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 71.12 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 69.85 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1403,6 +1475,8 @@
 (property "Reference" "SW19" (at 80.01 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 80.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 80.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 80.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 80.01 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1429,6 +1503,8 @@
 (property "Reference" "D19" (at 83.82 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 83.82 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 83.82 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 83.82 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 82.55 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1465,6 +1541,8 @@
 (property "Reference" "SW20" (at 92.71 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1491,6 +1569,8 @@
 (property "Reference" "D20" (at 96.52 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1527,6 +1607,8 @@
 (property "Reference" "SW21" (at 105.41 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 105.41 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 105.41 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 105.41 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 105.41 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1553,6 +1635,8 @@
 (property "Reference" "D21" (at 109.22 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 109.22 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 109.22 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 109.22 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 107.95 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1589,6 +1673,8 @@
 (property "Reference" "SW22" (at 118.11 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 118.11 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 118.11 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 118.11 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 118.11 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1615,6 +1701,8 @@
 (property "Reference" "D22" (at 121.92 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 121.92 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 121.92 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 121.92 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 120.65 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1651,6 +1739,8 @@
 (property "Reference" "SW23" (at 130.81 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 130.81 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 130.81 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 130.81 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 130.81 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1677,6 +1767,8 @@
 (property "Reference" "D23" (at 134.62 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 134.62 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 134.62 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 134.62 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 133.35 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1713,6 +1805,8 @@
 (property "Reference" "SW24" (at 143.51 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1739,6 +1833,8 @@
 (property "Reference" "D24" (at 147.32 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1775,6 +1871,8 @@
 (property "Reference" "SW25" (at 156.21 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1801,6 +1899,8 @@
 (property "Reference" "D25" (at 160.02 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1837,6 +1937,8 @@
 (property "Reference" "SW26" (at 168.91 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 168.91 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1863,6 +1965,8 @@
 (property "Reference" "D26" (at 172.72 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1899,6 +2003,8 @@
 (property "Reference" "SW27" (at 181.61 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 181.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 181.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 181.61 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 181.61 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1925,6 +2031,8 @@
 (property "Reference" "D27" (at 185.42 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 185.42 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 185.42 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 185.42 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 184.15 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1961,6 +2069,8 @@
 (property "Reference" "SW28" (at 194.31 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 194.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 194.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 194.31 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 194.31 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -1987,6 +2097,8 @@
 (property "Reference" "D28" (at 198.12 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 198.12 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 198.12 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 198.12 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 196.85 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2023,6 +2135,8 @@
 (property "Reference" "SW29" (at 207.01 38.1 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 207.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 207.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 207.01 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 207.01 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2051,6 +2165,8 @@
 (property "Reference" "D29" (at 210.82 50.8 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 210.82 53.34 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 210.82 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 210.82 53.34 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 209.55 52.07 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2087,6 +2203,8 @@
 (property "Reference" "SW30" (at 29.21 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.5u" (at 29.21 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2113,6 +2231,8 @@
 (property "Reference" "D30" (at 33.02 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2151,6 +2271,8 @@
 (property "Reference" "SW31" (at 41.91 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 41.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2177,6 +2299,8 @@
 (property "Reference" "D31" (at 45.72 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2213,6 +2337,8 @@
 (property "Reference" "SW32" (at 54.61 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 54.61 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2239,6 +2365,8 @@
 (property "Reference" "D32" (at 58.42 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2275,6 +2403,8 @@
 (property "Reference" "SW33" (at 67.31 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 67.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 67.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 67.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 67.31 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2301,6 +2431,8 @@
 (property "Reference" "D33" (at 71.12 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 71.12 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 71.12 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 71.12 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 69.85 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2337,6 +2469,8 @@
 (property "Reference" "SW34" (at 80.01 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 80.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 80.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 80.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 80.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2363,6 +2497,8 @@
 (property "Reference" "D34" (at 83.82 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 83.82 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 83.82 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 83.82 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 82.55 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2399,6 +2535,8 @@
 (property "Reference" "SW35" (at 92.71 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2425,6 +2563,8 @@
 (property "Reference" "D35" (at 96.52 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2461,6 +2601,8 @@
 (property "Reference" "SW36" (at 105.41 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 105.41 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 105.41 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 105.41 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 105.41 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2487,6 +2629,8 @@
 (property "Reference" "D36" (at 109.22 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 109.22 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 109.22 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 109.22 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 107.95 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2523,6 +2667,8 @@
 (property "Reference" "SW37" (at 118.11 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 118.11 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 118.11 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 118.11 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 118.11 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2549,6 +2695,8 @@
 (property "Reference" "D37" (at 121.92 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 121.92 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 121.92 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 121.92 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 120.65 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2585,6 +2733,8 @@
 (property "Reference" "SW38" (at 130.81 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 130.81 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 130.81 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 130.81 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 130.81 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2611,6 +2761,8 @@
 (property "Reference" "D38" (at 134.62 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 134.62 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 134.62 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 134.62 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 133.35 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2647,6 +2799,8 @@
 (property "Reference" "SW39" (at 143.51 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2673,6 +2827,8 @@
 (property "Reference" "D39" (at 147.32 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2709,6 +2865,8 @@
 (property "Reference" "SW40" (at 156.21 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2735,6 +2893,8 @@
 (property "Reference" "D40" (at 160.02 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2771,6 +2931,8 @@
 (property "Reference" "SW41" (at 168.91 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 168.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2797,6 +2959,8 @@
 (property "Reference" "D41" (at 172.72 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2833,6 +2997,8 @@
 (property "Reference" "SW42" (at 181.61 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 181.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 181.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 181.61 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 181.61 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2859,6 +3025,8 @@
 (property "Reference" "D42" (at 185.42 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 185.42 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 185.42 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 185.42 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 184.15 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2895,6 +3063,8 @@
 (property "Reference" "SW43" (at 194.31 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 194.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 194.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 194.31 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.5u" (at 194.31 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2921,6 +3091,8 @@
 (property "Reference" "D43" (at 198.12 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 198.12 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 198.12 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 198.12 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 196.85 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2957,6 +3129,8 @@
 (property "Reference" "SW44" (at 207.01 58.42 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 207.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 207.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 207.01 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 207.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -2983,6 +3157,8 @@
 (property "Reference" "D44" (at 210.82 71.12 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 210.82 73.66 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 210.82 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 210.82 73.66 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 209.55 72.39 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3019,6 +3195,8 @@
 (property "Reference" "SW45" (at 29.21 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.75u" (at 29.21 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3045,6 +3223,8 @@
 (property "Reference" "D45" (at 33.02 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3083,6 +3263,8 @@
 (property "Reference" "SW46" (at 41.91 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 41.91 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3109,6 +3291,8 @@
 (property "Reference" "D46" (at 45.72 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3145,6 +3329,8 @@
 (property "Reference" "SW47" (at 54.61 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 54.61 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3171,6 +3357,8 @@
 (property "Reference" "D47" (at 58.42 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3207,6 +3395,8 @@
 (property "Reference" "SW48" (at 67.31 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 67.31 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 67.31 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 67.31 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 67.31 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3233,6 +3423,8 @@
 (property "Reference" "D48" (at 71.12 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 71.12 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 71.12 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 71.12 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 69.85 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3269,6 +3461,8 @@
 (property "Reference" "SW49" (at 80.01 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 80.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 80.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 80.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 80.01 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3295,6 +3489,8 @@
 (property "Reference" "D49" (at 83.82 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 83.82 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 83.82 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 83.82 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 82.55 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3331,6 +3527,8 @@
 (property "Reference" "SW50" (at 92.71 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3357,6 +3555,8 @@
 (property "Reference" "D50" (at 96.52 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3393,6 +3593,8 @@
 (property "Reference" "SW51" (at 105.41 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 105.41 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 105.41 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 105.41 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 105.41 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3419,6 +3621,8 @@
 (property "Reference" "D51" (at 109.22 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 109.22 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 109.22 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 109.22 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 107.95 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3455,6 +3659,8 @@
 (property "Reference" "SW52" (at 118.11 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 118.11 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 118.11 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 118.11 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 118.11 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3481,6 +3687,8 @@
 (property "Reference" "D52" (at 121.92 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 121.92 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 121.92 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 121.92 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 120.65 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3517,6 +3725,8 @@
 (property "Reference" "SW53" (at 130.81 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 130.81 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 130.81 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 130.81 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 130.81 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3543,6 +3753,8 @@
 (property "Reference" "D53" (at 134.62 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 134.62 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 134.62 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 134.62 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 133.35 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3579,6 +3791,8 @@
 (property "Reference" "SW54" (at 143.51 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3605,6 +3819,8 @@
 (property "Reference" "D54" (at 147.32 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3641,6 +3857,8 @@
 (property "Reference" "SW55" (at 156.21 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3667,6 +3885,8 @@
 (property "Reference" "D55" (at 160.02 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3703,6 +3923,8 @@
 (property "Reference" "SW56" (at 168.91 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 168.91 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3729,6 +3951,8 @@
 (property "Reference" "D56" (at 172.72 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3765,6 +3989,8 @@
 (property "Reference" "SW57" (at 181.61 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 181.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 181.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 181.61 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 181.61 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3791,6 +4017,8 @@
 (property "Reference" "D57" (at 185.42 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 185.42 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 185.42 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 185.42 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 184.15 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3827,6 +4055,8 @@
 (property "Reference" "SW58" (at 207.01 78.74 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 207.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 207.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 207.01 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 207.01 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3853,6 +4083,8 @@
 (property "Reference" "D58" (at 210.82 91.44 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 210.82 93.98 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 210.82 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 210.82 93.98 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 209.55 92.71 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3889,6 +4121,8 @@
 (property "Reference" "SW59" (at 29.21 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 29.21 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3915,6 +4149,8 @@
 (property "Reference" "D59" (at 33.02 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3953,6 +4189,8 @@
 (property "Reference" "SW60" (at 41.91 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 41.91 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -3979,6 +4217,8 @@
 (property "Reference" "D60" (at 45.72 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4015,6 +4255,8 @@
 (property "Reference" "SW61" (at 54.61 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 54.61 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4041,6 +4283,8 @@
 (property "Reference" "D61" (at 58.42 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4077,6 +4321,8 @@
 (property "Reference" "SW62" (at 67.31 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 67.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 67.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 67.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 67.31 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4103,6 +4349,8 @@
 (property "Reference" "D62" (at 71.12 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 71.12 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 71.12 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 71.12 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 69.85 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4139,6 +4387,8 @@
 (property "Reference" "SW63" (at 80.01 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 80.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 80.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 80.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 80.01 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4165,6 +4415,8 @@
 (property "Reference" "D63" (at 83.82 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 83.82 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 83.82 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 83.82 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 82.55 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4201,6 +4453,8 @@
 (property "Reference" "SW64" (at 92.71 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4227,6 +4481,8 @@
 (property "Reference" "D64" (at 96.52 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4263,6 +4519,8 @@
 (property "Reference" "SW65" (at 105.41 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 105.41 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 105.41 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 105.41 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 105.41 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4289,6 +4547,8 @@
 (property "Reference" "D65" (at 109.22 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 109.22 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 109.22 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 109.22 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 107.95 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4325,6 +4585,8 @@
 (property "Reference" "SW66" (at 118.11 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 118.11 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 118.11 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 118.11 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 118.11 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4351,6 +4613,8 @@
 (property "Reference" "D66" (at 121.92 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 121.92 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 121.92 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 121.92 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 120.65 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4387,6 +4651,8 @@
 (property "Reference" "SW67" (at 130.81 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 130.81 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 130.81 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 130.81 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 130.81 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4413,6 +4679,8 @@
 (property "Reference" "D67" (at 134.62 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 134.62 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 134.62 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 134.62 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 133.35 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4449,6 +4717,8 @@
 (property "Reference" "SW68" (at 143.51 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4475,6 +4745,8 @@
 (property "Reference" "D68" (at 147.32 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4511,6 +4783,8 @@
 (property "Reference" "SW69" (at 156.21 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4537,6 +4811,8 @@
 (property "Reference" "D69" (at 160.02 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4573,6 +4849,8 @@
 (property "Reference" "SW70" (at 168.91 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.75u" (at 168.91 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4599,6 +4877,8 @@
 (property "Reference" "D70" (at 172.72 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4635,6 +4915,8 @@
 (property "Reference" "SW71" (at 194.31 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 194.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 194.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 194.31 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 194.31 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4661,6 +4943,8 @@
 (property "Reference" "D71" (at 198.12 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 198.12 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 198.12 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 198.12 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 196.85 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4697,6 +4981,8 @@
 (property "Reference" "SW72" (at 207.01 99.06 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 207.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 207.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 207.01 100.33 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 207.01 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4723,6 +5009,8 @@
 (property "Reference" "D72" (at 210.82 111.76 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 210.82 114.3 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 210.82 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 210.82 114.3 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 209.55 113.03 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4759,6 +5047,8 @@
 (property "Reference" "SW73" (at 29.21 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 29.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 29.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 29.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.25u" (at 29.21 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4785,6 +5075,8 @@
 (property "Reference" "D73" (at 33.02 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 33.02 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 33.02 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 33.02 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 31.75 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4823,6 +5115,8 @@
 (property "Reference" "SW74" (at 41.91 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 41.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 41.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 41.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.25u" (at 41.91 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4849,6 +5143,8 @@
 (property "Reference" "D74" (at 45.72 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 45.72 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 45.72 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 45.72 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 44.45 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4885,6 +5181,8 @@
 (property "Reference" "SW75" (at 54.61 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 54.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 54.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 54.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1.25u" (at 54.61 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4911,6 +5209,8 @@
 (property "Reference" "D75" (at 58.42 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 58.42 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 58.42 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 58.42 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 57.15 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4947,6 +5247,8 @@
 (property "Reference" "SW76" (at 92.71 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 92.71 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 92.71 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 92.71 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 92.71 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -4973,6 +5275,8 @@
 (property "Reference" "D76" (at 96.52 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 96.52 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 96.52 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 96.52 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 95.25 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5009,6 +5313,8 @@
 (property "Reference" "SW77" (at 143.51 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 143.51 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 143.51 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 143.51 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 143.51 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5035,6 +5341,8 @@
 (property "Reference" "D77" (at 147.32 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 147.32 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 147.32 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 147.32 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 146.05 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5071,6 +5379,8 @@
 (property "Reference" "SW78" (at 156.21 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 156.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 156.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 156.21 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 156.21 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5097,6 +5407,8 @@
 (property "Reference" "D78" (at 160.02 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 160.02 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 160.02 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 160.02 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 158.75 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5133,6 +5445,8 @@
 (property "Reference" "SW79" (at 168.91 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 168.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 168.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 168.91 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 168.91 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5159,6 +5473,8 @@
 (property "Reference" "D79" (at 172.72 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 172.72 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 172.72 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 172.72 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 171.45 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5195,6 +5511,8 @@
 (property "Reference" "SW80" (at 181.61 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 181.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 181.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 181.61 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 181.61 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5221,6 +5539,8 @@
 (property "Reference" "D80" (at 185.42 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 185.42 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 185.42 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 185.42 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 184.15 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5257,6 +5577,8 @@
 (property "Reference" "SW81" (at 194.31 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 194.31 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 194.31 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 194.31 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 194.31 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5283,6 +5605,8 @@
 (property "Reference" "D81" (at 198.12 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 198.12 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 198.12 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 198.12 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 196.85 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5319,6 +5643,8 @@
 (property "Reference" "SW82" (at 207.01 119.38 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Value" "SW_Push" (at 207.01 120.65 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "MPN" "CPG151101S11" (at 207.01 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C2803348" (at 207.01 120.65 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:SW_MX_HS_CPG151101S11_1u" (at 207.01 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5345,6 +5671,8 @@
 (property "Reference" "D82" (at 210.82 132.08 90) (effects (font (size 1.27 1.27)) (justify right))) 
 
 (property "Value" "D" (at 210.82 134.62 90) (effects (font (size 1.27 1.27)) (justify right) (hide yes))) 
+(property "MPN" "1N4148W" (at 210.82 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C81598" (at 210.82 134.62 90) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:D_SOD-123" (at 209.55 133.35 90) (effects (font (size 1.27 1.27)) (hide yes))) 
 
@@ -5376,7 +5704,7 @@
 
 (xy 215.9 137.16)) (stroke (width 0) (type default)) (uuid a9083ac9-76d6-488e-bb55-7f2c3c099317)) 
 
-(symbol (lib_id "Mechanical:SW_stab") (at 25.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "f3da5b43-1e55-4bfb-996d-28b44c99245b") 
+(symbol (lib_id "Mechanical:SW_stab") (at 25.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "f3da5b43-1e55-4bfb-996d-28b44c99245b") 
 
 (property "Reference" "ST28" (at 31.75 159.5729 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
@@ -5388,7 +5716,7 @@
 
 (property "Description" "Switch stabilizer" (at 25.4 160.97 0) (effects (font (size 1.27 1.27)) (hide yes))) (instances (project "fuji75" (path "/f9fa9632-d804-41cf-8e10-2d16c15e8373/969c268f-75de-48cf-bb57-3bc74bcc5f99" (reference "ST28") (unit 1))))) 
 
-(symbol (lib_id "Mechanical:SW_stab") (at 45.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "66665c3b-bd9f-455b-9f14-a093028635d6") 
+(symbol (lib_id "Mechanical:SW_stab") (at 45.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "66665c3b-bd9f-455b-9f14-a093028635d6") 
 
 (property "Reference" "ST57" (at 51.75 159.5729 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
@@ -5400,7 +5728,7 @@
 
 (property "Description" "Switch stabilizer" (at 45.4 160.97 0) (effects (font (size 1.27 1.27)) (hide yes))) (instances (project "fuji75" (path "/f9fa9632-d804-41cf-8e10-2d16c15e8373/969c268f-75de-48cf-bb57-3bc74bcc5f99" (reference "ST57") (unit 1))))) 
 
-(symbol (lib_id "Mechanical:SW_stab") (at 65.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "1a9e27f7-db66-4be2-8a06-2ae3c8a8d07d") 
+(symbol (lib_id "Mechanical:SW_stab") (at 65.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "1a9e27f7-db66-4be2-8a06-2ae3c8a8d07d") 
 
 (property "Reference" "ST59" (at 71.75 159.5729 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
@@ -5412,7 +5740,7 @@
 
 (property "Description" "Switch stabilizer" (at 65.4 160.97 0) (effects (font (size 1.27 1.27)) (hide yes))) (instances (project "fuji75" (path "/f9fa9632-d804-41cf-8e10-2d16c15e8373/969c268f-75de-48cf-bb57-3bc74bcc5f99" (reference "ST59") (unit 1))))) 
 
-(symbol (lib_id "Mechanical:SW_stab") (at 85.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "ae0528fc-dc80-400b-9429-be70b315452a") 
+(symbol (lib_id "Mechanical:SW_stab") (at 85.4 160.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "ae0528fc-dc80-400b-9429-be70b315452a") 
 
 (property "Reference" "ST76" (at 91.75 159.5729 0) (effects (font (size 1.27 1.27)) (justify left))) 
 

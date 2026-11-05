@@ -185,6 +185,8 @@
 (property "Reference" "LED1" (at 51.943 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 55.245 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 55.245 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 55.245 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 46.355 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -243,6 +245,8 @@
 (property "Reference" "LED2" (at 76.073 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 79.375 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 79.375 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 79.375 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 70.485 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -297,6 +301,8 @@
 (property "Reference" "LED3" (at 100.203 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 103.505 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 103.505 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 103.505 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 94.615 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -351,6 +357,8 @@
 (property "Reference" "LED4" (at 124.333 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 127.635 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 127.635 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 127.635 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 118.745 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -405,6 +413,8 @@
 (property "Reference" "LED5" (at 148.463 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 151.765 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 151.765 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 151.765 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 142.875 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -459,6 +469,8 @@
 (property "Reference" "LED6" (at 172.593 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 175.895 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 175.895 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 175.895 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 167.005 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -513,6 +525,8 @@
 (property "Reference" "LED7" (at 196.723 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 200.025 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 200.025 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 200.025 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 191.135 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -567,6 +581,8 @@
 (property "Reference" "LED8" (at 220.853 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 224.155 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 224.155 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 224.155 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 215.265 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -621,6 +637,8 @@
 (property "Reference" "LED9" (at 244.983 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 248.285 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 248.285 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 248.285 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 239.395 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -675,6 +693,8 @@
 (property "Reference" "LED10" (at 269.113 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 272.415 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 272.415 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 272.415 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 263.525 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -729,6 +749,8 @@
 (property "Reference" "LED11" (at 293.243 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 296.545 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 296.545 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 296.545 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 287.655 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -783,6 +805,8 @@
 (property "Reference" "LED12" (at 317.373 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 320.675 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 320.675 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 320.675 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 311.785 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -837,6 +861,8 @@
 (property "Reference" "LED13" (at 341.503 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 344.805 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 344.805 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 344.805 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 335.915 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -891,6 +917,8 @@
 (property "Reference" "LED14" (at 365.633 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 368.935 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 368.935 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 368.935 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 360.045 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -945,6 +973,8 @@
 (property "Reference" "LED15" (at 389.763 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 393.065 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 393.065 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 393.065 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 384.175 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -999,6 +1029,8 @@
 (property "Reference" "LED16" (at 413.893 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 417.195 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 417.195 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 417.195 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 408.305 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1053,6 +1085,8 @@
 (property "Reference" "LED17" (at 438.023 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 441.325 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 441.325 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 441.325 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 432.435 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1107,6 +1141,8 @@
 (property "Reference" "LED18" (at 462.153 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 465.455 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 465.455 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 465.455 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 456.565 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1161,6 +1197,8 @@
 (property "Reference" "LED19" (at 486.283 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 489.585 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 489.585 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 489.585 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 480.695 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1215,6 +1253,8 @@
 (property "Reference" "LED20" (at 510.413 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 513.715 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 513.715 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 513.715 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 504.825 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1269,6 +1309,8 @@
 (property "Reference" "LED21" (at 534.543 57.785 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 537.845 63.5 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 537.845 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 537.845 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 528.955 60.325 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1323,6 +1365,8 @@
 (property "Reference" "LED22" (at 51.943 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 55.245 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 55.245 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 55.245 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 46.355 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1401,6 +1445,8 @@
 (property "Reference" "LED23" (at 76.073 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 79.375 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 79.375 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 79.375 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 70.485 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1455,6 +1501,8 @@
 (property "Reference" "LED24" (at 100.203 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 103.505 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 103.505 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 103.505 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 94.615 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1509,6 +1557,8 @@
 (property "Reference" "LED25" (at 124.333 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 127.635 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 127.635 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 127.635 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 118.745 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1563,6 +1613,8 @@
 (property "Reference" "LED26" (at 148.463 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 151.765 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 151.765 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 151.765 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 142.875 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1617,6 +1669,8 @@
 (property "Reference" "LED27" (at 172.593 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 175.895 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 175.895 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 175.895 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 167.005 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1671,6 +1725,8 @@
 (property "Reference" "LED28" (at 196.723 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 200.025 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 200.025 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 200.025 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 191.135 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1725,6 +1781,8 @@
 (property "Reference" "LED29" (at 220.853 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 224.155 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 224.155 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 224.155 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 215.265 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1779,6 +1837,8 @@
 (property "Reference" "LED30" (at 244.983 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 248.285 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 248.285 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 248.285 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 239.395 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1833,6 +1893,8 @@
 (property "Reference" "LED31" (at 269.113 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 272.415 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 272.415 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 272.415 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 263.525 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1887,6 +1949,8 @@
 (property "Reference" "LED32" (at 293.243 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 296.545 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 296.545 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 296.545 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 287.655 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1941,6 +2005,8 @@
 (property "Reference" "LED33" (at 317.373 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 320.675 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 320.675 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 320.675 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 311.785 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1995,6 +2061,8 @@
 (property "Reference" "LED34" (at 341.503 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 344.805 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 344.805 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 344.805 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 335.915 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2049,6 +2117,8 @@
 (property "Reference" "LED35" (at 365.633 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 368.935 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 368.935 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 368.935 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 360.045 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2103,6 +2173,8 @@
 (property "Reference" "LED36" (at 389.763 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 393.065 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 393.065 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 393.065 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 384.175 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2157,6 +2229,8 @@
 (property "Reference" "LED37" (at 413.893 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 417.195 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 417.195 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 417.195 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 408.305 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2211,6 +2285,8 @@
 (property "Reference" "LED38" (at 438.023 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 441.325 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 441.325 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 441.325 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 432.435 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2265,6 +2341,8 @@
 (property "Reference" "LED39" (at 462.153 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 465.455 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 465.455 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 465.455 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 456.565 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2319,6 +2397,8 @@
 (property "Reference" "LED40" (at 486.283 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 489.585 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 489.585 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 489.585 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 480.695 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2373,6 +2453,8 @@
 (property "Reference" "LED41" (at 510.413 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 513.715 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 513.715 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 513.715 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 504.825 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2427,6 +2509,8 @@
 (property "Reference" "LED42" (at 534.543 87.63 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 537.845 93.345 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 537.845 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 537.845 93.345 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 528.955 90.17 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2481,6 +2565,8 @@
 (property "Reference" "LED43" (at 51.943 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 55.245 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 55.245 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 55.245 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 46.355 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2559,6 +2645,8 @@
 (property "Reference" "LED44" (at 76.073 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 79.375 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 79.375 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 79.375 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 70.485 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2613,6 +2701,8 @@
 (property "Reference" "LED45" (at 100.203 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 103.505 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 103.505 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 103.505 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 94.615 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2667,6 +2757,8 @@
 (property "Reference" "LED46" (at 124.333 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 127.635 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 127.635 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 127.635 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 118.745 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2721,6 +2813,8 @@
 (property "Reference" "LED47" (at 148.463 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 151.765 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 151.765 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 151.765 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 142.875 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2775,6 +2869,8 @@
 (property "Reference" "LED48" (at 172.593 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 175.895 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 175.895 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 175.895 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 167.005 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2829,6 +2925,8 @@
 (property "Reference" "LED49" (at 196.723 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 200.025 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 200.025 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 200.025 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 191.135 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2883,6 +2981,8 @@
 (property "Reference" "LED50" (at 220.853 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 224.155 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 224.155 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 224.155 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 215.265 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2937,6 +3037,8 @@
 (property "Reference" "LED51" (at 244.983 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 248.285 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 248.285 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 248.285 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 239.395 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2991,6 +3093,8 @@
 (property "Reference" "LED52" (at 269.113 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 272.415 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 272.415 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 272.415 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 263.525 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3045,6 +3149,8 @@
 (property "Reference" "LED53" (at 293.243 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 296.545 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 296.545 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 296.545 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 287.655 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3099,6 +3205,8 @@
 (property "Reference" "LED54" (at 317.373 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 320.675 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 320.675 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 320.675 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 311.785 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3153,6 +3261,8 @@
 (property "Reference" "LED55" (at 341.503 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 344.805 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 344.805 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 344.805 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 335.915 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3207,6 +3317,8 @@
 (property "Reference" "LED56" (at 365.633 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 368.935 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 368.935 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 368.935 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 360.045 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3261,6 +3373,8 @@
 (property "Reference" "LED57" (at 389.763 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 393.065 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 393.065 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 393.065 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 384.175 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3315,6 +3429,8 @@
 (property "Reference" "LED58" (at 413.893 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 417.195 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 417.195 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 417.195 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 408.305 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3369,6 +3485,8 @@
 (property "Reference" "LED59" (at 438.023 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 441.325 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 441.325 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 441.325 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 432.435 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3423,6 +3541,8 @@
 (property "Reference" "LED60" (at 462.153 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 465.455 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 465.455 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 465.455 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 456.565 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3477,6 +3597,8 @@
 (property "Reference" "LED61" (at 486.283 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 489.585 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 489.585 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 489.585 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 480.695 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3531,6 +3653,8 @@
 (property "Reference" "LED62" (at 510.413 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 513.715 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 513.715 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 513.715 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 504.825 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3585,6 +3709,8 @@
 (property "Reference" "LED63" (at 534.543 117.475 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 537.845 123.19 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 537.845 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 537.845 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 528.955 120.015 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3639,6 +3765,8 @@
 (property "Reference" "LED64" (at 51.943 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 55.245 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 55.245 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 55.245 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 46.355 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3717,6 +3845,8 @@
 (property "Reference" "LED65" (at 76.073 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 79.375 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 79.375 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 79.375 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 70.485 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3771,6 +3901,8 @@
 (property "Reference" "LED66" (at 100.203 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 103.505 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 103.505 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 103.505 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 94.615 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3825,6 +3957,8 @@
 (property "Reference" "LED67" (at 124.333 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 127.635 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 127.635 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 127.635 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 118.745 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3879,6 +4013,8 @@
 (property "Reference" "LED68" (at 148.463 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 151.765 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 151.765 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 151.765 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 142.875 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3933,6 +4069,8 @@
 (property "Reference" "LED69" (at 172.593 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 175.895 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 175.895 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 175.895 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 167.005 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3987,6 +4125,8 @@
 (property "Reference" "LED70" (at 196.723 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 200.025 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 200.025 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 200.025 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 191.135 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4041,6 +4181,8 @@
 (property "Reference" "LED71" (at 220.853 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 224.155 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 224.155 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 224.155 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 215.265 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4095,6 +4237,8 @@
 (property "Reference" "LED72" (at 244.983 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 248.285 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 248.285 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 248.285 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 239.395 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4149,6 +4293,8 @@
 (property "Reference" "LED73" (at 269.113 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 272.415 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 272.415 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 272.415 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 263.525 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4203,6 +4349,8 @@
 (property "Reference" "LED74" (at 293.243 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 296.545 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 296.545 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 296.545 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 287.655 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4257,6 +4405,8 @@
 (property "Reference" "LED75" (at 317.373 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 320.675 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 320.675 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 320.675 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 311.785 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4311,6 +4461,8 @@
 (property "Reference" "LED76" (at 341.503 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 344.805 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 344.805 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 344.805 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 335.915 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4365,6 +4517,8 @@
 (property "Reference" "LED77" (at 365.633 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 368.935 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 368.935 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 368.935 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 360.045 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4419,6 +4573,8 @@
 (property "Reference" "LED78" (at 389.763 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 393.065 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 393.065 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 393.065 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 384.175 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4473,6 +4629,8 @@
 (property "Reference" "LED79" (at 413.893 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 417.195 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 417.195 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 417.195 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 408.305 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4527,6 +4685,8 @@
 (property "Reference" "LED80" (at 438.023 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 441.325 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 441.325 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 441.325 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 432.435 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4581,6 +4741,8 @@
 (property "Reference" "LED81" (at 462.153 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 465.455 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 465.455 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 465.455 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 456.565 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4635,6 +4797,8 @@
 (property "Reference" "LED82" (at 486.283 147.32 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
 (property "Value" "SK6812MINI-E" (at 489.585 153.035 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "SK6812MINI-E" (at 489.585 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C5149201" (at 489.585 153.035 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:LED_MX_6028R" (at 480.695 149.86 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4698,7 +4862,9 @@
 
 (property "Reference" "C1" (at 49.53 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 49.53 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 49.53 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 49.53 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 49.53 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 46.355 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4726,7 +4892,9 @@
 
 (property "Reference" "C2" (at 59.055 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 59.055 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 59.055 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 59.055 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 59.055 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 55.88 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4754,7 +4922,9 @@
 
 (property "Reference" "C3" (at 68.58 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 68.58 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 68.58 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 68.58 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 68.58 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 65.405 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4782,7 +4952,9 @@
 
 (property "Reference" "C4" (at 78.105 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 78.105 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 78.105 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 78.105 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 78.105 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 74.93 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4810,7 +4982,9 @@
 
 (property "Reference" "C5" (at 87.63 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 87.63 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 87.63 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 87.63 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 87.63 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 84.455 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4838,7 +5012,9 @@
 
 (property "Reference" "C6" (at 97.155 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 97.155 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 97.155 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 97.155 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 97.155 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 93.98 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4866,7 +5042,9 @@
 
 (property "Reference" "C7" (at 106.68 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 106.68 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 106.68 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 106.68 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 106.68 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 103.505 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4894,7 +5072,9 @@
 
 (property "Reference" "C8" (at 116.205 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 116.205 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 116.205 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 116.205 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 116.205 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 113.03 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4922,7 +5102,9 @@
 
 (property "Reference" "C9" (at 125.73 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 125.73 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 125.73 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 125.73 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 125.73 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 122.555 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4950,7 +5132,9 @@
 
 (property "Reference" "C10" (at 135.255 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 135.255 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 135.255 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 135.255 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 135.255 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 132.08 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4978,7 +5162,9 @@
 
 (property "Reference" "C11" (at 144.78 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 144.78 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 144.78 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 144.78 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 144.78 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 141.605 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5006,7 +5192,9 @@
 
 (property "Reference" "C12" (at 154.305 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 154.305 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 154.305 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 154.305 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 154.305 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 151.13 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5034,7 +5222,9 @@
 
 (property "Reference" "C13" (at 163.83 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 163.83 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 163.83 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 163.83 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 163.83 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 160.655 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5062,7 +5252,9 @@
 
 (property "Reference" "C14" (at 173.355 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 173.355 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 173.355 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 173.355 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 173.355 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 170.18 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5090,7 +5282,9 @@
 
 (property "Reference" "C15" (at 182.88 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 182.88 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 182.88 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 182.88 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 182.88 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 179.705 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5118,7 +5312,9 @@
 
 (property "Reference" "C16" (at 192.405 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 192.405 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 192.405 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 192.405 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 192.405 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 189.23 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5146,7 +5342,9 @@
 
 (property "Reference" "C17" (at 201.93 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 201.93 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 201.93 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 201.93 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 201.93 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 198.755 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5174,7 +5372,9 @@
 
 (property "Reference" "C18" (at 211.455 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 211.455 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 211.455 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 211.455 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 211.455 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 208.28 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5202,7 +5402,9 @@
 
 (property "Reference" "C19" (at 220.98 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 220.98 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 220.98 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 220.98 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 220.98 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 217.805 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5230,7 +5432,9 @@
 
 (property "Reference" "C20" (at 230.505 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 230.505 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 230.505 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 230.505 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 230.505 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 227.33 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5258,7 +5462,9 @@
 
 (property "Reference" "C21" (at 240.03 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 240.03 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 240.03 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 240.03 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 240.03 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 236.855 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5286,7 +5492,9 @@
 
 (property "Reference" "C22" (at 249.555 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 249.555 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 249.555 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 249.555 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 249.555 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 246.38 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5314,7 +5522,9 @@
 
 (property "Reference" "C23" (at 259.08 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 259.08 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 259.08 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 259.08 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 259.08 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 255.905 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5342,7 +5552,9 @@
 
 (property "Reference" "C24" (at 268.605 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 268.605 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 268.605 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 268.605 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 268.605 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 265.43 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5370,7 +5582,9 @@
 
 (property "Reference" "C25" (at 278.13 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 278.13 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 278.13 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 278.13 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 278.13 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 274.955 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5398,7 +5612,9 @@
 
 (property "Reference" "C26" (at 287.655 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 287.655 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 287.655 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 287.655 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 287.655 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 284.48 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5426,7 +5642,9 @@
 
 (property "Reference" "C27" (at 297.18 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 297.18 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 297.18 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 297.18 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 297.18 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 294.005 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5454,7 +5672,9 @@
 
 (property "Reference" "C28" (at 306.705 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 306.705 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 306.705 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 306.705 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 306.705 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 303.53 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5482,7 +5702,9 @@
 
 (property "Reference" "C29" (at 316.23 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 316.23 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 316.23 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 316.23 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 316.23 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 313.055 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5510,7 +5732,9 @@
 
 (property "Reference" "C30" (at 325.755 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 325.755 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 325.755 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 325.755 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 325.755 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 322.58 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5538,7 +5762,9 @@
 
 (property "Reference" "C31" (at 335.28 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 335.28 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 335.28 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 335.28 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 335.28 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 332.105 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5566,7 +5792,9 @@
 
 (property "Reference" "C32" (at 344.805 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 344.805 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 344.805 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 344.805 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 344.805 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 341.63 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5594,7 +5822,9 @@
 
 (property "Reference" "C33" (at 354.33 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 354.33 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 354.33 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 354.33 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 354.33 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 351.155 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5622,7 +5852,9 @@
 
 (property "Reference" "C34" (at 363.855 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 363.855 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 363.855 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 363.855 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 363.855 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 360.68 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5650,7 +5882,9 @@
 
 (property "Reference" "C35" (at 373.38 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 373.38 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 373.38 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 373.38 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 373.38 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 370.205 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5678,7 +5912,9 @@
 
 (property "Reference" "C36" (at 382.905 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 382.905 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 382.905 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 382.905 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 382.905 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 379.73 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5706,7 +5942,9 @@
 
 (property "Reference" "C37" (at 392.43 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 392.43 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 392.43 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 392.43 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 392.43 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 389.255 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5734,7 +5972,9 @@
 
 (property "Reference" "C38" (at 401.955 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 401.955 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 401.955 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 401.955 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 401.955 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 398.78 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5762,7 +6002,9 @@
 
 (property "Reference" "C39" (at 411.48 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 411.48 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 411.48 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 411.48 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 411.48 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 408.305 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5790,7 +6032,9 @@
 
 (property "Reference" "C40" (at 421.005 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 421.005 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 421.005 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 421.005 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 421.005 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 417.83 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5818,7 +6062,9 @@
 
 (property "Reference" "C41" (at 430.53 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 430.53 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 430.53 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 430.53 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 430.53 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 427.355 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5846,7 +6092,9 @@
 
 (property "Reference" "C42" (at 440.055 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 440.055 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 440.055 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 440.055 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 440.055 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 436.88 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5874,7 +6122,9 @@
 
 (property "Reference" "C43" (at 449.58 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 449.58 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 449.58 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 449.58 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 449.58 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 446.405 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5902,7 +6152,9 @@
 
 (property "Reference" "C44" (at 459.105 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 459.105 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 459.105 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 459.105 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 459.105 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 455.93 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5930,7 +6182,9 @@
 
 (property "Reference" "C45" (at 468.63 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 468.63 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 468.63 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 468.63 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 468.63 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 465.455 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5958,7 +6212,9 @@
 
 (property "Reference" "C46" (at 478.155 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 478.155 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 478.155 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 478.155 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 478.155 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 474.98 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -5986,7 +6242,9 @@
 
 (property "Reference" "C47" (at 487.68 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 487.68 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 487.68 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 487.68 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 487.68 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 484.505 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6014,7 +6272,9 @@
 
 (property "Reference" "C48" (at 497.205 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 497.205 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 497.205 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 497.205 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 497.205 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 494.03 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6042,7 +6302,9 @@
 
 (property "Reference" "C49" (at 506.73 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 506.73 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 506.73 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 506.73 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 506.73 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 503.555 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6070,7 +6332,9 @@
 
 (property "Reference" "C50" (at 516.255 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 516.255 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 516.255 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 516.255 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 516.255 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 513.08 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6098,7 +6362,9 @@
 
 (property "Reference" "C51" (at 525.78 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 525.78 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 525.78 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 525.78 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 525.78 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 522.605 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6126,7 +6392,9 @@
 
 (property "Reference" "C52" (at 535.305 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 535.305 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 535.305 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 535.305 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 535.305 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 532.13 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6154,7 +6422,9 @@
 
 (property "Reference" "C53" (at 544.83 181.68 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 544.83 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 544.83 184.22 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 544.83 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 544.83 184.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 541.655 187.88 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6814,7 +7084,9 @@
 
 (property "Reference" "C54" (at 49.53 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 49.53 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 49.53 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 49.53 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 49.53 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 46.355 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6842,7 +7114,9 @@
 
 (property "Reference" "C55" (at 59.055 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 59.055 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 59.055 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 59.055 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 59.055 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 55.88 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6870,7 +7144,9 @@
 
 (property "Reference" "C56" (at 68.58 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 68.58 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 68.58 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 68.58 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 68.58 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 65.405 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6898,7 +7174,9 @@
 
 (property "Reference" "C57" (at 78.105 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 78.105 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 78.105 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 78.105 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 78.105 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 74.93 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6926,7 +7204,9 @@
 
 (property "Reference" "C58" (at 87.63 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 87.63 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 87.63 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 87.63 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 87.63 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 84.455 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6954,7 +7234,9 @@
 
 (property "Reference" "C59" (at 97.155 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 97.155 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 97.155 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 97.155 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 97.155 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 93.98 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -6982,7 +7264,9 @@
 
 (property "Reference" "C60" (at 106.68 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 106.68 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 106.68 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 106.68 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 106.68 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 103.505 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7010,7 +7294,9 @@
 
 (property "Reference" "C61" (at 116.205 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 116.205 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 116.205 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 116.205 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 116.205 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 113.03 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7038,7 +7324,9 @@
 
 (property "Reference" "C62" (at 125.73 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 125.73 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 125.73 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 125.73 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 125.73 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 122.555 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7066,7 +7354,9 @@
 
 (property "Reference" "C63" (at 135.255 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 135.255 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 135.255 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 135.255 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 135.255 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 132.08 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7094,7 +7384,9 @@
 
 (property "Reference" "C64" (at 144.78 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 144.78 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 144.78 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 144.78 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 144.78 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 141.605 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7122,7 +7414,9 @@
 
 (property "Reference" "C65" (at 154.305 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 154.305 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 154.305 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 154.305 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 154.305 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 151.13 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7150,7 +7444,9 @@
 
 (property "Reference" "C66" (at 163.83 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 163.83 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 163.83 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 163.83 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 163.83 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 160.655 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7178,7 +7474,9 @@
 
 (property "Reference" "C67" (at 173.355 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 173.355 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 173.355 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 173.355 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 173.355 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 170.18 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7206,7 +7504,9 @@
 
 (property "Reference" "C68" (at 182.88 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 182.88 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 182.88 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 182.88 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 182.88 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 179.705 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7234,7 +7534,9 @@
 
 (property "Reference" "C69" (at 192.405 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 192.405 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 192.405 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 192.405 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 192.405 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 189.23 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7262,7 +7564,9 @@
 
 (property "Reference" "C70" (at 201.93 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 201.93 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 201.93 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 201.93 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 201.93 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 198.755 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7290,7 +7594,9 @@
 
 (property "Reference" "C71" (at 211.455 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 211.455 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 211.455 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 211.455 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 211.455 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 208.28 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7318,7 +7624,9 @@
 
 (property "Reference" "C72" (at 220.98 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 220.98 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 220.98 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 220.98 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 220.98 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 217.805 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7346,7 +7654,9 @@
 
 (property "Reference" "C73" (at 230.505 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 230.505 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 230.505 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 230.505 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 230.505 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 227.33 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7374,7 +7684,9 @@
 
 (property "Reference" "C74" (at 240.03 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 240.03 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 240.03 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 240.03 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 240.03 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 236.855 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7402,7 +7714,9 @@
 
 (property "Reference" "C75" (at 249.555 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 249.555 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 249.555 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 249.555 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 249.555 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 246.38 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7430,7 +7744,9 @@
 
 (property "Reference" "C76" (at 259.08 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 259.08 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 259.08 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 259.08 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 259.08 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 255.905 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7458,7 +7774,9 @@
 
 (property "Reference" "C77" (at 268.605 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 268.605 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 268.605 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 268.605 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 268.605 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 265.43 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7486,7 +7804,9 @@
 
 (property "Reference" "C78" (at 278.13 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 278.13 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 278.13 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 278.13 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 278.13 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 274.955 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7514,7 +7834,9 @@
 
 (property "Reference" "C79" (at 287.655 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 287.655 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 287.655 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 287.655 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 287.655 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 284.48 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7542,7 +7864,9 @@
 
 (property "Reference" "C80" (at 297.18 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 297.18 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 297.18 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 297.18 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 297.18 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 294.005 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7570,7 +7894,9 @@
 
 (property "Reference" "C81" (at 306.705 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 306.705 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 306.705 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 306.705 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 306.705 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 303.53 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -7598,7 +7924,9 @@
 
 (property "Reference" "C82" (at 316.23 196.92 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Value" "C" (at 316.23 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "Value" "100n" (at 316.23 199.46 0) (effects (font (size 1.27 1.27)) (justify left))) 
+(property "MPN" "CL05B104KO5NNNC" (at 316.23 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "LCSC" "C1525" (at 316.23 199.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
 
 (property "Footprint" "fuji75:C_0402_1005Metric" (at 313.055 203.12 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
