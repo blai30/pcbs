@@ -3,7 +3,7 @@
 # Reverse-mount LED pads sit closer to their own cutout than the board default allows.
 (rule "LED cutout edge clearance"
   (constraint edge_clearance (min 0.25mm))
-  (condition "A.memberOfFootprint('LED*')"))
+  (condition "A.Type == 'Pad' && A.memberOfFootprint('LED*')"))
 
 # Outer-column socket pads are trimmed to stop 0.3 mm inside the edge (the socket tab overhangs, like stock).
 (rule "Socket pads at the board edge"

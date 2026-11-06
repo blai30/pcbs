@@ -21,7 +21,7 @@ White solder mask, black silkscreen, and ENIG finish, set in the board stackup (
 
 To run it again on a board without the controller, install kbplacer once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user "kbplacer[schematic]==0.20"`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/generate.py` from the repo root (add `--no-flex-cuts` for a solid board).
 
-Footprints in `lib/` are copies from marbastlib (CERN-OHL-P, see `lib/marbastlib-LICENSE`) and KiCad's stock library. `LED_MX_6028R` has its pads renumbered to KiCad's SK6812 numbering (1 GND, 2 DIN, 3 VCC, 4 DOUT), which kbplacer expects.
+Footprints in `lib/` are copies from marbastlib (CERN-OHL-P, see `lib/marbastlib-LICENSE`) and KiCad's stock library. The RP2040's QFN-56 pads are 0.17 mm wide instead of the datasheet's 0.20 mm. White solder mask needs at least 0.22 mm between pads (PCBWay), and 0.17 mm leaves 0.23 mm. `LED_MX_6028R` has its pads renumbered to KiCad's SK6812 numbering (1 GND, 2 DIN, 3 VCC, 4 DOUT), which kbplacer expects.
 
 The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm inside the board edge (the socket tab hangs over the edge, like stock). The arrow keys' LED cutouts open into the bottom edge as notches (a closed cutout would leave a 0.09 mm strip, too thin to make). Don't run "Update Footprints from Library" on those switches or the arrow LEDs (LED73 to LED75), it undoes the trim and the notches.
 
