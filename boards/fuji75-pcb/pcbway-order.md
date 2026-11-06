@@ -54,6 +54,9 @@ Detailed information of assembly:
 Both sides are assembled. Placement file covers both sides.
 Stabilizers are not included and not in the BOM.
 LED1-LED82 (SK6812MINI-E) are reverse-mount: placed on the bottom with the lens facing up through the board cutout.
+LED1-LED82 are moisture sensitive (MSL 5a). Please bake them before reflow if the reel has been opened.
+SW1-SW82 (hotswap sockets) coordinates are the socket body center (midpoint of its two pin holes).
+OK to add process rails and fiducials if needed. The board has no fiducials.
 Substitutes are OK for capacitors, resistors, and D1-D82 (1N4148W). The hotswap socket CPG151101S11 can be replaced with HanElectricity CPG151101S11-2.
 No substitutes for U1-U5, Y1, Q1, J1, SW100, or LED1-LED82 without asking first.
 Please send part rotation photos for approval before production.
@@ -73,7 +76,7 @@ Please send part rotation photos for approval before production.
 | Thickness | 1.6 | Default. Same as stock, the plate and case expect it |
 | Min track/spacing | 6/6mil | Default. Smallest track and gap are both 0.2 mm (about 7.9 mil) |
 | Min hole size | 0.3mm | Default. Vias are 0.3 mm |
-| Solder mask | White | Default is Green |
+| Solder mask | White | Default is Green. White needs at least 0.22 mm between IC pads for the mask bridge. The RP2040's pads are narrowed to 0.17 mm for it (0.23 mm gaps) |
 | Silkscreen | Black | Default is White |
 | UV printing Multi-color | None | Default |
 | Edge connector | No | Default |
@@ -128,5 +131,5 @@ PCBWay sends photos of the part rotations before building. Things to check:
 
 - RP2040, flash, and the SOT-23 parts: the pin 1 dot matches the silkscreen dot
 - Diodes: the stripe (cathode) faces the row line (down on most keys, right on the five keys at the right edge)
-- LEDs: they're reverse-mount, the lens faces up through the board. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5
-- Hotswap sockets: the socket's body matches the footprint outline on the bottom
+- LEDs: they're reverse-mount, the lens faces up through the board. Pin 1 (GND) sits on the pad next to the silkscreen triangle. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5. A 180 degree error swaps GND and 5 V (JLCPCB's library had exactly this offset)
+- Hotswap sockets: the socket's body matches the footprint outline on the bottom, its two pins sit in the plated holes, and both metal tabs sit on their pads

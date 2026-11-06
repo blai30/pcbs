@@ -75,9 +75,15 @@ Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/fab.
 
 - `fuji75-gerbers.zip`: Gerbers and drill files
 - `fuji75-bom.csv`: BOM with manufacturer and LCSC part numbers (every symbol has `MPN` and `LCSC` fields)
+- `fuji75-bom-jlcpcb.csv`: the same BOM in JLCPCB's format (Comment, Designator, Footprint, LCSC Part #)
 - `fuji75-cpl.csv`: placement for both sides
+- `fuji75-cpl-jlcpcb.csv`: the same placement with JLCPCB's rotation offsets
+
+[limitations.md](limitations.md) lists the design's limitations (most of them from the stock outline and case) and possible improvements, including ways to cut the manufacturing cost.
 
 [pcbway-order.md](pcbway-order.md) has every PCBWay form setting, the notes to paste, and what to check in the rotation photos. In short: 2 layers, 1.6 mm, 1 oz copper, ENIG, white mask, black silkscreen, 5 boards with 2 assembled on both sides (turnkey). Stabilizers are left out.
+
+[jlcpcb-order.md](jlcpcb-order.md) has the same for JLCPCB.
 
 ## Reference
 
