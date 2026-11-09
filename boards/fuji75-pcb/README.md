@@ -46,7 +46,7 @@ GPIO 0, 12 to 17, and 29 are unused.
 
 Parts sit on both sides. The crystal and the 12 RP2040 decoupling capacitors are on the top side right above the chip (under the spacebar), and so is the boot button.
 
-To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The printed plate has to keep the stock plate's wide spacebar cutout.
+To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). Any plate has to keep the stock plate's wide spacebar cutout (the FR4 plate does).
 
 ## Firmware
 
@@ -69,6 +69,26 @@ Each layer has one job. Rows and columns never cross on the same layer:
 
 Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk and the 3.3 V lines are 0.3 to 0.5 mm. The USBLC6-2SC6 and boot button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
 
+## Plate
+
+`plate/fuji75-plate.kicad_pcb` is an FR4 switch plate for this layout, ordered as a PCB. It shares the PCB's coordinates and lines up with it when overlaid.
+
+`scripts/plate.py` builds it from the stock plate DXF:
+
+- Stock outline and T-shaped gasket tabs
+- Stock 14 mm switch cutouts wherever they match a switch on the PCB (70 of 82)
+- Stock backspace cutout, copied to Enter and left shift
+- Stock wide spacebar cutout, which leaves the boot button reachable
+- New cutouts for the rest from the PCB footprints: caps lock, backslash, the bottom row, and the spacebar stabilizers. The multi-layout stock cutouts are gone
+- The stock plate's 2 mm vertical slots between keys, plus new ones between the bottom-right 1u keys
+- Flex cuts between rows for more flex than stock (the stock plate is too stiff). They're 1 mm wide with staggered 3 mm bridges, the same pattern as the printed plate in the 3d-prints repo. The web above the spacebar has none. They stop 1.5 mm from every cutout and slot, which leaves the backspace and Enter stabilizer notches in solid plate
+
+- No copper. It's ordered as a 1-layer board with the cheapest finish. `--rings` adds a gold (ENIG) ring around each key cutout on the top: bare copper from 0.35 to 1 mm out from the cut edge, with the solder mask opened over it. JLCPCB needs copper at least 0.3 mm from a milled edge (the edge clearance in `plate/fuji75-plate.kicad_pro`)
+
+`--no-row-cuts` leaves the row cuts off, for the stiffer stock flex.
+
+The script checks that every switch and the boot button sit fully inside a cutout, that the plate is still one piece, and that nothing leaves less than 1 mm of material. Install its libraries once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user ezdxf shapely`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py` from the repo root. Run `fab.py` after it.
+
 ## Fab
 
 Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/fab.py` from the repo root. It writes `build/fab/`:
@@ -78,6 +98,7 @@ Run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/fab.
 - `fuji75-bom-jlcpcb.csv`: the same BOM in JLCPCB's format (Comment, Designator, Footprint, LCSC Part #)
 - `fuji75-cpl.csv`: placement for both sides
 - `fuji75-cpl-jlcpcb.csv`: the same placement with JLCPCB's rotation offsets
+- `fuji75-plate-gerbers.zip`: the plate's Gerbers (top copper, top mask, and outline only, for a 1-layer order)
 
 [limitations.md](limitations.md) lists the design's limitations (most of them from the stock outline and case) and possible improvements, including ways to cut the manufacturing cost.
 

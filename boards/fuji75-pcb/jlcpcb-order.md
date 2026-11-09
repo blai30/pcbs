@@ -7,6 +7,7 @@ Upload from `build/fab/` (run `scripts/fab.py` first):
 - `fuji75-gerbers.zip`: on the quote page, before filling in the form (it sets the size and layers, which can't be edited after)
 - `fuji75-bom-jlcpcb.csv`: BOM, after "Next" with assembly turned on
 - `fuji75-cpl-jlcpcb.csv`: placement (centroid) file, same step as the BOM. Not `fuji75-cpl.csv`: this one has JLCPCB's rotation offsets (`JLCPCB_ROTATION` in `fab.py`)
+- `fuji75-plate-gerbers.zip`: switch plate, a second PCB order in the same cart (see [Switch plate](#switch-plate))
 
 ## PCB
 
@@ -137,3 +138,30 @@ The preview shows each part on the board, with JLCPCB's pin 1 as a magenta dot (
 - LEDs: "GND" sits on the pad next to the silkscreen triangle. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5
 - Hotswap sockets: the two pins sit in the plated holes and both metal tabs sit on their pads
 - Top side: Y1's pin 1 at its silkscreen dot, and SW100 lined up with its 4 pads the same way as the footprint
+
+## Switch plate
+
+The FR4 switch plate is a separate PCB order (no assembly) added to the same cart. Upload `fuji75-plate-gerbers.zip` on a new quote page. It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB section like this:
+
+| Field | Set to | Notes |
+| --- | --- | --- |
+| Layers | 1 | Read from the Gerbers (top copper and mask only) |
+| Dimensions | 313.38 x 128.48 mm | Read from the Gerbers. Outline including the gasket tabs |
+| PCB Qty | 5 | Default. 5 is the minimum |
+| PCB Thickness | 1.6mm | Default. Switches clip best into 1.5 mm, but 1.6 mm is the usual FR4 plate thickness and clips fine |
+| PCB Color | White | Default is Green |
+| Surface Finish | Whichever is cheapest | There's no copper to finish |
+| Confirm Production file | Yes | Default is No. Check that every cutout and slot is there before production |
+| Mark on PCB | Remove Mark | Default. The plate's top shows between the keycaps |
+| PCB Remark | Paste the text below | Empty by default |
+| PCB Assembly | Off | Default |
+
+PCB Remark (the box takes 200 characters, this is 134):
+
+```
+Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout: switch, stabilizer, 2 mm slots, and 1 mm flex cuts between rows.
+```
+
+The underside may come without solder mask (bare FR4) on a 1-layer board. It faces the PCB and doesn't show.
+
+`plate.py --rings` adds a gold ring around each key cutout on the top. That needs ENIG, which costs a lot more on a board this size.

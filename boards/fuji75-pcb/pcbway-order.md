@@ -7,6 +7,7 @@ Upload from `build/fab/` (run `scripts/fab.py` first):
 - `fuji75-gerbers.zip`: PCB files
 - `fuji75-bom.csv`: BOM
 - `fuji75-cpl.csv`: placement (centroid) file
+- `fuji75-plate-gerbers.zip`: switch plate, a second PCB item in the same cart (see [Switch plate](#switch-plate))
 
 ## Assembly Service
 
@@ -134,3 +135,25 @@ PCBWay sends photos of the part rotations before building. Things to check:
 - Diodes: the stripe (cathode) faces the row line (down on most keys, right on the five keys at the right edge)
 - LEDs: they're reverse-mount, the lens faces up through the board. Pin 1 (GND) sits on the pad next to the silkscreen triangle. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5. A 180 degree error swaps GND and 5 V (JLCPCB's library had exactly this offset)
 - Hotswap sockets: the socket's body matches the footprint outline on the bottom, its two pins sit in the plated holes, and both metal tabs sit on their pads
+
+## Switch plate
+
+The FR4 switch plate is a plain PCB quote (no assembly) added to the same cart. It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB Specifications the same as the PCB, except:
+
+| Field | Set to | Notes |
+| --- | --- | --- |
+| Size (single) | 313.4 x 128.5 mm | Empty by default. Outline including the gasket tabs |
+| Quantity (single) | 5 | Empty by default. 5 is the minimum |
+| Layers | 1 Layer | Default is 2 Layers |
+| Thickness | 1.6 | Default. Switches clip best into 1.5 mm, but 1.6 mm is the usual FR4 plate thickness and clips fine |
+| Solder mask | White | Default is Green |
+| Silkscreen | Black | Default is White. There's no silkscreen on the plate |
+| Surface finish | HASL lead free | Default. There's no copper to finish |
+| Remove product No. | Yes (extra $1.5) | Default is No. The plate's top shows between the keycaps |
+| Other special request | Paste the text below | Empty by default |
+
+Other special request:
+
+```
+Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout: switch, stabilizer, 2 mm slots, and 1 mm flex cuts between rows.
+```

@@ -1,5 +1,5 @@
 """Writes the PCBWay and JLCPCB order files to build/fab/: zipped Gerbers and drill files, the BOM,
-and the placement (CPL) file for both sides.
+the placement (CPL) file for both sides, and the plate Gerbers.
 
 Run from the repo root with KiCad's bundled Python:
 
@@ -19,8 +19,12 @@ KICAD_CLI = "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe"
 BOARD_DIR = Path(__file__).resolve().parent.parent
 PCB = BOARD_DIR / "fuji75.kicad_pcb"
 SCHEMATIC = BOARD_DIR / "fuji75.kicad_sch"
+# Built by plate.py.
+PLATE = BOARD_DIR / "plate" / "fuji75-plate.kicad_pcb"
 OUT = BOARD_DIR / "build" / "fab"
 LAYERS = "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts"
+# The plate is ordered as a 1-layer board with no holes.
+PLATE_LAYERS = "F.Cu,F.Mask,Edge.Cuts"
 
 # Degrees added to KiCad's rotation for JLCPCB, by LCSC part number. Their part library holds
 # these parts turned from KiCad's convention (checked against pin 1 in their placement preview).
@@ -40,13 +44,18 @@ def cli(*args):
     subprocess.run([KICAD_CLI, *args], check=True, capture_output=True)
 
 
-def gerbers():
-    folder = OUT / "gerbers"
+def gerbers(board, name, layers=LAYERS, holes=True):
+    folder = OUT / name
     folder.mkdir(parents=True)
-    cli("pcb", "export", "gerbers", "--layers", LAYERS, "--subtract-soldermask", "-o", f"{folder}/", str(PCB))
-    cli("pcb", "export", "drill", "--format", "excellon", "--excellon-separate-th", "--generate-map",
-        "--map-format", "gerberx2", "-o", f"{folder}/", str(PCB))
-    with zipfile.ZipFile(OUT / "fuji75-gerbers.zip", "w", zipfile.ZIP_DEFLATED) as archive:
+    cli("pcb", "export", "gerbers", "--layers", layers, "--subtract-soldermask", "-o", f"{folder}/", str(board))
+    if holes:
+        cli("pcb", "export", "drill", "--format", "excellon", "--excellon-separate-th", "--generate-map",
+            "--map-format", "gerberx2", "-o", f"{folder}/", str(board))
+    else:
+        # The job file's stackup (2 layers, ENIG) comes from the PCB. Leave it out so the fab
+        # reads the plate's layers from the Gerbers.
+        next(folder.glob("*.gbrjob")).unlink()
+    with zipfile.ZipFile(OUT / f"{name}.zip", "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(folder.iterdir()):
             archive.write(path, path.name)
 
@@ -144,7 +153,8 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    gerbers()
+    gerbers(PCB, "fuji75-gerbers")
+    gerbers(PLATE, "fuji75-plate-gerbers", PLATE_LAYERS, holes=False)
     designators = bom()
     placed = placement(designators)
     missing = set(designators) - placed
