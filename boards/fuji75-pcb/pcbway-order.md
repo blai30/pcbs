@@ -57,7 +57,8 @@ LED1-LED82 (SK6812MINI-E) are reverse-mount: placed on the bottom with the lens 
 LED1-LED82 are moisture sensitive (MSL 5a). Please bake them before reflow if the reel has been opened.
 SW1-SW82 (hotswap sockets) coordinates are the socket body center (midpoint of its two pin holes).
 OK to add process rails and fiducials if needed. The board has no fiducials.
-Substitutes are OK for capacitors, resistors, and D1-D82 (1N4148W). The hotswap socket CPG151101S11 can be replaced with HanElectricity CPG151101S11-2.
+Substitutes are OK for capacitors, resistors, and D1-D82 (1N4148W).
+SW1-SW82 must be genuine Kailh. First choice is the white CPG151101S11-1 (LCSC C5184526), then the black CPG151101S11 (LCSC C2803348). No clones or other brands (HanElectricity etc).
 No substitutes for U1-U5, Y1, Q1, J1, SW100, or LED1-LED82 without asking first.
 Please send part rotation photos for approval before production.
 ```
