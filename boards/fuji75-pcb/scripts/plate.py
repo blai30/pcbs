@@ -11,6 +11,8 @@ The plate has no copper, for the cheapest order (1 layer, any finish). --rings a
 around each key cutout on the top: bare copper with the solder mask opened over it, which needs
 ENIG.
 
+It also writes plate/fuji75-plate-foam.dxf and .pdf (1:1), the foam that sits between the plate and the PCB.
+
 Run from the repo root with KiCad's bundled Python:
 
     "C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py [--no-row-cuts] [--rings]
@@ -32,6 +34,9 @@ BOARD_DIR = Path(__file__).resolve().parent.parent
 PCB = BOARD_DIR / "fuji75.kicad_pcb"
 DXF = BOARD_DIR / "fuji75_plate.dxf"
 PLATE = BOARD_DIR / "plate" / "fuji75-plate.kicad_pcb"
+FOAM = BOARD_DIR / "plate" / "fuji75-plate-foam.dxf"
+# Blank space around the foam on the PDF page.
+PDF_MARGIN = 10.0
 
 SWITCH_CUTOUT = 14.0
 CORNER_RADIUS = 0.5
@@ -272,6 +277,99 @@ def write_plate(pcb, outline, cutouts, rings):
     plate.Save(str(PLATE))
 
 
+# Plate foam: the PCB outline pulled in, with a hole for each switch and whole regions cut out where
+# something stands up from the PCB.
+FOAM_INSET = 0.5
+# Below the plate a switch is 14 mm square. The extra keeps the foam off its clips.
+FOAM_SWITCH_HOLE = 15.0
+# Stabilizer housings sit over their two PCB holes: the foam clears both holes by this much, across
+# FOAM_STAB_WIDTH (the housing is about 6.6 mm wide). The wire runs above the plate.
+FOAM_STAB_CLEARANCE = 0.75
+FOAM_STAB_WIDTH = 8.0
+# Clearance around the parts on top of the PCB (the controller passives, crystal, and boot button).
+FOAM_PART_CLEARANCE = 1.5
+# Foam narrower than this tears. Holes closer together than this merge into one.
+FOAM_MIN_WEB = 1.9
+
+
+def foam(pcb, switches):
+    """The foam sheet as a polygon."""
+    outlines = pcbnew.SHAPE_POLY_SET()
+    pcb.GetBoardPolygonOutlines(outlines, False)
+    chain = outlines.Outline(0)
+    outline = Polygon([(pcbnew.ToMM(chain.CPoint(i).x), pcbnew.ToMM(chain.CPoint(i).y)) for i in range(chain.PointCount())])
+    sheet = outline.buffer(-FOAM_INSET, join_style="mitre")
+
+    half = FOAM_SWITCH_HOLE / 2
+    holes = [box(x - half, y - half, x + half, y + half) for x, y in switches.values()]
+    for footprint in pcb.GetFootprints():
+        ref = footprint.GetReference()
+        if ref.startswith("ST"):
+            pads = [(pcbnew.ToMM(pad.GetPosition().x), pcbnew.ToMM(pad.GetPosition().y), pcbnew.ToMM(pad.GetDrillSize().x) / 2) for pad in footprint.Pads()]
+            for x in {round(pad_x, 3) for pad_x, _, _ in pads}:
+                housing = [(pad_y, radius) for pad_x, pad_y, radius in pads if abs(pad_x - x) < 0.01]
+                top = min(pad_y - radius for pad_y, radius in housing) - FOAM_STAB_CLEARANCE
+                bottom = max(pad_y + radius for pad_y, radius in housing) + FOAM_STAB_CLEARANCE
+                holes.append(box(x - FOAM_STAB_WIDTH / 2, top, x + FOAM_STAB_WIDTH / 2, bottom))
+        elif footprint.GetLayer() == pcbnew.F_Cu and not ref.startswith(("SW", "ST")) or ref == "SW100":
+            bounds = footprint.GetBoundingBox(False)
+            holes.append(box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom()))).buffer(FOAM_PART_CLEARANCE, join_style="mitre"))
+    # Merges holes closer than FOAM_MIN_WEB to each other or to the edge (those open into the edge),
+    # which also fills the gaps between the controller parts into one region.
+    closing = FOAM_MIN_WEB / 2
+    outside = sheet.envelope.buffer(10).difference(sheet)
+    cut = unary_union([*holes, outside]).buffer(closing, join_style="mitre").buffer(-closing, join_style="mitre")
+    pieces = sheet.difference(cut)
+    pieces = sorted(getattr(pieces, "geoms", [pieces]), key=lambda piece: piece.area)
+    # Merged regions can leave small islands of foam. They'd just fall out, so they go too.
+    for island in pieces[:-1]:
+        print(f"Dropped a {island.area:.0f} mm² foam island at {tuple(round(value, 1) for value in island.centroid.coords[0])}")
+    return pieces[-1]
+
+
+def write_foam(shape):
+    document = ezdxf.new(units=ezdxf.units.MM)
+    space = document.modelspace()
+    for ring in [shape.exterior, *shape.interiors]:
+        # DXF's y axis points up. Flip so the foam reads the right way up.
+        space.add_lwpolyline([(x, -y) for x, y in ring.coords], close=True)
+    document.saveas(FOAM)
+    write_pdf(shape, FOAM.with_suffix(".pdf"))
+    min_x, min_y, max_x, max_y = shape.bounds
+    print(f"Wrote {FOAM} and .pdf: {max_x - min_x:.1f} x {max_y - min_y:.1f} mm, {len(shape.interiors)} holes")
+
+
+def write_pdf(shape, path):
+    """A one-page vector PDF at 1:1, on a page the size of the shape plus PDF_MARGIN."""
+    points_per_mm = 72 / 25.4
+    min_x, min_y, max_x, max_y = shape.bounds
+    width, height = (max_x - min_x + 2 * PDF_MARGIN) * points_per_mm, (max_y - min_y + 2 * PDF_MARGIN) * points_per_mm
+    # PDF's y axis points up, KiCad's points down.
+    to_page = lambda x, y: ((x - min_x + PDF_MARGIN) * points_per_mm, height - (y - min_y + PDF_MARGIN) * points_per_mm)
+    paths = []
+    for ring in [shape.exterior, *shape.interiors]:
+        start, *rest = [to_page(x, y) for x, y in ring.coords]
+        paths.append(f"{start[0]:.3f} {start[1]:.3f} m " + " ".join(f"{x:.3f} {y:.3f} l" for x, y in rest) + " h S")
+    # Hairline black strokes.
+    content = ("0.25 w 0 0 0 RG\n" + "\n".join(paths)).encode("ascii")
+    objects = [
+        b"<< /Type /Catalog /Pages 2 0 R >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {width:.3f} {height:.3f}] /Contents 4 0 R >>".encode("ascii"),
+        f"<< /Length {len(content)} >>\nstream\n".encode("ascii") + content + b"\nendstream",
+    ]
+    output = bytearray(b"%PDF-1.4\n")
+    offsets = []
+    for number, body in enumerate(objects, start=1):
+        offsets.append(len(output))
+        output += f"{number} 0 obj\n".encode("ascii") + body + b"\nendobj\n"
+    table = len(output)
+    output += f"xref\n0 {len(objects) + 1}\n0000000000 65535 f \n".encode("ascii")
+    output += b"".join(f"{offset:010d} 00000 n \n".encode("ascii") for offset in offsets)
+    output += f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{table}\n%%EOF\n".encode("ascii")
+    path.write_bytes(bytes(output))
+
+
 def main():
     pcb = pcbnew.LoadBoard(str(PCB))
     center = lambda footprint: (pcbnew.ToMM(footprint.GetPosition().x), pcbnew.ToMM(footprint.GetPosition().y))
@@ -292,6 +390,7 @@ def main():
     rings = gold_rings(outline, keys, holes) if "--rings" in sys.argv else []
     write_plate(pcb, outline, holes, rings)
     print(f"Wrote {PLATE}")
+    write_foam(foam(pcb, switches))
 
 
 if __name__ == "__main__":

@@ -87,6 +87,13 @@ Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk 
 
 `--no-row-cuts` leaves the row cuts off, for the stiffer stock flex.
 
+It also writes `plate/fuji75-plate-foam.dxf` and a 1:1 vector `plate/fuji75-plate-foam.pdf` (for shops that ask for a PDF), the plate foam that sits between the plate and the PCB (3 to 3.5 mm PORON or PE, the gap is about 3.4 mm under the 1.6 mm plate). It follows the PCB outline 0.5 mm in, with:
+
+- A 15 mm hole for each switch (14 mm below the plate, plus room for the clips)
+- A hole over each stabilizer housing, clearing both of its PCB holes by 0.75 mm
+- One region around the controller parts on top of the PCB under the spacebar, and one around the boot button
+- Holes closer than 1.9 mm to each other or to the edge merged into one region (thinner foam tears), so the top and side rows open into the edge. Loose islands that leaves (one, by left Ctrl and Win) are cut out too
+
 The script checks that every switch and the boot button sit fully inside a cutout, that the plate is still one piece, and that nothing leaves less than 1 mm of material. Install its libraries once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user ezdxf shapely`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py` from the repo root. Run `fab.py` after it.
 
 ## Fab
