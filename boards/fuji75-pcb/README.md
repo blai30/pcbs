@@ -80,12 +80,10 @@ Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk 
 - Stock backspace cutout, copied to Enter and left shift
 - Stock wide spacebar cutout, which leaves the boot button reachable
 - New cutouts for the rest from the PCB footprints: caps lock, backslash, the bottom row, and the spacebar stabilizers. The multi-layout stock cutouts are gone
-- The stock plate's 2 mm vertical slots between keys, plus new ones between the bottom-right 1u keys
-- Flex cuts between rows for more flex than stock (the stock plate is too stiff). They're 1 mm wide with staggered 3 mm bridges, the same pattern as the printed plate in the 3d-prints repo. The web above the spacebar has none. They stop 1.5 mm from every cutout and slot, which leaves the backspace and Enter stabilizer notches in solid plate
+- Spacebar stabilizer cutouts the size of the backspace's stabilizer notches (the stock ones were 1.5 mm taller)
+- No flex cuts. JLCPCB rejected slots closer than 3 mm to another cutout or the edge, and there's no room for that between keys. Every cutout is at least 3 mm from the next. The only narrower spots are 1.1 to 1.6 mm between the bottom row and the bottom edge, set by the stock outline
 
-- No copper. It's ordered as a 1-layer board with the cheapest finish. `--rings` adds a gold (ENIG) ring around each key cutout on the top: bare copper from 0.35 to 1 mm out from the cut edge, with the solder mask opened over it. JLCPCB needs copper at least 0.3 mm from a milled edge (the edge clearance in `plate/fuji75-plate.kicad_pro`)
-
-`--no-row-cuts` leaves the row cuts off, for the stiffer stock flex.
+`--slots` adds the stock plate's 2 mm vertical slots between keys (plus new ones between the bottom-right 1u keys). `--row-cuts` adds 1 mm cuts between rows with staggered 3 mm bridges (the printed plate's pattern in the 3d-prints repo), stopping 1.5 mm from every cutout and slot. Both leave 1.5 to 2 mm webs, for a fab that allows them.
 
 It also writes `plate/fuji75-plate-foam.dxf` and a 1:1 vector `plate/fuji75-plate-foam.pdf` (for shops that ask for a PDF), the plate foam that sits between the plate and the PCB (3 to 3.5 mm PORON or PE, the gap is about 3.4 mm under the 1.6 mm plate). It follows the PCB outline 0.5 mm in, with:
 

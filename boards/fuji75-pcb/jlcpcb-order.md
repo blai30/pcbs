@@ -151,15 +151,15 @@ The FR4 switch plate is a separate PCB order (no assembly) added to the same car
 | PCB Thickness | 1.6mm | Default. Switches clip best into 1.5 mm, but 1.6 mm is the usual FR4 plate thickness and clips fine |
 | PCB Color | White | Default is Green |
 | Surface Finish | Whichever is cheapest | There's no copper to finish |
-| Confirm Production file | Yes | Default is No. Check that every cutout and slot is there before production |
+| Confirm Production file | Yes | Default is No. Check that every cutout is there before production |
 | Mark on PCB | Remove Mark | Default. The plate's top shows between the keycaps |
 | PCB Remark | Paste the text below | Empty by default |
 | PCB Assembly | Off | Default |
 
-PCB Remark (the box takes 200 characters, this is 134):
+PCB Remark (the box takes 200 characters, this is 166):
 
 ```
-Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout: switch, stabilizer, 2 mm slots, and 1 mm flex cuts between rows.
+Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout. The 1.1-1.6 mm webs at the bottom edge are set by the keyboard case. Please produce as designed.
 ```
 
 The underside may come without solder mask (bare FR4) on a 1-layer board. It faces the PCB and doesn't show.

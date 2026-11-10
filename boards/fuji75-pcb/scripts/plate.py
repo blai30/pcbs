@@ -4,8 +4,9 @@ Starts from the stock plate DXF (outline, T-shaped gasket tabs) and swaps its mu
 cutouts for ones that fit this PCB's layout, placed from the PCB's switch and stabilizer
 footprints. The plate shares the PCB's coordinates.
 
-Flex comes from the stock plate's vertical slots between keys plus long cuts between rows (the
-printed plate's pattern). --no-row-cuts leaves the row cuts off (the stiffer stock plate).
+The plate has no flex cuts. JLCPCB rejects slots closer than 3 mm to another cutout, and there's
+no room for that between keys. For a fab that allows them, --slots adds the stock plate's vertical
+slots between keys and --row-cuts adds long cuts between rows (the printed plate's pattern).
 
 The plate has no copper, for the cheapest order (1 layer, any finish). --rings adds a gold ring
 around each key cutout on the top: bare copper with the solder mask opened over it, which needs
@@ -15,7 +16,7 @@ It also writes plate/fuji75-plate-foam.dxf and .pdf (1:1), the foam that sits be
 
 Run from the repo root with KiCad's bundled Python:
 
-    "C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py [--no-row-cuts] [--rings]
+    "C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py [--slots] [--row-cuts] [--rings]
 
 It needs ezdxf and shapely, installed once with
 "C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user ezdxf shapely
@@ -47,9 +48,10 @@ MIN_WEB = 1.0
 # Stock cutouts kept as drawn, by the switch they hold: the backspace (the template for the other
 # 2u and 2.25u keys) and the wide spacebar cutout that leaves the boot button reachable.
 STOCK_CUTOUTS = {"backspace": "SW28", "spacebar": "SW76"}
-# 6.25u stabilizer cutouts relative to each stabilizer: the stock plate's height, 7 mm wide like
-# the backspace's stabilizer notches.
-SPACE_STAB = (-3.5, -10.5, 3.5, 7.0)
+# 6.25u stabilizer cutouts relative to each stabilizer: the backspace's 7 x 16 mm stabilizer notch,
+# turned around like the spacebar's stabilizer. The stock plate's were 1.5 mm taller, which left
+# 1.5 mm to the shift row.
+SPACE_STAB = (-3.5, -9.0, 3.5, 7.0)
 CUT_WIDTH = 1.0
 # Gold ring around each key cutout, as its inner and outer distance from the cutout edge. JLCPCB
 # needs copper 0.3 mm from milled edges (the edge clearance in fuji75-plate.kicad_pro).
@@ -382,8 +384,8 @@ def main():
 
     outline, cutouts = to_pcb(*read_dxf(), switches)
     keys, added, slots = layout_cutouts(cutouts, switches, stabilizers)
-    flex = stock_slots(keys, added, slots, switches)
-    if "--no-row-cuts" not in sys.argv:
+    flex = stock_slots(keys, added, slots, switches) if "--slots" in sys.argv else []
+    if "--row-cuts" in sys.argv:
         flex += row_cuts(keys + flex)
     holes = keys + flex
     check(outline, keys, added, holes, cutouts, switches, button)

@@ -155,5 +155,5 @@ The FR4 switch plate is a plain PCB quote (no assembly) added to the same cart. 
 Other special request:
 
 ```
-Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout: switch, stabilizer, 2 mm slots, and 1 mm flex cuts between rows.
+Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout. The 1.1-1.6 mm webs at the bottom edge are set by the keyboard case. Please produce as designed.
 ```
