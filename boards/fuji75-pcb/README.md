@@ -10,7 +10,7 @@ Open `fuji75.kicad_pro` in KiCad 10.
 
 - `fuji75.kicad_sch`: root sheet
 - `fuji75-key-matrix.kicad_sch` and `fuji75-led-chain.kicad_sch`: generated
-- `fuji75-controller.kicad_sch`: USB in, power, RP2040, flash, clock, boot button, and the LED level shifter. Edited by hand
+- `fuji75-controller.kicad_sch`: USB in, power, the LED power switch, RP2040, flash, clock, boot and reset buttons, SWD pads, and the LED level shifter. Edited by hand
 - `fuji75.kicad_pcb`: switches, LEDs, stabilizers, outline, and flex cuts came from the generator. Diodes, LED capacitors, the controller, and all routing were placed and drawn by one-off scripts after that. The board file is the source now
 - `layout.json`: the layout with each key's matrix position as its top-left legend (`row,col`, VIA format). Opens in keyboard-layout-editor.com
 - `fuji75.kicad_dru`: custom DRC rules for the socket pads at the board edge and the LED cutouts
@@ -27,33 +27,55 @@ The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm
 
 ## Controller
 
-The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The ESD chip's VBUS pin is on the MOSFET's output side (on the input side, a reversed cable shorts through it). The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
+The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The ESD chip's VBUS pin is on the MOSFET's output side (on the input side, a reversed cable shorts through it). R1 and R2 are the RP2040's 27 Ω USB series resistors, next to the chip like in Raspberry Pi's design.
 
-The ESD chip, R1, R2, and the MOSFET sit next to J1. The ESD chip is about 10 mm in front of J1's opening, which leaves room for the cable plug to slide in straight. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 19 cm from J1 to the chip. That's fine at full speed (12 Mbps).
+The ESD chip and the MOSFET sit on the bottom behind J1 (the side away from the opening). D+ and D- cross under J1 on the top layer. Only flat tracks sit in front of J1's opening, and the cable plug slides in straight. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 19 cm from J1 to the chip. That's fine at full speed (12 Mbps).
 
 GPIO pin map:
 
 | GPIO | Signal |
 | --- | --- |
+| 0 | Board ID, tied to GND (v1.1.0) |
 | 1 | ROW5 |
 | 2 | LED data (through the 74AHCT1G125 to 5 V) |
 | 3 | ROW4 |
 | 4 to 7 | COL3, COL2, COL1, COL0 |
 | 8 to 11 | ROW3, ROW2, ROW1, ROW0 |
+| 13 | `LED_FAULT`, U6's fault output (v1.1.0) |
+| 14 | `LED_EN`, U6's enable (v1.1.0) |
 | 18 to 28 | COL14 down to COL4 |
+| 29 | `LED_SENSE`, the LED voltage through a divider (v1.1.0) |
 
-GPIO 0, 12 to 17, and 29 are unused.
+GPIO 12 and 15 to 17 are unused. On v1.0.0, GPIO 0, 13, 14, and 29 are unconnected.
 
-Parts sit on both sides. The crystal and the 12 RP2040 decoupling capacitors are on the top side right above the chip (under the spacebar), and so is the boot button.
+Parts sit on both sides. The crystal, the 12 RP2040 decoupling capacitors, R1 and R2, and the sense divider are on the top side right above the chip (under the spacebar), and so are the boot and reset buttons.
 
-To enter the bootloader, pull the spacebar keycap, hold the button through the plate window right of the spacebar switch (a toothpick or tweezers work), and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The plate needs an opening over the button. The FR4 plate has its own window for it, and the stock plate's wide spacebar cutout also reaches it.
+To enter the bootloader, pull the spacebar keycap, hold the boot button through the plate window right of the spacebar switch (a toothpick or tweezers work), and plug in the cable. A board with blank flash goes to the bootloader on its own. The reset button (SW101) sits right of the boot button in the same window. Holding boot and pressing reset enters the bootloader without unplugging. RUN has no external pull-up (the RP2040's internal one holds it high). Keycaps can't reach the buttons, even multi-stem spacebars (they sit below the plate). The plate needs an opening over the buttons. The FR4 plate has its own window for them, and both plungers sit inside the stock plate's spacebar cutouts.
+
+SWD pads TP1 to TP5 sit on the bottom about 9 mm south of the RP2040, 2.54 mm apart, for clips or a probe. Left to right, labeled on the silkscreen: 3V3, GND, CLK (SWCLK), DIO (SWDIO), RUN.
+
+## Power
+
+VBUS goes through Q1 (reverse protection) to `VCC`. The controller gets its own 0.3 mm feed from Q1. The LEDs sit behind U6, a TPS2553 load switch with soft-start, enable, and fault output. R5 (21.5 kΩ) sets its current limit to about 1.2 A, above the firmware's LED budget. C119 (1 µF) is on its input and C120 (10 µF) on its output.
+
+U6's output is `LED_5V`. All 82 LEDs and their 100 nF caps are on it. The trunk down the left edge is 1.0 mm (0.5 mm for a short span by a peg hole), and the 0.2 mm row lines branch off it.
+
+R6 (15 kΩ) and R7 (10 kΩ) divide `LED_5V` down to 0.4 for GPIO 29 (ADC). The tap is on the row-4 lane near the controller, far from the feed at the top left. It sees close to the worst drop on the board.
+
+The budget comes from the JST SH connector, rated 1 A per contact (one VBUS pin, one GND pin). The firmware estimates each frame's current and scales the frame down when it's over budget:
+
+- v1.0.0: fixed 800 mA. 950 mA sagged the LED voltage under 4.5 V and turned white orange
+- v1.1.0: adaptive, 300 to 950 mA. It lowers the budget when `LED_5V` sags and raises it back slowly
+
+One firmware build runs on both. It reads GPIO 0 at startup (tied to GND on v1.1.0, pulled up internally on v1.0.0) to tell them apart.
 
 ## Firmware
 
 QMK with VIA, in `firmware/`. See `firmware/readme.md` for building, flashing, and loading the VIA definition.
 
 - 1000 Hz polling and NKRO
-- RGB brightness is capped at 36 of 255 (about 14%). All 82 LEDs at full white would draw about 3 A, and the cap keeps that worst case near 420 mA, under USB's 500 mA
+- RGB brightness goes to 255. A current limit in the RGB driver scales each frame to the LED budget (see [Power](#power))
+- One build for v1.0.0 and v1.1.0. Each revision has its own VIA definition (caps lock differs)
 - USB ID `0x1209`/`0x0001` is pid.codes' test PID until this board gets its own
 
 ## Routing
@@ -67,7 +89,7 @@ Each layer has one job. Rows and columns never cross on the same layer:
 - No bottom copper within 2.5 mm of a stabilizer screw hole, where the screw heads sit (keepouts in the stabilizer footprints)
 - Flex cuts stop at least 4 mm from any stabilizer hole (the stabilizer housing never sits across a cut)
 
-Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk and the 3.3 V lines are 0.3 to 0.5 mm. The USBLC6-2SC6 and boot button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
+Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk is 1.0 mm (0.5 mm by one peg hole). The controller's 5 V feed and the 3.3 V lines are 0.3 to 0.5 mm. The USBLC6-2SC6 and button footprints mark the pads that are joined inside the part (jumper pad groups). DRC treats them as connected.
 
 ## Plate
 
@@ -78,7 +100,7 @@ Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk 
 - Stock outline and T-shaped gasket tabs
 - Stock 14 mm switch cutouts wherever they match a switch on the PCB (70 of 82)
 - Stock backspace cutout, copied to Enter and left shift
-- A plain 14 mm spacebar switch cutout, and a separate window over the boot button. The window is the size of the part of the stock spacebar cutout right of the switch, with 3 mm of plate between the two
+- A plain 14 mm spacebar switch cutout, and a separate window over the boot and reset buttons, with at least 3 mm of plate between the two
 - New cutouts for the rest from the PCB footprints: stepped caps lock, backslash, the bottom row, and the spacebar stabilizers. The multi-layout stock cutouts are gone
 - Spacebar stabilizer cutouts the size of the backspace's stabilizer notches (the stock ones were 1.5 mm taller)
 - No flex cuts. JLCPCB rejected slots closer than 3 mm to another cutout or the edge, and there's no room for that between keys. Every cutout is at least 3 mm from the next. The only narrower spots are 1.1 to 1.6 mm between the bottom row and the bottom edge, set by the stock outline
@@ -90,10 +112,10 @@ It also writes `plate/fuji75-plate-foam.dxf` and a 1:1 vector `plate/fuji75-plat
 - A 15 mm hole for each switch (14 mm below the plate, plus room for the clips)
 - A hole over each stabilizer housing, clearing both of its PCB holes by 0.75 mm
 - A channel for each stabilizer wire between its housings, from 3 mm inside the big PCB holes to past their outer edge (the wire runs under the plate). The spacebar's channel cuts off the foam under the spacebar, so that's two loose pieces that drop in on their own
-- One region around the controller parts on top of the PCB under the spacebar, and one around the boot button
+- One region around the controller parts on top of the PCB under the spacebar, and one around the boot and reset buttons
 - Holes closer than 1.9 mm to each other or to the edge merged into one region (thinner foam tears), so the top and side rows open into the edge. Loose islands that leaves (one, by left Ctrl and Win) are cut out too
 
-The script checks that every switch and the boot button sit fully inside a cutout, that the plate is still one piece, and that nothing leaves less than 1 mm of material. Install its libraries once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user ezdxf shapely`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py` from the repo root. Run `fab.py` after it.
+The script checks that every switch and both buttons sit fully inside a cutout, that the plate is still one piece, and that nothing leaves less than 1 mm of material. Install its libraries once with `"C:/Program Files/KiCad/10.0/bin/python.exe" -m pip install --user ezdxf shapely`, then run `"C:/Program Files/KiCad/10.0/bin/python.exe" boards/fuji75-pcb/scripts/plate.py` from the repo root. Run `fab.py` after it.
 
 ## Fab
 
@@ -148,17 +170,27 @@ The wire colors don't follow USB conventions. Don't go by color.
 
 The pinout comes from the UDB schematic, the [Fuji75 interest check](https://geekhack.org/index.php?topic=113840.0), and the traces between J1 and the 32U4 in `photos/IMG_5497.JPEG`. It wasn't checked with a multimeter, but the v1.0.0 board works with the stock daughterboard and cable.
 
-The daughterboard has its own fuse, ESD protection, CC resistors, and series resistors on D+ and D- (they look like 22 Ω).
+The daughterboard has its own fuse, ESD protection, CC resistors, and series resistors on D+ and D- (they look like 22 Ω). With R1 and R2 (27 Ω) that makes about 49 Ω per line. That's slightly over spec, but fine at full speed. v1.0.0 has 0 Ω in R1 and R2.
+
+On v1.1.0, U2 sits behind J1 and only flat tracks run in front of the opening. The connector is rated 1 A per contact, and it carries all the power through one VBUS pin and one GND pin. That sets the LED budget (see [Power](#power)).
 
 ## Revisions
 
 The version is printed on the underside, under the spacebar. Photos of the assembled v1.0.0 boards are in `photos/v1.0.0/`.
 
 - v1.1.0: order this one
-  - The ESD chip (U2), R1, and R2 moved 8 mm further from J1
+  - The ESD chip (U2) moved behind J1. Only flat tracks sit in front of J1's opening, and the cable plug goes in straight
+  - R1 and R2 are real 27 Ω resistors next to the RP2040 (0 Ω next to J1 on v1.0.0)
+  - LED power switch (U6, TPS2553) with a 1.2 A limit. The LEDs are on their own `LED_5V` net, and the RP2040 can turn it off
+  - LED voltage sense on GPIO 29. The firmware adapts the LED budget between 300 and 950 mA (fixed 800 mA on v1.0.0)
+  - Board ID strap on GPIO 0 (tied to GND), for the firmware
+  - The 5 V trunk down the left edge is 1.0 mm (0.5 mm on v1.0.0)
   - Stepped caps lock. The switch moved 4.76 mm left, under the raised 1.25u part of a stepped keycap. Regular 1.75u caps lock keycaps don't fit anymore
-  - The boot button moved 3 mm right, under its own plate window. The FR4 plate's spacebar switch cutout is closed on all four sides
+  - The boot button moved 3 mm right. A reset button (SW101) sits next to it, and both share one plate window. The FR4 plate's spacebar switch cutout is closed on all four sides
+  - SWD pads on the bottom (3V3, GND, SWCLK, SWDIO, RUN)
+  - Six fiducials, three per side
   - The v1.1.0 FR4 plate doesn't fit v1.0.0 boards (caps lock moved). The stock plate fits both
+  - Its VIA definition is `firmware/fuji75-via.json`. v1.0.0 uses `firmware/fuji75-via-v1.0.0.json`
 - v1.0.0: the first boards made. They work, but U2 sits about 2 mm in front of J1's opening. The cable plug only goes in at an angle, it's very tight to seat, and the wires arch over U2. Caps lock takes a regular 1.75u keycap
 
 ## License

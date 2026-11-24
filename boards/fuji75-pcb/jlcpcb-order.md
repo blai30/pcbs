@@ -78,9 +78,9 @@ Turn on the PCB Assembly switch.
 | Field | Set to | Notes |
 | --- | --- | --- |
 | PCBA Type | Standard | Default. Economic can't do both sides |
-| Assembly Side | Both Sides | Default is Top Side. 17 parts on top (controller passives, crystal, boot button), 342 on the bottom |
+| Assembly Side | Both Sides | Default is Top Side. 22 parts on top (controller passives, crystal, boot and reset buttons), 344 on the bottom |
 | PCBA Qty | 2 (Custom Qty) | Default is 5 |
-| Edge Rails/Fiducials | Added by JLCPCB | Default. The sockets reach the board edge and the board has no fiducials. The rails make it 310.14 x 130.93 mm during assembly |
+| Edge Rails/Fiducials | Added by JLCPCB | Default. The sockets reach the board edge. The board has its own fiducials (three per side), and JLCPCB may add more on the rails. The rails make it 310.14 x 130.93 mm during assembly |
 | Confirm Parts Placement | Yes | Default is No. Check the placement preview before production (see below) |
 | Stencil Storage | No | Default |
 | Fixture Storage | No | Default |
@@ -122,8 +122,9 @@ U2 (USBLC6-2SC6): pin 1 at the silkscreen triangle (the preview shows the dot on
 
 After uploading the BOM and CPL, JLCPCB matches every line by its LCSC number. Check:
 
-- All 18 lines are matched and in stock (if a part is out of stock, stop and look for a replacement before ordering)
-- 359 parts placed, 17 on the top and 342 on the bottom
+- All 23 lines are matched and in stock (if a part is out of stock, stop and look for a replacement before ordering)
+- 366 parts placed, 22 on the top and 344 on the bottom. The SWD pads (TP1 to TP5) and fiducials aren't parts and stay out of the BOM and CPL
+- New on v1.1.0: U6 (TPS2553DBVR, C55266), R5 (21.5 kΩ, C25872), R6 (15 kΩ, C25756), R7 (10 kΩ, C25744), SW101 (same part as SW100, C318884), and R1 and R2 as 27 Ω (C25100). C119 and C120 share the existing 1 µF and 10 µF lines
 - Extended parts add a setup fee of about $3 each. Most of these parts are extended
 - The LED line comes in unselected with a "processing is difficult" warning (reverse mount). Tick it by hand. JLCPCB reviews it after the order and emails if it needs an extra fee
 - JLCPCB has been out of the Kailh socket (C2803348). Swap it for the HanElectricity CPG151101S11-2 (C49352235) with the magnifier on that line. It's the same size and fits the same footprint
@@ -134,14 +135,15 @@ The preview shows each part on the board, with JLCPCB's pin 1 as a magenta dot (
 
 - U1, U3, U4, U5, Q1, J1: the magenta dot sits at the silkscreen triangle, and the part's leads line up with the pads (U4's body lies the long way between its two pad columns)
 - U2: the dot shows on the pin 6 corner (a preview quirk, covered in the assembly remark). The body and pin columns should line up with the pads
+- U6 (bottom, behind J1): the magenta dot at the silkscreen triangle. Pin 2 is GND and pin 1 is the input. U6 has no offset in `fab.py` yet, so check this one first
 - Diodes: the stripe (cathode) faces the row line (down on most keys, right on the five keys at the right edge)
 - LEDs: "GND" sits on the pad next to the silkscreen triangle. Rows 0, 2, and 4 are turned 180 degrees from rows 1, 3, and 5
 - Hotswap sockets: the two pins sit in the plated holes and both metal tabs sit on their pads
-- Top side: Y1's pin 1 at its silkscreen dot, and SW100 lined up with its 4 pads the same way as the footprint
+- Top side: Y1's pin 1 at its silkscreen dot, and SW100 and SW101 lined up with their 4 pads the same way as the footprint. SW101 is turned 180 degrees from SW100 (either way round works, it's a 2-terminal switch)
 
 ## Switch plate
 
-The FR4 switch plate is a separate PCB order (no assembly) added to the same cart. Upload `fuji75-plate-gerbers.zip` on a new quote page. It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB section like this:
+The FR4 switch plate is a separate PCB order (no assembly) added to the same cart. The v1.1.0 plate doesn't fit v1.0.0 boards (caps lock moved). Upload `fuji75-plate-gerbers.zip` on a new quote page. It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB section like this:
 
 | Field | Set to | Notes |
 | --- | --- | --- |

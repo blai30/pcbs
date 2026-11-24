@@ -64,4 +64,4 @@ On v1.1.0 the board measures its LED voltage and adjusts the budget between 300 
 
 Each frame is measured before it goes out. If it would draw more than the budget, the whole frame scales down evenly. At 800 mA, one full color on every key runs at about 73%. White tops out at about 62 of 255. Fewer lit keys or mixed effects reach full brightness when they stay under budget.
 
-The same build runs on v1.0.0 and v1.1.0.
+The same build runs on v1.0.0 and v1.1.0. It reads GP0 at startup to tell them apart (tied to GND on v1.1.0, pulled up internally on v1.0.0).
