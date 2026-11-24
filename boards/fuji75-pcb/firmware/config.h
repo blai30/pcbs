@@ -22,6 +22,8 @@
 // LED_5V through R6 (15 kΩ) over R7 (10 kΩ): the ADC sees 0.4 of it.
 #define LED_SENSE_PIN GP29
 #define LED_SENSE_RATIO_PERMILLE 400
+// ADC samples averaged per LED voltage reading, to cut noise against the 100 mV band.
+#define LED_SENSE_SAMPLES 4
 
 // With sensing, the budget can rise to the JST SH rating minus the controller.
 #define LED_SENSE_BUDGET_UA 950000

@@ -16,6 +16,7 @@ static bool     power_on      = false;
 static bool     fault_latched = false;
 static bool     suspended     = false;
 static bool     settled       = false;
+static bool     was_limited   = false;
 static uint16_t power_on_time = 0;
 
 static void frame_set_color(int index, uint8_t red, uint8_t green, uint8_t blue) {
@@ -29,7 +30,11 @@ static void frame_set_color_all(uint8_t red, uint8_t green, uint8_t blue) {
 }
 
 static uint16_t led_millivolts(void) {
-    uint32_t adc_mv = (uint32_t)analogReadPin(LED_SENSE_PIN) * 3300 / ADC_MAX_COUNT;
+    uint32_t count_sum = 0;
+    for (int i = 0; i < LED_SENSE_SAMPLES; i++) {
+        count_sum += analogReadPin(LED_SENSE_PIN);
+    }
+    uint32_t adc_mv = count_sum * 3300 / (ADC_MAX_COUNT * LED_SENSE_SAMPLES);
     return adc_mv * 1000 / LED_SENSE_RATIO_PERMILLE;
 }
 
@@ -45,13 +50,14 @@ static void frame_flush(void) {
         settled = true;
     }
     if (has_sense) {
-        budget_ua = led_power_adapt(budget_ua, led_millivolts(), LED_SENSE_BUDGET_UA);
+        budget_ua = led_power_adapt(budget_ua, led_millivolts(), LED_SENSE_BUDGET_UA, was_limited);
     }
     uint32_t channel_sum = 0;
     for (int i = 0; i < RGB_MATRIX_LED_COUNT; i++) {
         channel_sum += frame[i].r + frame[i].g + frame[i].b;
     }
     uint16_t scale = led_power_scale(channel_sum, RGB_MATRIX_LED_COUNT, budget_ua);
+    was_limited = scale < 256;
     for (int i = 0; i < RGB_MATRIX_LED_COUNT; i++) {
         ws2812_set_color(i, (frame[i].r * scale) >> 8, (frame[i].g * scale) >> 8, (frame[i].b * scale) >> 8);
     }
@@ -87,6 +93,8 @@ void keyboard_pre_init_kb(void) {
     gpio_set_pin_input_high(BOARD_ID_PIN);
     wait_us(10);
     has_sense = !gpio_read_pin(BOARD_ID_PIN);
+    // Drop the pull-up so it draws nothing through the strap.
+    gpio_set_pin_input(BOARD_ID_PIN);
     budget_ua = has_sense ? LED_SENSE_BUDGET_UA : LED_BUDGET_UA;
     keyboard_pre_init_user();
 }
