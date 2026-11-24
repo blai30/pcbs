@@ -127,7 +127,9 @@ void housekeeping_task_kb(void) {
     } else {
         fault_low = false;
     }
-    set_power(enabled && !suspended && !fault_latched);
+    // RGB_MATRIX_TIMEOUT blanks the LEDs after no input. Cut their power too, since they still idle at about 1 mA each.
+    bool idle = RGB_MATRIX_TIMEOUT > 0 && last_input_activity_elapsed() > RGB_MATRIX_TIMEOUT;
+    set_power(enabled && !suspended && !fault_latched && !idle);
     housekeeping_task_user();
 }
 

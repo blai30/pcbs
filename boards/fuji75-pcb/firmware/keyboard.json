@@ -34,6 +34,7 @@
     "rgb_matrix": {
         "driver": "custom",
         "sleep": true,
+        "timeout": 600000,
         "default": {
             "animation": "solid_color"
         },

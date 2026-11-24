@@ -2,6 +2,8 @@
 
 Every field on JLCPCB's PCB + assembly quote form, top to bottom. The Notes column says when a field is left at the form's default, or what the default was when it's changed.
 
+This guide is for v1.1.0. The outline and PCB fields are the same as v1.0.0. The parts, the placement checks, and the plate changed.
+
 Upload from `build/fab/` (run `scripts/fab.py` first):
 
 - `fuji75-gerbers.zip`: on the quote page, before filling in the form (it sets the size and layers, which can't be edited after)
@@ -16,7 +18,7 @@ Upload from `build/fab/` (run `scripts/fab.py` first):
 | Base Material | FR-4 | Default |
 | Layers | 2 | Default. Read from the Gerbers |
 | Dimensions | 310.14 x 130.93 mm | Default is 100 x 100. Read from the Gerbers and locked. The board is 310.14 x 120.93, and the edge rails from the assembly section add 10 mm |
-| PCB Qty | 5 | Default. 5 is the minimum, 2 of them get assembled |
+| PCB Qty | 5 | Default. 5 is the minimum, all 5 get assembled |
 | Product Type | Industrial/Consumer electronics | Default |
 
 ### PCB Specifications
@@ -79,7 +81,7 @@ Turn on the PCB Assembly switch.
 | --- | --- | --- |
 | PCBA Type | Standard | Default. Economic can't do both sides |
 | Assembly Side | Both Sides | Default is Top Side. 22 parts on top (controller passives, crystal, boot and reset buttons), 344 on the bottom |
-| PCBA Qty | 2 (Custom Qty) | Default is 5 |
+| PCBA Qty | 5 | Default. Each extra board adds its parts and soldering (setup, stencil, and extended part fees are once per order) |
 | Edge Rails/Fiducials | Added by JLCPCB | Default. The sockets reach the board edge. The board has its own fiducials (three per side), and JLCPCB may add more on the rails. The rails make it 310.14 x 130.93 mm during assembly |
 | Confirm Parts Placement | Yes | Default is No. Check the placement preview before production (see below) |
 | Stencil Storage | No | Default |

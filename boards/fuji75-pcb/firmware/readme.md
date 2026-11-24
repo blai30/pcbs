@@ -57,6 +57,8 @@ The board has no lock LEDs, so the key LEDs show them:
 
 They only show while RGB is on (Fn+Insert). On v1.1.0 the LEDs also lose power while RGB is off and while the PC sleeps.
 
+The LEDs turn off after 10 minutes without a keypress, indicators included. The next keypress turns them back on. On v1.1.0 they lose power while off. The timeout is `rgb_matrix.timeout` in `keyboard.json` (in ms, 0 turns it off).
+
 ## Brightness
 
 On v1.0.0 the LEDs get an 800 mA budget. 950 mA sagged the LED voltage and turned white orange.
