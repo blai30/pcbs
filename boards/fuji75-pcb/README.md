@@ -89,6 +89,7 @@ It also writes `plate/fuji75-plate-foam.dxf` and a 1:1 vector `plate/fuji75-plat
 
 - A 15 mm hole for each switch (14 mm below the plate, plus room for the clips)
 - A hole over each stabilizer housing, clearing both of its PCB holes by 0.75 mm
+- A channel for each stabilizer wire between its housings, from 3 mm inside the big PCB holes to past their outer edge (the wire runs under the plate). The spacebar's channel cuts off the foam under the spacebar, so that's two loose pieces that drop in on their own
 - One region around the controller parts on top of the PCB under the spacebar, and one around the boot button
 - Holes closer than 1.9 mm to each other or to the edge merged into one region (thinner foam tears), so the top and side rows open into the edge. Loose islands that leaves (one, by left Ctrl and Win) are cut out too
 

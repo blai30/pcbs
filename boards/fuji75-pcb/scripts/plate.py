@@ -28,7 +28,7 @@ from pathlib import Path
 import ezdxf
 import pcbnew
 from ezdxf import path as dxf_path
-from shapely import LineString, Point, Polygon, affinity, box, unary_union
+from shapely import LineString, MultiPolygon, Point, Polygon, affinity, box, unary_union
 from shapely.ops import polygonize_full
 
 BOARD_DIR = Path(__file__).resolve().parent.parent
@@ -285,11 +285,16 @@ FOAM_INSET = 0.5
 # Below the plate a switch is 14 mm square. The extra keeps the foam off its clips.
 FOAM_SWITCH_HOLE = 15.0
 # Stabilizer housings sit over their two PCB holes: the foam clears both holes by this much, across
-# FOAM_STAB_WIDTH (the housing is about 6.6 mm wide). The wire runs above the plate.
+# FOAM_STAB_WIDTH (the housing is about 6.6 mm wide).
 FOAM_STAB_CLEARANCE = 0.75
 FOAM_STAB_WIDTH = 8.0
+# The wire runs between the housings under the plate, across the big PCB holes. The channel for it
+# reaches this far from the big holes' centers toward the small holes.
+FOAM_WIRE_REACH = 3.0
 # Clearance around the parts on top of the PCB (the controller passives, crystal, and boot button).
 FOAM_PART_CLEARANCE = 1.5
+# Loose foam pieces smaller than this are left out (too small to stay put).
+FOAM_MIN_PIECE = 300
 # Foam narrower than this tears. Holes closer together than this merge into one.
 FOAM_MIN_WEB = 1.9
 
@@ -313,6 +318,12 @@ def foam(pcb, switches):
                 top = min(pad_y - radius for pad_y, radius in housing) - FOAM_STAB_CLEARANCE
                 bottom = max(pad_y + radius for pad_y, radius in housing) + FOAM_STAB_CLEARANCE
                 holes.append(box(x - FOAM_STAB_WIDTH / 2, top, x + FOAM_STAB_WIDTH / 2, bottom))
+            xs = [pad_x for pad_x, _, _ in pads]
+            _, small_y, _ = min(pads, key=lambda pad: pad[2])
+            _, big_y, radius = max(pads, key=lambda pad: pad[2])
+            side = 1 if big_y > small_y else -1
+            near, far = big_y - side * FOAM_WIRE_REACH, big_y + side * (radius + FOAM_STAB_CLEARANCE)
+            holes.append(box(min(xs), min(near, far), max(xs), max(near, far)))
         elif footprint.GetLayer() == pcbnew.F_Cu and not ref.startswith(("SW", "ST")) or ref == "SW100":
             bounds = footprint.GetBoundingBox(False)
             holes.append(box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom()))).buffer(FOAM_PART_CLEARANCE, join_style="mitre"))
@@ -322,23 +333,27 @@ def foam(pcb, switches):
     outside = sheet.envelope.buffer(10).difference(sheet)
     cut = unary_union([*holes, outside]).buffer(closing, join_style="mitre").buffer(-closing, join_style="mitre")
     pieces = sheet.difference(cut)
-    pieces = sorted(getattr(pieces, "geoms", [pieces]), key=lambda piece: piece.area)
-    # Merged regions can leave small islands of foam. They'd just fall out, so they go too.
-    for island in pieces[:-1]:
-        print(f"Dropped a {island.area:.0f} mm² foam island at {tuple(round(value, 1) for value in island.centroid.coords[0])}")
-    return pieces[-1]
+    pieces = sorted(getattr(pieces, "geoms", [pieces]), key=lambda piece: -piece.area)
+    # The cuts split off some loose pieces (the spacebar's wire channel cuts off the foam under it).
+    # Big ones stay as separate pieces, held in place between the plate and PCB.
+    for piece in pieces[1:]:
+        if piece.area < FOAM_MIN_PIECE:
+            print(f"Dropped a {piece.area:.0f} mm² foam piece at {tuple(round(value, 1) for value in piece.centroid.coords[0])}")
+    return [pieces[0]] + [piece for piece in pieces[1:] if piece.area >= FOAM_MIN_PIECE]
 
 
-def write_foam(shape):
+def write_foam(pieces):
+    shape = MultiPolygon(pieces)
     document = ezdxf.new(units=ezdxf.units.MM)
     space = document.modelspace()
-    for ring in [shape.exterior, *shape.interiors]:
-        # DXF's y axis points up. Flip so the foam reads the right way up.
-        space.add_lwpolyline([(x, -y) for x, y in ring.coords], close=True)
+    for piece in pieces:
+        for ring in [piece.exterior, *piece.interiors]:
+            # DXF's y axis points up. Flip so the foam reads the right way up.
+            space.add_lwpolyline([(x, -y) for x, y in ring.coords], close=True)
     document.saveas(FOAM)
     write_pdf(shape, FOAM.with_suffix(".pdf"))
     min_x, min_y, max_x, max_y = shape.bounds
-    print(f"Wrote {FOAM} and .pdf: {max_x - min_x:.1f} x {max_y - min_y:.1f} mm, {len(shape.interiors)} holes")
+    print(f"Wrote {FOAM} and .pdf: {max_x - min_x:.1f} x {max_y - min_y:.1f} mm, {len(pieces)} pieces")
 
 
 def write_pdf(shape, path):
@@ -349,7 +364,7 @@ def write_pdf(shape, path):
     # PDF's y axis points up, KiCad's points down.
     to_page = lambda x, y: ((x - min_x + PDF_MARGIN) * points_per_mm, height - (y - min_y + PDF_MARGIN) * points_per_mm)
     paths = []
-    for ring in [shape.exterior, *shape.interiors]:
+    for ring in [ring for piece in shape.geoms for ring in (piece.exterior, *piece.interiors)]:
         start, *rest = [to_page(x, y) for x, y in ring.coords]
         paths.append(f"{start[0]:.3f} {start[1]:.3f} m " + " ".join(f"{x:.3f} {y:.3f} l" for x, y in rest) + " h S")
     # Hairline black strokes.
