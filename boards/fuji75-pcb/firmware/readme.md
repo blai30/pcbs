@@ -42,7 +42,10 @@ The board shows up as a drive named `RPI-RP2`. Copy the `.uf2` file onto it. It 
 
 ## VIA
 
-VIA doesn't know this board. Load `fuji75-via.json` once in VIA's Settings (turn on "Show Design tab"), then Design, then Load.
+VIA doesn't know this board. Load one of these once in VIA's Settings (turn on "Show Design tab"), then Design, then Load:
+
+- `fuji75-via.json` for v1.1.0 (stepped caps lock)
+- `fuji75-via-v1.0.0.json` for v1.0.0 (regular caps lock)
 
 ## Lock indicators
 
@@ -51,4 +54,12 @@ The board has no lock LEDs, so the key LEDs show them:
 - Caps key: white while Caps Lock is on. While Fn is held it shows Num Lock instead
 - F11: white while Scroll Lock is on
 
-They only show while RGB is on (Fn+Insert).
+They only show while RGB is on (Fn+Insert). On v1.1.0 the LEDs also lose power while RGB is off and while the PC sleeps.
+
+## Brightness
+
+The LEDs get a 950 mA budget. The JST SH connector contacts are rated 1 A, and the controller uses about 50 mA of that.
+
+Each frame is measured before it goes out. If it would draw more than the budget, the whole frame scales down evenly. Single colors stay at full brightness. White tops out at about 75 of 255.
+
+The same build runs on v1.0.0 and v1.1.0.

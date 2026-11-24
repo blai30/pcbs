@@ -32,8 +32,7 @@
         "pin": "GP2"
     },
     "rgb_matrix": {
-        "driver": "ws2812",
-        "max_brightness": 36,
+        "driver": "custom",
         "sleep": true,
         "default": {
             "animation": "solid_color"

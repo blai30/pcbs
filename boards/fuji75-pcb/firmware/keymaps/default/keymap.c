@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #define F11_ROW 0
 #define F11_COL 11
 
-// Indicator color as hue and saturation (white). Brightness is the RGB matrix cap.
+// Indicator color as hue and saturation (white). The driver's current limit scales it with the rest of the frame.
 #define INDICATOR_HUE 0
 #define INDICATOR_SAT 0
 
