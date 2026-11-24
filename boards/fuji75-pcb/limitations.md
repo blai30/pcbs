@@ -20,7 +20,6 @@ Most of these come from keeping the stock Fuji75 outline, case, and daughterboar
 ## Case
 
 - The daughterboard and J1 stay in the stock spot by F1 and F2. The strip there is too narrow for the controller on 2 layers. The RP2040 sits under the spacebar and USB runs about 19 cm across the board (fine at full speed)
-- The J1 pinout comes from research, not a meter. Reverse-polarity protection only covers power
 - No mounting holes (gasket mount, the PCB hangs from the plate). Stabilizer screw heads sit on the bottom, and the stabilizer footprints keep copper away from the screw holes
 - The boot button is only reachable with the spacebar keycap pulled
 

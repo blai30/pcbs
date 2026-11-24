@@ -29,7 +29,7 @@ The socket pads on Esc, \`, the nav column, and Right are trimmed to stop 0.3 mm
 
 The circuit follows Raspberry Pi's minimal RP2040 design (12 MHz crystal, W25Q16JV flash, AP2112K 3.3 V regulator). USB comes in through J1 in the stock spot, then a USBLC6-2SC6 ESD chip and an AO3401A MOSFET that blocks reversed power. The ESD chip's VBUS pin is on the MOSFET's output side (on the input side, a reversed cable shorts through it). The daughterboard already has 22 Ω resistors on D+ and D-, so the RP2040's own 27 Ω pair are 0 Ω placeholders (R1, R2).
 
-The ESD chip, R1, R2, and the MOSFET sit next to J1. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 19 cm from J1 to the chip. That's fine at full speed (12 Mbps).
+The ESD chip, R1, R2, and the MOSFET sit next to J1. The ESD chip is about 10 mm in front of J1's opening, which leaves room for the cable plug to slide in straight. The RP2040, flash, regulator, and level shifter sit under the spacebar, where there's room for them (the strip by J1 is too narrow on 2 layers). USB runs about 19 cm from J1 to the chip. That's fine at full speed (12 Mbps).
 
 GPIO pin map:
 
@@ -145,9 +145,16 @@ The pinout follows the Unified Daughterboard (the Fuji75 PCBs were sold as UDB c
 
 The wire colors don't follow USB conventions. Don't go by color.
 
-The pinout wasn't checked with a multimeter. It comes from the UDB schematic, the [Fuji75 interest check](https://geekhack.org/index.php?topic=113840.0), and the traces between J1 and the 32U4 in `photos/IMG_5497.JPEG`. The new board adds reverse-polarity protection on VBUS in case it's wrong.
+The pinout comes from the UDB schematic, the [Fuji75 interest check](https://geekhack.org/index.php?topic=113840.0), and the traces between J1 and the 32U4 in `photos/IMG_5497.JPEG`. It wasn't checked with a multimeter, but the v1.0.0 board works with the stock daughterboard and cable.
 
 The daughterboard has its own fuse, ESD protection, CC resistors, and series resistors on D+ and D- (they look like 22 Ω).
+
+## Revisions
+
+The version is printed on the underside, under the spacebar. Photos of the assembled v1.0.0 boards are in `photos/v1.0.0/`.
+
+- v1.1.0: the ESD chip (U2), R1, and R2 moved 8 mm further from J1. Order this one
+- v1.0.0: the first boards made. They work, but U2 sits about 2 mm in front of J1's opening. The cable plug only goes in at an angle, it's very tight to seat, and the wires arch over U2
 
 ## License
 

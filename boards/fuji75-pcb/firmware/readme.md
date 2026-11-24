@@ -3,7 +3,7 @@
 QMK firmware for the Fuji75 RGB, a replacement hotswap PCB for the Sakura Workshop Fuji75 with an RP2040 and per-key RGB. The board design is in the parent folder.
 
 - Keyboard maintainer: [blai30](https://github.com/blai30)
-- Hardware supported: Fuji75 RGB v1.0.0
+- Hardware supported: Fuji75 RGB v1.0.0 and v1.1.0
 
 ## Building
 
