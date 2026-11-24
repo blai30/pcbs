@@ -7,8 +7,8 @@
 #define WS2812_LED_COUNT RGB_MATRIX_LED_COUNT
 
 // LED power switch U6 (v1.1.0). Both pins are unconnected on v1.0.0.
-#define LED_POWER_EN_PIN GP16
-#define LED_POWER_FAULT_PIN GP17
+#define LED_POWER_EN_PIN GP14
+#define LED_POWER_FAULT_PIN GP13
 
 // Time for U6's soft-start before the first frame.
 #define LED_POWER_SETTLE_MS 5

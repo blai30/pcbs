@@ -248,6 +248,7 @@
 		(size 1.325 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(zone_connect 2)
 	)
 	(pad "3" smd roundrect
 		(at -1.1375 0.95)
