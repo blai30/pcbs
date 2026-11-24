@@ -111,13 +111,14 @@ Bake Components remark:
 Please bake LED1-LED82 (SK6812MINI-E, LCSC C5149201) before reflow. They are moisture sensitive (MSL 5a). Follow the datasheet or J-STD-033 for bake time and temperature.
 ```
 
-Assembly remark (the box cuts off at 500 characters, this is 470):
+Assembly remark (the box cuts off at 500 characters, this is 491):
 
 ```
-Both sides assembled. Stabilizers are not in the BOM.
+Stabilizers are not in the BOM.
 LED1-LED82 (SK6812MINI-E) are reverse-mount on the bottom, lens facing up through the cutout. Pin 1 (GND) is the pad at the silkscreen triangle. CPL rotations include a 180 degree offset for JLCPCB's library.
 SW1-SW82: coordinates are the socket body center.
 U2 (USBLC6-2SC6): pin 1 at the silkscreen triangle (the preview shows the dot on pin 6). Pin 2 is GND, pin 5 is 5 V. Turned 180 degrees it shorts 5 V to GND.
+U6: pin 1 (IN) at the silkscreen triangle.
 ```
 
 ## BOM and placement

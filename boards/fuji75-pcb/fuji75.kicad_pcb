@@ -149751,6 +149751,17 @@
 			)
 		)
 	)
+	(gr_text "RST"
+		(at 183.54 137.9 0)
+		(layer "F.SilkS")
+		(uuid "f262c76b-1941-40db-9c79-89eed212c5a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "3V3"
 		(at 141.82 143.95 0)
 		(layer "B.SilkS")
