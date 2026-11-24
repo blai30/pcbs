@@ -198,7 +198,7 @@
 
 (property "Reference" "#PWR1" (at 46.355 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 46.355 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 46.355 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 46.355 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -258,7 +258,7 @@
 
 (property "Reference" "#PWR3" (at 70.485 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 70.485 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 70.485 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 70.485 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -314,7 +314,7 @@
 
 (property "Reference" "#PWR5" (at 94.615 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 94.615 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 94.615 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 94.615 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -370,7 +370,7 @@
 
 (property "Reference" "#PWR7" (at 118.745 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 118.745 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 118.745 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 118.745 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -426,7 +426,7 @@
 
 (property "Reference" "#PWR9" (at 142.875 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 142.875 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 142.875 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 142.875 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -482,7 +482,7 @@
 
 (property "Reference" "#PWR11" (at 167.005 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 167.005 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 167.005 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 167.005 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -538,7 +538,7 @@
 
 (property "Reference" "#PWR13" (at 191.135 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 191.135 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 191.135 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 191.135 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -594,7 +594,7 @@
 
 (property "Reference" "#PWR15" (at 215.265 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 215.265 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 215.265 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 215.265 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -650,7 +650,7 @@
 
 (property "Reference" "#PWR17" (at 239.395 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 239.395 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 239.395 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 239.395 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -706,7 +706,7 @@
 
 (property "Reference" "#PWR19" (at 263.525 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 263.525 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 263.525 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 263.525 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -762,7 +762,7 @@
 
 (property "Reference" "#PWR21" (at 287.655 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 287.655 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 287.655 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 287.655 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -818,7 +818,7 @@
 
 (property "Reference" "#PWR23" (at 311.785 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 311.785 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 311.785 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 311.785 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -874,7 +874,7 @@
 
 (property "Reference" "#PWR25" (at 335.915 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 335.915 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 335.915 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 335.915 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -930,7 +930,7 @@
 
 (property "Reference" "#PWR27" (at 360.045 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 360.045 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 360.045 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 360.045 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -986,7 +986,7 @@
 
 (property "Reference" "#PWR29" (at 384.175 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 384.175 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 384.175 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 384.175 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1042,7 +1042,7 @@
 
 (property "Reference" "#PWR31" (at 408.305 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 408.305 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 408.305 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 408.305 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1098,7 +1098,7 @@
 
 (property "Reference" "#PWR33" (at 432.435 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 432.435 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 432.435 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 432.435 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1154,7 +1154,7 @@
 
 (property "Reference" "#PWR35" (at 456.565 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 456.565 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 456.565 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 456.565 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1210,7 +1210,7 @@
 
 (property "Reference" "#PWR37" (at 480.695 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 480.695 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 480.695 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 480.695 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1266,7 +1266,7 @@
 
 (property "Reference" "#PWR39" (at 504.825 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 504.825 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 504.825 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 504.825 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1322,7 +1322,7 @@
 
 (property "Reference" "#PWR41" (at 528.955 55.625 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 528.955 46.875 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 528.955 46.875 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 528.955 51.435 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1378,7 +1378,7 @@
 
 (property "Reference" "#PWR43" (at 46.355 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 46.355 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 46.355 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 46.355 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1458,7 +1458,7 @@
 
 (property "Reference" "#PWR45" (at 70.485 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 70.485 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 70.485 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 70.485 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1514,7 +1514,7 @@
 
 (property "Reference" "#PWR47" (at 94.615 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 94.615 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 94.615 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 94.615 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1570,7 +1570,7 @@
 
 (property "Reference" "#PWR49" (at 118.745 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 118.745 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 118.745 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 118.745 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1626,7 +1626,7 @@
 
 (property "Reference" "#PWR51" (at 142.875 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 142.875 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 142.875 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 142.875 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1682,7 +1682,7 @@
 
 (property "Reference" "#PWR53" (at 167.005 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 167.005 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 167.005 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 167.005 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1738,7 +1738,7 @@
 
 (property "Reference" "#PWR55" (at 191.135 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 191.135 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 191.135 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 191.135 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1794,7 +1794,7 @@
 
 (property "Reference" "#PWR57" (at 215.265 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 215.265 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 215.265 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 215.265 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1850,7 +1850,7 @@
 
 (property "Reference" "#PWR59" (at 239.395 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 239.395 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 239.395 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 239.395 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1906,7 +1906,7 @@
 
 (property "Reference" "#PWR61" (at 263.525 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 263.525 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 263.525 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 263.525 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -1962,7 +1962,7 @@
 
 (property "Reference" "#PWR63" (at 287.655 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 287.655 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 287.655 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 287.655 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2018,7 +2018,7 @@
 
 (property "Reference" "#PWR65" (at 311.785 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 311.785 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 311.785 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 311.785 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2074,7 +2074,7 @@
 
 (property "Reference" "#PWR67" (at 335.915 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 335.915 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 335.915 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 335.915 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2130,7 +2130,7 @@
 
 (property "Reference" "#PWR69" (at 360.045 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 360.045 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 360.045 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 360.045 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2186,7 +2186,7 @@
 
 (property "Reference" "#PWR71" (at 384.175 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 384.175 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 384.175 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 384.175 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2242,7 +2242,7 @@
 
 (property "Reference" "#PWR73" (at 408.305 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 408.305 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 408.305 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 408.305 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2298,7 +2298,7 @@
 
 (property "Reference" "#PWR75" (at 432.435 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 432.435 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 432.435 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 432.435 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2354,7 +2354,7 @@
 
 (property "Reference" "#PWR77" (at 456.565 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 456.565 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 456.565 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 456.565 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2410,7 +2410,7 @@
 
 (property "Reference" "#PWR79" (at 480.695 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 480.695 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 480.695 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 480.695 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2466,7 +2466,7 @@
 
 (property "Reference" "#PWR81" (at 504.825 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 504.825 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 504.825 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 504.825 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2522,7 +2522,7 @@
 
 (property "Reference" "#PWR83" (at 528.955 85.47 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 528.955 76.72 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 528.955 76.72 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 528.955 81.28 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2578,7 +2578,7 @@
 
 (property "Reference" "#PWR85" (at 46.355 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 46.355 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 46.355 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 46.355 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2658,7 +2658,7 @@
 
 (property "Reference" "#PWR87" (at 70.485 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 70.485 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 70.485 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 70.485 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2714,7 +2714,7 @@
 
 (property "Reference" "#PWR89" (at 94.615 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 94.615 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 94.615 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 94.615 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2770,7 +2770,7 @@
 
 (property "Reference" "#PWR91" (at 118.745 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 118.745 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 118.745 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 118.745 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2826,7 +2826,7 @@
 
 (property "Reference" "#PWR93" (at 142.875 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 142.875 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 142.875 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 142.875 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2882,7 +2882,7 @@
 
 (property "Reference" "#PWR95" (at 167.005 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 167.005 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 167.005 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 167.005 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2938,7 +2938,7 @@
 
 (property "Reference" "#PWR97" (at 191.135 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 191.135 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 191.135 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 191.135 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -2994,7 +2994,7 @@
 
 (property "Reference" "#PWR99" (at 215.265 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 215.265 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 215.265 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 215.265 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3050,7 +3050,7 @@
 
 (property "Reference" "#PWR101" (at 239.395 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 239.395 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 239.395 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 239.395 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3106,7 +3106,7 @@
 
 (property "Reference" "#PWR103" (at 263.525 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 263.525 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 263.525 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 263.525 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3162,7 +3162,7 @@
 
 (property "Reference" "#PWR105" (at 287.655 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 287.655 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 287.655 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 287.655 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3218,7 +3218,7 @@
 
 (property "Reference" "#PWR107" (at 311.785 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 311.785 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 311.785 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 311.785 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3274,7 +3274,7 @@
 
 (property "Reference" "#PWR109" (at 335.915 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 335.915 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 335.915 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 335.915 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3330,7 +3330,7 @@
 
 (property "Reference" "#PWR111" (at 360.045 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 360.045 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 360.045 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 360.045 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3386,7 +3386,7 @@
 
 (property "Reference" "#PWR113" (at 384.175 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 384.175 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 384.175 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 384.175 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3442,7 +3442,7 @@
 
 (property "Reference" "#PWR115" (at 408.305 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 408.305 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 408.305 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 408.305 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3498,7 +3498,7 @@
 
 (property "Reference" "#PWR117" (at 432.435 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 432.435 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 432.435 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 432.435 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3554,7 +3554,7 @@
 
 (property "Reference" "#PWR119" (at 456.565 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 456.565 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 456.565 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 456.565 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3610,7 +3610,7 @@
 
 (property "Reference" "#PWR121" (at 480.695 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 480.695 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 480.695 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 480.695 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3666,7 +3666,7 @@
 
 (property "Reference" "#PWR123" (at 504.825 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 504.825 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 504.825 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 504.825 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3722,7 +3722,7 @@
 
 (property "Reference" "#PWR125" (at 528.955 115.315 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 528.955 106.565 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 528.955 106.565 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 528.955 111.125 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3778,7 +3778,7 @@
 
 (property "Reference" "#PWR127" (at 46.355 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 46.355 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 46.355 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 46.355 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3858,7 +3858,7 @@
 
 (property "Reference" "#PWR129" (at 70.485 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 70.485 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 70.485 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 70.485 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3914,7 +3914,7 @@
 
 (property "Reference" "#PWR131" (at 94.615 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 94.615 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 94.615 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 94.615 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -3970,7 +3970,7 @@
 
 (property "Reference" "#PWR133" (at 118.745 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 118.745 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 118.745 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 118.745 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4026,7 +4026,7 @@
 
 (property "Reference" "#PWR135" (at 142.875 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 142.875 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 142.875 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 142.875 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4082,7 +4082,7 @@
 
 (property "Reference" "#PWR137" (at 167.005 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 167.005 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 167.005 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 167.005 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4138,7 +4138,7 @@
 
 (property "Reference" "#PWR139" (at 191.135 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 191.135 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 191.135 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 191.135 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4194,7 +4194,7 @@
 
 (property "Reference" "#PWR141" (at 215.265 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 215.265 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 215.265 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 215.265 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4250,7 +4250,7 @@
 
 (property "Reference" "#PWR143" (at 239.395 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 239.395 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 239.395 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 239.395 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4306,7 +4306,7 @@
 
 (property "Reference" "#PWR145" (at 263.525 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 263.525 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 263.525 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 263.525 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4362,7 +4362,7 @@
 
 (property "Reference" "#PWR147" (at 287.655 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 287.655 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 287.655 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 287.655 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4418,7 +4418,7 @@
 
 (property "Reference" "#PWR149" (at 311.785 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 311.785 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 311.785 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 311.785 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4474,7 +4474,7 @@
 
 (property "Reference" "#PWR151" (at 335.915 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 335.915 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 335.915 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 335.915 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4530,7 +4530,7 @@
 
 (property "Reference" "#PWR153" (at 360.045 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 360.045 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 360.045 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 360.045 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4586,7 +4586,7 @@
 
 (property "Reference" "#PWR155" (at 384.175 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 384.175 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 384.175 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 384.175 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4642,7 +4642,7 @@
 
 (property "Reference" "#PWR157" (at 408.305 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 408.305 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 408.305 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 408.305 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4698,7 +4698,7 @@
 
 (property "Reference" "#PWR159" (at 432.435 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 432.435 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 432.435 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 432.435 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4754,7 +4754,7 @@
 
 (property "Reference" "#PWR161" (at 456.565 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 456.565 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 456.565 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 456.565 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -4810,7 +4810,7 @@
 
 (property "Reference" "#PWR163" (at 480.695 145.16 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 480.695 136.41 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 480.695 136.41 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 480.695 140.97 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
@@ -8310,7 +8310,7 @@
 
 (property "Reference" "#PWR165" (at 40.005 180.72 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
-(property "Value" "VCC" (at 40.005 171.97 0) (effects (font (size 1.27 1.27)))) 
+(property "Value" "LED_5V" (at 40.005 171.97 0) (effects (font (size 1.27 1.27)))) 
 
 (property "Footprint" "" (at 40.005 176.53 0) (hide yes) (effects (font (size 1.27 1.27)))) 
 
