@@ -13,6 +13,9 @@
 // Time for U6's soft-start before the first frame.
 #define LED_POWER_SETTLE_MS 5
 
+// LED_FAULT must stay low this long to latch. U6 holds a real fault for at least 7.5 ms.
+#define LED_FAULT_DEBOUNCE_MS 4
+
 // Measured on v1.0.0 with the stock daughterboard: 950 mA sagged and turned white orange.
 #define LED_BUDGET_UA 800000
 

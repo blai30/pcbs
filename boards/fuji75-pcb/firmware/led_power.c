@@ -25,3 +25,10 @@ uint32_t led_power_adapt(uint32_t budget_ua, uint16_t led_mv, uint32_t max_ua, b
     }
     return budget_ua;
 }
+
+uint32_t led_power_smooth(uint32_t average, uint16_t led_mv) {
+    if (average == 0) {
+        return (uint32_t)led_mv << LED_SENSE_SMOOTH_SHIFT;
+    }
+    return average - (average >> LED_SENSE_SMOOTH_SHIFT) + led_mv;
+}
