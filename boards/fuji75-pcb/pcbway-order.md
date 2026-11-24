@@ -15,7 +15,7 @@ Upload from `build/fab/` (run `scripts/fab.py` first):
 | --- | --- | --- |
 | Options | Turnkey | Default. PCBWay sources every part |
 | Board type | Single pieces | Default |
-| Assembly side(s) | Both sides | Default is Top side. 17 parts on top (controller passives, crystal, boot button), 342 on the bottom |
+| Assembly side(s) | Both sides | Default is Top side. 22 parts on top (controller passives, crystal, boot and reset buttons), 344 on the bottom |
 | Quantity | 2 | Empty by default |
 | Contains sensitive components/parts | No | Default |
 | Accept alternatives/substitutes made in China | Yes | Default is No. Only for the parts listed in the assembly notes below |
@@ -30,8 +30,8 @@ All empty by default. Filling them in gets an exact price instead of waiting for
 
 | Field | Set to |
 | --- | --- |
-| Number of Unique Parts | 18 |
-| Number of SMD Parts | 359 |
+| Number of Unique Parts | 23 |
+| Number of SMD Parts | 366 |
 | Number of BGA/QFP Parts | 2 (RP2040 QFN-56, W25Q16JV USON-8) |
 | Number of Through-Hole Parts | 0 |
 
@@ -57,10 +57,10 @@ Stabilizers are not included and not in the BOM.
 LED1-LED82 (SK6812MINI-E) are reverse-mount: placed on the bottom with the lens facing up through the board cutout.
 LED1-LED82 are moisture sensitive (MSL 5a). Please bake them before reflow if the reel has been opened.
 SW1-SW82 (hotswap sockets) coordinates are the socket body center (midpoint of its two pin holes).
-OK to add process rails and fiducials if needed. The board has no fiducials.
+OK to add process rails and fiducials if needed. The board has 3 fiducials per side.
 Substitutes are OK for capacitors, resistors, and D1-D82 (1N4148W).
 SW1-SW82 must be genuine Kailh. First choice is the white CPG151101S11-1 (LCSC C5184526), then the black CPG151101S11 (LCSC C2803348). No clones or other brands (HanElectricity etc).
-No substitutes for U1-U5, Y1, Q1, J1, SW100, or LED1-LED82 without asking first.
+No substitutes for U1-U6, Y1, Q1, J1, SW100, SW101, or LED1-LED82 without asking first.
 Please send part rotation photos for approval before production.
 ```
 
@@ -138,7 +138,7 @@ PCBWay sends photos of the part rotations before building. Things to check:
 
 ## Switch plate
 
-The FR4 switch plate is a plain PCB quote (no assembly) added to the same cart. It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB Specifications the same as the PCB, except:
+The FR4 switch plate is a plain PCB quote (no assembly) added to the same cart. The v1.1.0 plate doesn't fit v1.0.0 boards (caps lock moved). It's a plain white plate with no copper, ordered as the cheapest board that fits: 1 layer, cheapest finish. Fill in the PCB Specifications the same as the PCB, except:
 
 | Field | Set to | Notes |
 | --- | --- | --- |

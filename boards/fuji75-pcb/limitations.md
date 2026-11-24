@@ -30,6 +30,7 @@ Most of these come from keeping the stock Fuji75 outline, case, and daughterboar
 - White on all 82 LEDs tops out at about a quarter of full brightness (62 of 255 at 800 mA). Full brightness needs a daughterboard with more power pins and the CC lines (to ask the host for 3 A), and a new cable
 - Most of the voltage drop is likely off the board (USB cable, daughterboard fuse, JST cable). Wider row lines wouldn't fix it
 - The 0.2 mm row power lines carry about 0.25 A each at the 1 A budget. The 1.0 mm trunk down the left edge carries all of it. U6 limits the LED power to about 1.2 A if the firmware gets it wrong (v1.1.0 only)
+- On v1.1.0 the 82 LED caps (100 nF each) and C120 sit behind U6's soft-start. VBUS only sees the controller side: C101 (10 µF), C119 (1 µF), and C118 (100 nF), 11.1 µF total. That's still slightly over USB's 10 µF limit. It's harmless in practice, and far less than v1.0.0's (about 18 µF)
 
 ## Possible improvements
 
