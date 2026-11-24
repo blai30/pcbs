@@ -37,6 +37,7 @@ Enter the bootloader one of these ways:
 - Hold the boot button under the spacebar while plugging in the cable (pull the spacebar keycap first)
 - Press Fn+Esc
 - A board with blank flash starts in the bootloader on its own
+- v1.1.0: hold the boot button and press the reset button next to it (SW101). No unplugging needed
 
 The board shows up as a drive named `RPI-RP2`. Copy the `.uf2` file onto it. It restarts on its own.
 

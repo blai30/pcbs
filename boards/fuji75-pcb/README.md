@@ -52,7 +52,7 @@ Parts sit on both sides. The crystal, the 12 RP2040 decoupling capacitors, R1 an
 
 To enter the bootloader, pull the spacebar keycap, hold the boot button through the plate window right of the spacebar switch (a toothpick or tweezers work), and plug in the cable. A board with blank flash goes to the bootloader on its own. The reset button (SW101) sits right of the boot button in the same window. Holding boot and pressing reset enters the bootloader without unplugging. RUN has no external pull-up (the RP2040's internal one holds it high). Keycaps can't reach the buttons, even multi-stem spacebars (they sit below the plate). The plate needs an opening over the buttons. The FR4 plate has its own window for them, and both plungers sit inside the stock plate's spacebar cutouts.
 
-SWD pads TP1 to TP5 sit on the bottom about 9 mm south of the RP2040, 2.54 mm apart, for clips or a probe. Left to right, labeled on the silkscreen: 3V3, GND, CLK (SWCLK), DIO (SWDIO), RUN.
+SWD pads TP1 to TP5 sit on the bottom about 9 mm south of the RP2040, 2.54 mm apart, for clips or a probe. With the board flipped over to read the bottom silkscreen, left to right: RUN, DIO (SWDIO), CLK (SWCLK), GND, 3V3. That's the reverse of the order in a top view.
 
 ## Power
 
