@@ -60,6 +60,6 @@ They only show while RGB is on (Fn+Insert). On v1.1.0 the LEDs also lose power w
 
 The LEDs get a 950 mA budget. The JST SH connector contacts are rated 1 A, and the controller uses about 50 mA of that.
 
-Each frame is measured before it goes out. If it would draw more than the budget, the whole frame scales down evenly. Single colors stay at full brightness. White tops out at about 75 of 255.
+Each frame is measured before it goes out. If it would draw more than the budget, the whole frame scales down evenly. One full color on every key runs at about 88%. White tops out at about 75 of 255. Fewer lit keys or mixed effects reach full brightness when they stay under budget.
 
 The same build runs on v1.0.0 and v1.1.0.

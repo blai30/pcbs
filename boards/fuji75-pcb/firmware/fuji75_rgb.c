@@ -9,6 +9,7 @@ static rgb_t    frame[RGB_MATRIX_LED_COUNT];
 static bool     power_on      = false;
 static bool     fault_latched = false;
 static bool     suspended     = false;
+static bool     settled       = false;
 static uint16_t power_on_time = 0;
 
 static void frame_set_color(int index, uint8_t red, uint8_t green, uint8_t blue) {
@@ -22,9 +23,15 @@ static void frame_set_color_all(uint8_t red, uint8_t green, uint8_t blue) {
 }
 
 static void frame_flush(void) {
-    // Nothing goes out while the LEDs are off or the switch is still ramping up.
-    if (!power_on || timer_elapsed(power_on_time) < LED_POWER_SETTLE_MS) {
+    if (!power_on) {
         return;
+    }
+    // Nothing goes out while the switch is still ramping up.
+    if (!settled) {
+        if (timer_elapsed(power_on_time) < LED_POWER_SETTLE_MS) {
+            return;
+        }
+        settled = true;
     }
     uint32_t channel_sum = 0;
     for (int i = 0; i < RGB_MATRIX_LED_COUNT; i++) {
@@ -56,6 +63,7 @@ static void set_power(bool on) {
     gpio_write_pin(LED_POWER_EN_PIN, on);
     power_on      = on;
     power_on_time = timer_read();
+    settled       = false;
 }
 
 void keyboard_pre_init_kb(void) {
