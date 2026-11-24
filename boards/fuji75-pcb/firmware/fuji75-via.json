@@ -99,9 +99,14 @@
       ],
       [
         {
-          "w": 1.75
+          "w": 1.25,
+          "w2": 1.75,
+          "l": true
         },
         "3,0\n\n\n\n\n\n\n\n\nCaps Lock",
+        {
+          "x": 0.5
+        },
         "3,1\n\n\n\n\n\n\n\n\nA",
         "3,2\n\n\n\n\n\n\n\n\nS",
         "3,3\n\n\n\n\n\n\n\n\nD",

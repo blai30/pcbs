@@ -2,7 +2,7 @@
 
 Replacement hotswap PCB for the Sakura Workshop Fuji75, with per-key RGB and an RP2040. It fits the stock case, plate mount, daughterboard, and JST cable.
 
-The layout is the stock Fuji75 hotswap layout except for the bottom right: 1u Alt, Fn, and Ctrl instead of 1.5u Alt and Ctrl (`reference/keyboard-layout.json`). The nav column is Insert, Delete, PgUp, and PgDn.
+The layout is the stock Fuji75 hotswap layout with two changes (`reference/keyboard-layout.json`): stepped caps lock, and 1u Alt, Fn, and Ctrl in the bottom right instead of 1.5u Alt and Ctrl. The nav column is Insert, Delete, PgUp, and PgDn.
 
 ## KiCad project
 
@@ -46,7 +46,7 @@ GPIO 0, 12 to 17, and 29 are unused.
 
 Parts sit on both sides. The crystal and the 12 RP2040 decoupling capacitors are on the top side right above the chip (under the spacebar), and so is the boot button.
 
-To enter the bootloader, pull the spacebar keycap, hold the button in the window right of the spacebar switch, and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). Any plate has to keep the stock plate's wide spacebar cutout (the FR4 plate does).
+To enter the bootloader, pull the spacebar keycap, hold the button through the plate window right of the spacebar switch (a toothpick or tweezers work), and plug in the cable. A board with blank flash goes to the bootloader on its own. Keycaps can't reach the button, even multi-stem spacebars (it sits below the plate). The plate needs an opening over the button. The FR4 plate has its own window for it, and the stock plate's wide spacebar cutout also reaches it.
 
 ## Firmware
 
@@ -78,8 +78,8 @@ Tracks are 0.2 mm, including the LED power line through each row. The 5 V trunk 
 - Stock outline and T-shaped gasket tabs
 - Stock 14 mm switch cutouts wherever they match a switch on the PCB (70 of 82)
 - Stock backspace cutout, copied to Enter and left shift
-- Stock wide spacebar cutout, which leaves the boot button reachable
-- New cutouts for the rest from the PCB footprints: caps lock, backslash, the bottom row, and the spacebar stabilizers. The multi-layout stock cutouts are gone
+- A plain 14 mm spacebar switch cutout, and a separate window over the boot button. The window is the size of the part of the stock spacebar cutout right of the switch, with 3 mm of plate between the two
+- New cutouts for the rest from the PCB footprints: stepped caps lock, backslash, the bottom row, and the spacebar stabilizers. The multi-layout stock cutouts are gone
 - Spacebar stabilizer cutouts the size of the backspace's stabilizer notches (the stock ones were 1.5 mm taller)
 - No flex cuts. JLCPCB rejected slots closer than 3 mm to another cutout or the edge, and there's no room for that between keys. Every cutout is at least 3 mm from the next. The only narrower spots are 1.1 to 1.6 mm between the bottom row and the bottom edge, set by the stock outline
 
@@ -154,8 +154,12 @@ The daughterboard has its own fuse, ESD protection, CC resistors, and series res
 
 The version is printed on the underside, under the spacebar. Photos of the assembled v1.0.0 boards are in `photos/v1.0.0/`.
 
-- v1.1.0: the ESD chip (U2), R1, and R2 moved 8 mm further from J1. Order this one
-- v1.0.0: the first boards made. They work, but U2 sits about 2 mm in front of J1's opening. The cable plug only goes in at an angle, it's very tight to seat, and the wires arch over U2
+- v1.1.0: order this one
+  - The ESD chip (U2), R1, and R2 moved 8 mm further from J1
+  - Stepped caps lock. The switch moved 4.76 mm left, under the raised 1.25u part of a stepped keycap. Regular 1.75u caps lock keycaps don't fit anymore
+  - The boot button moved 3 mm right, under its own plate window. The FR4 plate's spacebar switch cutout is closed on all four sides
+  - The v1.1.0 FR4 plate doesn't fit v1.0.0 boards (caps lock moved). The stock plate fits both
+- v1.0.0: the first boards made. They work, but U2 sits about 2 mm in front of J1's opening. The cable plug only goes in at an angle, it's very tight to seat, and the wires arch over U2. Caps lock takes a regular 1.75u keycap
 
 ## License
 

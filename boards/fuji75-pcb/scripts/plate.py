@@ -46,8 +46,13 @@ SLOT_WIDTH = 3.5
 # Narrowest material allowed next to a new cutout. Stock webs are 1.5 mm.
 MIN_WEB = 1.0
 # Stock cutouts kept as drawn, by the switch they hold: the backspace (the template for the other
-# 2u and 2.25u keys) and the wide spacebar cutout that leaves the boot button reachable.
-STOCK_CUTOUTS = {"backspace": "SW28", "spacebar": "SW76"}
+# 2u and 2.25u keys).
+STOCK_CUTOUTS = {"backspace": "SW28"}
+# Window over the boot button, as wide as the part of the stock spacebar cutout right of the switch.
+# It's centered on the button and on the spacebar row, so solid plate separates it from the
+# spacebar's switch cutout.
+BOOT_WINDOW = (11.9, 14.0)
+SPACEBAR = "SW76"
 # 6.25u stabilizer cutouts relative to each stabilizer: the backspace's 7 x 16 mm stabilizer notch,
 # turned around like the spacebar's stabilizer. The stock plate's were 1.5 mm taller, which left
 # 1.5 mm to the shift row.
@@ -125,7 +130,7 @@ def rounded(left, top, right, bottom):
     return box(left, top, right, bottom).buffer(-CORNER_RADIUS).buffer(CORNER_RADIUS, quad_segs=8)
 
 
-def layout_cutouts(cutouts, switches, stabilizers):
+def layout_cutouts(cutouts, switches, stabilizers, button):
     """Keeps the stock cutouts that fit this layout and adds the rest from the PCB footprints."""
     holding = lambda cutout: [ref for ref, center in switches.items() if cutout.contains(Point(center))]
     stock = {name: next(cutout for cutout in cutouts if STOCK_CUTOUTS[name] in holding(cutout)) for name in STOCK_CUTOUTS}
@@ -148,7 +153,7 @@ def layout_cutouts(cutouts, switches, stabilizers):
         size = stabilizers.get(ref)
         if size in ("2u", "2.25u"):
             added.append(affinity.translate(stock["backspace"], x - backspace[0], y - backspace[1]))
-        elif size is None:
+        elif size in (None, "6.25u"):
             half = SWITCH_CUTOUT / 2
             added.append(rounded(x - half, y - half, x + half, y + half))
         else:
@@ -158,6 +163,9 @@ def layout_cutouts(cutouts, switches, stabilizers):
             x, y = switches[ref]
             left, top, right, bottom = SPACE_STAB
             added += [rounded(x + side * 50.006 + left, y + top, x + side * 50.006 + right, y + bottom) for side in (-1, 1)]
+    width, height = BOOT_WINDOW
+    x, y = button.centroid.x, switches[SPACEBAR][1]
+    added.append(rounded(x - width / 2, y - height / 2, x + width / 2, y + height / 2))
 
     print(f"Kept {len(kept)} stock cutouts, replaced {len(dropped)} multi-layout cutouts with {len(added)}")
     return kept + added, added, slots
@@ -398,7 +406,7 @@ def main():
     button = box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom())))
 
     outline, cutouts = to_pcb(*read_dxf(), switches)
-    keys, added, slots = layout_cutouts(cutouts, switches, stabilizers)
+    keys, added, slots = layout_cutouts(cutouts, switches, stabilizers, button)
     flex = stock_slots(keys, added, slots, switches) if "--slots" in sys.argv else []
     if "--row-cuts" in sys.argv:
         flex += row_cuts(keys + flex)
