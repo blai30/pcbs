@@ -48,10 +48,13 @@ MIN_WEB = 1.0
 # Stock cutouts kept as drawn, by the switch they hold: the backspace (the template for the other
 # 2u and 2.25u keys).
 STOCK_CUTOUTS = {"backspace": "SW28"}
-# Window over the boot button, as wide as the part of the stock spacebar cutout right of the switch.
-# It's centered on the button and on the spacebar row, so solid plate separates it from the
-# spacebar's switch cutout.
-BOOT_WINDOW = (11.9, 14.0)
+# Window over the boot and reset buttons: each side clears the buttons by the margin, and the height
+# matches the stock spacebar cutout. It's centered on the spacebar row, so solid plate separates it
+# from the spacebar's switch cutout.
+BUTTON_WINDOW_MARGIN = 2.175
+BUTTON_WINDOW_HEIGHT = 14.0
+# JLCPCB rejects cutouts closer than this to another cutout.
+MIN_WINDOW_GAP = 3.0
 SPACEBAR = "SW76"
 # 6.25u stabilizer cutouts relative to each stabilizer: the backspace's 7 x 16 mm stabilizer notch,
 # turned around like the spacebar's stabilizer. The stock plate's were 1.5 mm taller, which left
@@ -130,7 +133,7 @@ def rounded(left, top, right, bottom):
     return box(left, top, right, bottom).buffer(-CORNER_RADIUS).buffer(CORNER_RADIUS, quad_segs=8)
 
 
-def layout_cutouts(cutouts, switches, stabilizers, button):
+def layout_cutouts(cutouts, switches, stabilizers, buttons):
     """Keeps the stock cutouts that fit this layout and adds the rest from the PCB footprints."""
     holding = lambda cutout: [ref for ref, center in switches.items() if cutout.contains(Point(center))]
     stock = {name: next(cutout for cutout in cutouts if STOCK_CUTOUTS[name] in holding(cutout)) for name in STOCK_CUTOUTS}
@@ -163,9 +166,9 @@ def layout_cutouts(cutouts, switches, stabilizers, button):
             x, y = switches[ref]
             left, top, right, bottom = SPACE_STAB
             added += [rounded(x + side * 50.006 + left, y + top, x + side * 50.006 + right, y + bottom) for side in (-1, 1)]
-    width, height = BOOT_WINDOW
-    x, y = button.centroid.x, switches[SPACEBAR][1]
-    added.append(rounded(x - width / 2, y - height / 2, x + width / 2, y + height / 2))
+    left, _, right, _ = buttons.bounds
+    y = switches[SPACEBAR][1]
+    added.append(rounded(left - BUTTON_WINDOW_MARGIN, y - BUTTON_WINDOW_HEIGHT / 2, right + BUTTON_WINDOW_MARGIN, y + BUTTON_WINDOW_HEIGHT / 2))
 
     print(f"Kept {len(kept)} stock cutouts, replaced {len(dropped)} multi-layout cutouts with {len(added)}")
     return kept + added, added, slots
@@ -213,15 +216,20 @@ def thin(shape):
     return shape.difference(shape.buffer(-half, join_style="mitre").buffer(half, join_style="mitre"))
 
 
-def check(outline, keys, added, holes, stock, switches, button):
+def check(outline, keys, added, holes, stock, switches, buttons):
     # Stock cutouts sit up to 0.014 mm off the PCB's switch centers.
     area = unary_union(holes).buffer(0.02)
     half = SWITCH_CUTOUT / 2
     for ref, (x, y) in switches.items():
         if not area.contains(rounded(x - half, y - half, x + half, y + half)):
             sys.exit(f"{ref} isn't fully inside a cutout")
-    if not area.contains(button):
-        sys.exit("The boot button isn't fully inside a cutout")
+    if not area.contains(buttons):
+        sys.exit("The boot and reset buttons aren't fully inside a cutout")
+    window = added[-1]
+    gap = window.distance(unary_union([key for key in keys if key is not window]))
+    if gap < MIN_WINDOW_GAP:
+        sys.exit(f"The button window is {gap:.2f} mm from the nearest cutout, under {MIN_WINDOW_GAP} mm")
+    print(f"Button window {tuple(round(value, 2) for value in window.bounds)}, {gap:.2f} mm from the nearest cutout")
     if not all(outline.contains(hole) for hole in holes):
         sys.exit("A cutout runs past the outline")
     for cutout in added:
@@ -299,7 +307,7 @@ FOAM_STAB_WIDTH = 8.0
 # The wire runs between the housings under the plate, across the big PCB holes. The channel for it
 # reaches this far from the big holes' centers toward the small holes.
 FOAM_WIRE_REACH = 3.0
-# Clearance around the parts on top of the PCB (the controller passives, crystal, and boot button).
+# Clearance around the parts on top of the PCB (the controller passives, crystal, and boot and reset buttons).
 FOAM_PART_CLEARANCE = 1.5
 # Loose foam pieces smaller than this are left out (too small to stay put).
 FOAM_MIN_PIECE = 300
@@ -332,7 +340,7 @@ def foam(pcb, switches):
             side = 1 if big_y > small_y else -1
             near, far = big_y - side * FOAM_WIRE_REACH, big_y + side * (radius + FOAM_STAB_CLEARANCE)
             holes.append(box(min(xs), min(near, far), max(xs), max(near, far)))
-        elif footprint.GetLayer() == pcbnew.F_Cu and not ref.startswith(("SW", "ST")) or ref == "SW100":
+        elif footprint.GetLayer() == pcbnew.F_Cu and not ref.startswith(("SW", "ST")) or ref in ("SW100", "SW101"):
             bounds = footprint.GetBoundingBox(False)
             holes.append(box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom()))).buffer(FOAM_PART_CLEARANCE, join_style="mitre"))
     # Merges holes closer than FOAM_MIN_WEB to each other or to the edge (those open into the edge),
@@ -402,16 +410,15 @@ def main():
     switches = {ref: center(footprint) for ref, footprint in footprints.items() if footprint.GetFPIDAsString().startswith("fuji75:SW_MX")}
     # Stabilizer size by the switch it sits under (ST28 sits under SW28).
     stabilizers = {"SW" + ref[2:]: footprint.GetFPIDAsString().split("_")[-1] for ref, footprint in footprints.items() if ref.startswith("ST")}
-    bounds = footprints["SW100"].GetBoundingBox(False)
-    button = box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom())))
+    buttons = unary_union([box(*(pcbnew.ToMM(value) for value in (bounds.GetLeft(), bounds.GetTop(), bounds.GetRight(), bounds.GetBottom()))) for bounds in (footprints[ref].GetBoundingBox(False) for ref in ("SW100", "SW101"))])
 
     outline, cutouts = to_pcb(*read_dxf(), switches)
-    keys, added, slots = layout_cutouts(cutouts, switches, stabilizers, button)
+    keys, added, slots = layout_cutouts(cutouts, switches, stabilizers, buttons)
     flex = stock_slots(keys, added, slots, switches) if "--slots" in sys.argv else []
     if "--row-cuts" in sys.argv:
         flex += row_cuts(keys + flex)
     holes = keys + flex
-    check(outline, keys, added, holes, cutouts, switches, button)
+    check(outline, keys, added, holes, cutouts, switches, buttons)
     rings = gold_rings(outline, keys, holes) if "--rings" in sys.argv else []
     write_plate(pcb, outline, holes, rings)
     print(f"Wrote {PLATE}")
