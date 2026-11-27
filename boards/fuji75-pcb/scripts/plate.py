@@ -12,7 +12,7 @@ The plate has no copper, for the cheapest order (1 layer, any finish). --rings a
 around each key cutout on the top: bare copper with the solder mask opened over it, which needs
 ENIG.
 
-It also writes plate/fuji75-plate-foam.dxf and .pdf (1:1), the foam that sits between the plate and the PCB.
+It also writes plate/fuji75-plate.dxf (the same plate for laser cutting) and plate/fuji75-plate-foam.dxf and .pdf (1:1), the foam that sits between the plate and the PCB.
 
 Run from the repo root with KiCad's bundled Python:
 
@@ -35,6 +35,8 @@ BOARD_DIR = Path(__file__).resolve().parent.parent
 PCB = BOARD_DIR / "fuji75.kicad_pcb"
 DXF = BOARD_DIR / "fuji75_plate.dxf"
 PLATE = BOARD_DIR / "plate" / "fuji75-plate.kicad_pcb"
+# The same plate for laser cutting (PC, POM, or metal).
+PLATE_DXF = BOARD_DIR / "plate" / "fuji75-plate.dxf"
 FOAM = BOARD_DIR / "plate" / "fuji75-plate-foam.dxf"
 # Blank space around the foam on the PDF page.
 PDF_MARGIN = 10.0
@@ -358,15 +360,20 @@ def foam(pcb, switches):
     return [pieces[0]] + [piece for piece in pieces[1:] if piece.area >= FOAM_MIN_PIECE]
 
 
-def write_foam(pieces):
-    shape = MultiPolygon(pieces)
+def write_dxf(pieces, path):
+    """Each ring as a closed polyline, the way laser cutters want it."""
     document = ezdxf.new(units=ezdxf.units.MM)
     space = document.modelspace()
     for piece in pieces:
         for ring in [piece.exterior, *piece.interiors]:
-            # DXF's y axis points up. Flip so the foam reads the right way up.
+            # DXF's y axis points up. Flip so it reads the right way up.
             space.add_lwpolyline([(x, -y) for x, y in ring.coords], close=True)
-    document.saveas(FOAM)
+    document.saveas(path)
+
+
+def write_foam(pieces):
+    shape = MultiPolygon(pieces)
+    write_dxf(pieces, FOAM)
     write_pdf(shape, FOAM.with_suffix(".pdf"))
     min_x, min_y, max_x, max_y = shape.bounds
     print(f"Wrote {FOAM} and .pdf: {max_x - min_x:.1f} x {max_y - min_y:.1f} mm, {len(pieces)} pieces")
@@ -421,7 +428,8 @@ def main():
     check(outline, keys, added, holes, cutouts, switches, buttons)
     rings = gold_rings(outline, keys, holes) if "--rings" in sys.argv else []
     write_plate(pcb, outline, holes, rings)
-    print(f"Wrote {PLATE}")
+    write_dxf([outline.difference(unary_union(holes))], PLATE_DXF)
+    print(f"Wrote {PLATE} and {PLATE_DXF}")
     write_foam(foam(pcb, switches))
 
 

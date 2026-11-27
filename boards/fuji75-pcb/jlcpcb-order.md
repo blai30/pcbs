@@ -10,6 +10,7 @@ Upload from `build/fab/` (run `scripts/fab.py` first):
 - `fuji75-bom-jlcpcb.csv`: BOM, after "Next" with assembly turned on
 - `fuji75-cpl-jlcpcb.csv`: placement (centroid) file, same step as the BOM. Not `fuji75-cpl.csv`: this one has JLCPCB's rotation offsets (`JLCPCB_ROTATION` in `fab.py`)
 - `fuji75-plate-gerbers.zip`: switch plate, a second PCB order in the same cart (see [Switch plate](#switch-plate))
+- `fuji75-plate-1.5mm.step`: PC or POM switch plate from JLCCNC, optional (see [PC and POM plates](#pc-and-pom-plates))
 
 ## PCB
 
@@ -170,3 +171,32 @@ Keyboard switch plate, no copper. Please mill every Edge.Cuts cutout. The 1.1-1.
 The underside may come without solder mask (bare FR4) on a 1-layer board. It faces the PCB and doesn't show.
 
 `plate.py --rings` adds a gold ring around each key cutout on the top. That needs ENIG, which costs a lot more on a board this size.
+
+### PC and POM plates
+
+PC and POM plates are CNC machined at JLCCNC (jlccnc.com) from `build/fab/fuji75-plate-1.5mm.step`. It's the same plate as the FR4 one, 1.5 mm thick like the stock aluminum plate. Upload the STEP on JLCCNC's quote page and pick the material (Polycarbonate (PC) or POM). Then click "other products" in JLCCNC's top bar to get back to JLCPCB. Both carts show up together and get paid and shipped as one order.
+
+| Field | Set to | Notes |
+| --- | --- | --- |
+| Material | Plastic | |
+| Type of Plastic | Polycarbonate or POM | One quote per material |
+| Surface Finish | No | Default is Yes (Blue-Tinted Vapor Polish). Clear PC sheet stays clear on both faces, only the cut edges come out frosted. Bead Blasting frosts the whole plate |
+| Tightest Tolerance | ±0.10mm | Default is ISO 2768 medium, which allows ±0.2 mm on the 14.0 mm switch cutouts. That's loose enough for switches to rattle or not clip in |
+| Appearance Requirements | Standard | Default |
+| Threads | No | Default |
+| Sub-assembly | No | Default |
+| Qty | 1 or more | No minimum |
+| Product Desc | Board & Block Category > Plastic Irregular Board - HS Code 392690 | Required. Used for customs. The plate isn't a plain rectangle |
+| Remark | Paste the text below | |
+
+Remark:
+
+```
+Keyboard switch plate. Please cut every through cutout in the STEP model. Inner corners are 0.5 mm radius, so a 1 mm or smaller end mill is needed for the switch cutouts. The 1.1-1.6 mm webs at the bottom edge are set by the keyboard case. Please produce as designed. Please cut from clear 1.5 mm sheet and keep both faces clear (no face milling).
+```
+
+POM is opaque. Leave the last sentence out of its remark.
+
+POM is soft, and the thin webs at the bottom edge bend more than on FR4. Handle that edge with care when clipping in the bottom row.
+
+For laser cutting somewhere else, `plate/fuji75-plate.dxf` has the same plate as closed outlines in mm.

@@ -1,5 +1,5 @@
 """Writes the PCBWay and JLCPCB order files to build/fab/: zipped Gerbers and drill files, the BOM,
-the placement (CPL) file for both sides, and the plate Gerbers.
+the placement (CPL) file for both sides, the plate Gerbers, and a STEP model of the plate for CNC.
 
 Run from the repo root with KiCad's bundled Python:
 
@@ -7,6 +7,7 @@ Run from the repo root with KiCad's bundled Python:
 """
 
 import csv
+import re
 import shutil
 import subprocess
 import sys
@@ -25,6 +26,8 @@ OUT = BOARD_DIR / "build" / "fab"
 LAYERS = "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts"
 # The plate is ordered as a 1-layer board with no holes.
 PLATE_LAYERS = "F.Cu,F.Mask,Edge.Cuts"
+# CNC plates (PC, POM) are as thick as the stock aluminum plate.
+CNC_PLATE_THICKNESS = 1.5
 
 # Degrees added to KiCad's rotation for JLCPCB, by LCSC part number. Their part library holds
 # these parts turned from KiCad's convention (checked against pin 1 in their placement preview).
@@ -58,6 +61,21 @@ def gerbers(board, name, layers=LAYERS, holes=True):
     with zipfile.ZipFile(OUT / f"{name}.zip", "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(folder.iterdir()):
             archive.write(path, path.name)
+
+
+def cnc_plate():
+    """The plate as a STEP model for CNC machining, at CNC_PLATE_THICKNESS."""
+    # KiCad's STEP export takes the thickness from the stackup's core layer. pcbnew's Python API
+    # can't reach the stackup, so this edits the file.
+    text, count = re.subn(r'(\(type "core"\)\s*\(thickness )[\d.]+', rf"\g<1>{CNC_PLATE_THICKNESS}", PLATE.read_text(encoding="utf-8"))
+    if count != 1:
+        sys.exit(f"Expected one core layer in {PLATE}, found {count}")
+    thinner = OUT / "plate-cnc.kicad_pcb"
+    thinner.write_text(text, encoding="utf-8")
+    cli("pcb", "export", "step", "--board-only", "-o", str(OUT / f"fuji75-plate-{CNC_PLATE_THICKNESS}mm.step"), str(thinner))
+    # kicad-cli leaves a project settings file next to it.
+    for path in (thinner, thinner.with_suffix(".kicad_prl")):
+        path.unlink(missing_ok=True)
 
 
 def bom():
@@ -155,6 +173,7 @@ def main():
     OUT.mkdir(parents=True)
     gerbers(PCB, "fuji75-gerbers")
     gerbers(PLATE, "fuji75-plate-gerbers", PLATE_LAYERS, holes=False)
+    cnc_plate()
     designators = bom()
     placed = placement(designators)
     missing = set(designators) - placed

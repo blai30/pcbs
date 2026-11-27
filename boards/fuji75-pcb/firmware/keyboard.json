@@ -19,6 +19,7 @@
     "features": {
         "bootmagic": true,
         "extrakey": true,
+        "key_lock": true,
         "nkro": true,
         "rgb_matrix": true
     },
